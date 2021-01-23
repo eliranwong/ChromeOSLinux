@@ -55,9 +55,9 @@ If the version is not 10 (buster) or above, you'll need to run the update script
 
 6) To enable ADB debugging: Settings > Linux > Develop Android apps > Enable ADB debugging
 
-Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
-
 7) To use microphone with Linux app: Settings > Linux > Allow Linux to access your microphone.
+
+Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 
 # How to restart Linux virtual machine?
 
