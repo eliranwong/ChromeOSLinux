@@ -118,6 +118,30 @@ Unique Bible App Desktop
 
 https://github.com/eliranwong/UniqueBible/blob/master/installation/chrome_os.md
 
+> sudo apt install python3 python-setuptools python3-pip python3-venv libnss3 -y
+
+> cd ~
+
+> wget https://github.com/eliranwong/UniqueBible/archive/master.zip
+
+> unzip master.zip
+
+> cd UniqueBible-master
+
+> python3 -m venv venv
+
+> source venv/bin/activate
+
+> pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2 --trusted-host download.qt.io
+
+[Remarks: 
+* "PySide2" folder, installed with the command above, is located at "~/.local/lib/python3.5/site-packages/PySide2"<br>
+[instead of "/usr/local/lib/python3.5/dist-packages/PySide2"]<br>
+* In our testings, command "pip3 install PySide2" encounters memory errors on some low-memory chromebooks.  The above command installs wheel directly from Qt servers with this command.  Find details at: https://wiki.qt.io/Qt_for_Python/GettingStarted
+]<br>
+
+> pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans pypinyin langdetect
+
 Unique Bible App Hybrid
 
 https://github.com/eliranwong/UniqueBibleAppHybrid
