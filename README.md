@@ -142,6 +142,17 @@ https://github.com/eliranwong/UniqueBible/blob/master/installation/chrome_os.md
 
 > pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans pypinyin langdetect
 
+The Following line is optional:
+> sudo apt install libxcb*
+
+> export QT_QPA_PLATFORM=wayland
+
+> cd ~/UniqueBible-master
+
+> source venv/bin/activate
+
+> python3 main.py
+
 Unique Bible App Hybrid
 
 https://github.com/eliranwong/UniqueBibleAppHybrid
