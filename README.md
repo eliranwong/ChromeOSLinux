@@ -34,6 +34,8 @@ Checked with Chrome browser:
 
 cros-termina - Version: 13495.0.0
 
+<b>python3:</b> Python 3.7.3
+
 # Basics
 Go to settings to get the latest version of Chrome OS first, "sudo apt update" does not work in some Chrome OS versions.
 
@@ -90,3 +92,26 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 # Input Method
 
 e.g. Chinese pinyin
+
+# Text Editor
+
+geany
+> sudo apt install geany -y
+
+# Development Tools
+
+Android Studio
+
+Flutter
+
+Dart
+
+# Office Apps
+
+WPS Office
+
+# Bible Apps
+
+Unique Bible App Desktop
+
+Unique Bible App Hybrid
