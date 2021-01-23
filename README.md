@@ -6,7 +6,7 @@ We also wrote some note about WSL2 setup on Windows: https://github.com/eliranwo
 
 # Tested Device & Versions
 
-Notes in this repository works are tested with the following device and os versions:
+Notes in this repository are tested with the following device and os versions:
 
 <b>Device: Pixelbook Go</b>
 
@@ -50,6 +50,8 @@ If the version is not 10 (buster) or above, you'll need to run the update script
 
 5) To update packages, run on terminal app:
 > sudo apt update && sudo apt dist-upgrade
+
+6) To enable ADB debugging: Settings > Linux > Develop Android apps > Enable ADB debugging
 
 Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 
