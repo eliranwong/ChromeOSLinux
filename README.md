@@ -55,11 +55,17 @@ If the version is not 10 (buster) or above, you'll need to run the update script
 
 Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 
+7) To use microphone with Linux app: Settings > Linux > Allow Linux to access your microphone.
+
 # How to restart Linux virtual machine?
 
 1) Right-click "Terminal" app icon on the "shelf".
 2) Shut down Linux (Beta)
 3) Start the "Terminal" app again
+
+# Where to adjust disk size of Linux container?
+
+Settings > Linux > Disk size > Change
 
 # Basic Tools
 
@@ -73,3 +79,14 @@ To enable Flatpak:
 4) Try to run an app with flatpak, e.g.:
 > flatpak run org.mozilla.firefox
 
+# Test Audio
+
+Update to the latest Chrome OS to get audio support for Linux apps.
+
+Test: Open a youtube video with Linux firefox.
+
+Remarks: Audio is not supported in some old versions of Chrome OS.
+
+# Input Method
+
+e.g. Chinese pinyin
