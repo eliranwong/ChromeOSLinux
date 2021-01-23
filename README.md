@@ -1,4 +1,4 @@
-# chromeoslinux
+# Chrome OS Linux
 
 This repository contains notes about Linux setup on Chrome OS.  These are written for setting up environment for developing bible apps.
 
@@ -53,5 +53,19 @@ If the version is not 10 (buster) or above, you'll need to run the update script
 
 Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 
+# How to restart Linux virtual machine?
+
+1) Right-click "Terminal" app icon on the "shelf".
+2) Shut down Linux (Beta)
+3) Start the "Terminal" app again
+
 # Basic Tools
+
+To enable Flatpak:
+1) Run on terminal:
+> sudo apt install flatpak -y
+> flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+2) Restart Linux virtual machine
+3) Try to install an app with Flatpak, e.g.:
+> flatpak install firefox
 
