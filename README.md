@@ -66,6 +66,8 @@ To enable Flatpak:
 > sudo apt install flatpak -y
 > flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 2) Restart Linux virtual machine
-3) Try to install an app with Flatpak, e.g.:
+3) Try to install an app with flatpak, e.g.:
 > flatpak install firefox
+4) Try to run an app with flatpak, e.g.:
+> flatpak run org.mozilla.firefox
 
