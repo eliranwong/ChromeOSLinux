@@ -93,6 +93,8 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 
 e.g. Chinese pinyin
 
+https://github.com/eliranwong/wsl2/blob/master/input_method/backup/fcitx.md
+
 # Text Editor
 
 geany
@@ -114,4 +116,8 @@ WPS Office
 
 Unique Bible App Desktop
 
+https://github.com/eliranwong/UniqueBible/blob/master/installation/chrome_os.md
+
 Unique Bible App Hybrid
+
+https://github.com/eliranwong/UniqueBibleAppHybrid
