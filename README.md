@@ -8,11 +8,11 @@ We also wrote some note about WSL2 setup on Windows: https://github.com/eliranwo
 
 Notes in this repository works are tested with the following device and os versions:
 
-- Device Pixelbook Go
+<b>Device: Pixelbook Go</b>
 
-- Chrome OS Version: 87.0.4280.152 (Official Build) (64-bit)
+<b>Chrome OS Version:</b> 87.0.4280.152 (Official Build) (64-bit)
 
-- Linux version: 
+<b>Linux version:</b> 
 
 > cat /etc/os-release
 
@@ -26,7 +26,7 @@ HOME_URL="https://www.debian.org/"<br>
 SUPPORT_URL="https://www.debian.org/support"<br>
 BUG_REPORT_URL="https://bugs.debian.org/"
 
-- Virtual machine:
+<b>Virtual machine:</b>
 
 Checked with Chrome browser:
 
