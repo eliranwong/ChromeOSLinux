@@ -20,9 +20,9 @@ We have developed three versions
 
 > pip3 install PySide2
 
-[Remarks: On low-memory devices, use the following line instead of "pip3 install PySide2":
+* [Remarks: On low-memory devices, use the following line instead of "pip3 install PySide2":
 
-pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2 --trusted-host download.qt.io
+* > pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2 --trusted-host download.qt.io
 
 * "PySide2" folder, installed with the command above, is located at "~/.local/lib/python3.7/site-packages/PySide2"<br>
 [instead of "/usr/local/lib/python3.y/dist-packages/PySide2"]<br>
