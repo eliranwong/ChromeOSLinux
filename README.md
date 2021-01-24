@@ -69,6 +69,10 @@ Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 
 Settings > Linux > Disk size > Change
 
+To check disk storage, run:
+
+> df -h
+
 # Basic Tools
 
 To enable Flatpak:
@@ -80,6 +84,8 @@ To enable Flatpak:
 > flatpak install firefox
 4) Try to run an app with flatpak, e.g.:
 > flatpak run org.mozilla.firefox
+
+Remarks: To add environment variable with flatpak, e.g. flatpak run --env=QT_QPA_PLATFORM=wayland APP [ARGUMENT?]
 
 # Test Audio
 
