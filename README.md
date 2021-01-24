@@ -73,6 +73,75 @@ To check disk storage, run:
 
 > df -h
 
+# Package management
+
+
+To manage packages:
+
+To show help of "apt" command:
+
+> apt help
+
+To display policy:
+
+> apt policy
+
+To update package information, upgrade installed packages and install necessary dependencies:
+
+> sudo apt update && sudo apt dist-upgrade
+
+To install a package ("-y" below is optional.  It simply says "yes".):
+
+> sudo apt -y install [package]
+
+To upgrade a package:
+
+> sudo apt upgrade [package]
+
+To upgrade a package and install new dependencies if necessary:
+
+> sudo apt dist-upgrade [package]
+
+To overwrite an installed old version without upgrading:
+
+> sudo apt install [package] --no-upgrade
+
+To remove a package without removing configuration files:
+
+> sudo apt remove [package]
+
+To remove a package together with configuration files:
+
+> sudo apt purge [package]
+
+To remove old downloaded archive files:
+
+> sudo apt autoclean
+
+To list installed packages:
+
+> sudo apt list --installed
+
+To list upgradable packages:
+
+> sudo apt list --upgradable
+
+To show a package information:
+
+> apt show [package]
+
+TO show a package dependency:
+
+> apt depends [package]
+
+To search for a package, e.g.:
+
+> apt search fcitx
+
+OR
+
+> apt-cache search fcitx
+
 # Basic Tools
 
 To install some basic command line tools, run:
