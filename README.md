@@ -152,22 +152,10 @@ To enable Flatpak:
 > sudo apt install flatpak -y
 > flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 2) Restart Linux virtual machine
-3) Try to install an app with flatpak, e.g.:
-> flatpak install firefox
-4) Try to run an app with flatpak, e.g.:
-> flatpak run org.mozilla.firefox
 
-Find more apps at: https://flathub.org
+You may find flatpak packages at: https://flathub.org
 
 Remarks: To add environment variable with flatpak, e.g. flatpak run --env=QT_QPA_PLATFORM=wayland APP [ARGUMENT?]
-
-# Test Audio
-
-Update to the latest Chrome OS to get audio support for Linux apps.
-
-Test: Open a youtube video with Linux firefox.
-
-Remarks: Audio is not supported in some old versions of Chrome OS.
 
 # Input Method
 
@@ -189,19 +177,24 @@ Environment="GDK_BACKEND=x11"
 export QT_QPA_PLATFORM=wayland
 export GDK_BACKEND=x11
 
+[Remarks: Without these settings, fcitx may still work, but not selection panel of Chinese characters.]
+
 # Text Editor
 
 nano, geany
 
 > sudo apt install nano geany -y
 
-# Development Tools
+# Browser
 
-<b>Android Studio + Flutter + Dart + connecting flutter to chromebook</b>
+Install firefox, for example:
+First make sure you have "flatpak" installed.
 
-We found the following way is the easiest one to setup Android Studio together with flutter and dart.  Overall, it is easier to first install Android Studio then flutter and dart.
+1) Install an app with flatpak:
+> flatpak install firefox
 
-https://github.com/eliranwong/ChromeOSLinux/blob/main/development/AndroidStudioFlutter.md
+2) Launch it via Launcher or flatpak on terminal:
+> flatpak run org.mozilla.firefox
 
 # Office Apps
 
@@ -210,6 +203,32 @@ We prefer WPS office.  It has better compatability with Microsoft documents than
 Download the Linux Deb package from https://www.wps.com/
 
 Right click the downloaded deb package and select "Install with Linux (Beta)"
+
+# Test Audio
+
+Update to the latest Chrome OS to get audio support for Linux apps.
+
+Test: Open a youtube video with Linux firefox.
+
+Remarks: Audio is not supported in some old versions of Chrome OS.
+
+# Audio Editor
+
+At the time of writing, flatpak package has a newer version than apt package, so we choose the flatpak one.
+
+> flatpak install flathub org.audacityteam.Audacity
+
+You may launch audacity via Launcher or run in terminal:
+
+> flatpak run org.audacityteam.Audacity
+
+# Development Tools
+
+<b>Android Studio + Flutter + Dart + connecting flutter to chromebook</b>
+
+We found the following way is the easiest one to setup Android Studio together with flutter and dart.  Overall, it is easier to first install Android Studio then flutter and dart.
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/AndroidStudioFlutter.md
 
 # Bible Apps
 
@@ -220,3 +239,7 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md
 Unique Bible App Hybrid
 
 https://github.com/eliranwong/UniqueBibleAppHybrid
+
+# Useful Command Line Tools
+
+https://github.com/eliranwong/wsl2/tree/master/cli_tools
