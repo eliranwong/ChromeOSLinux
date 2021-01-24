@@ -107,7 +107,7 @@ To overwrite an installed old version without upgrading:
 
 To remove a package without removing configuration files:
 
-> sudo apt remove [package]
+> sudo apt remove [package] && sudo apt autoremove
 
 To remove a package together with configuration files:
 
