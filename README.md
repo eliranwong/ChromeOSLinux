@@ -216,13 +216,15 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 
 # Audio Editor
 
-At the time of writing, flatpak package has a newer version than apt package, so we choose the flatpak one.
+> sudo apt install audacity
 
-> flatpak install flathub org.audacityteam.Audacity
+# Scaling Individual Applications
 
-You may launch audacity via Launcher or run in terminal:
+If you find the installed audacity too small on screen, you may want to scale it up.
 
-> flatpak run org.audacityteam.Audacity
+> sommelier -X --scale=0.8 --dpi=200 audacity
+
+Read more at: https://www.reddit.com/r/Crostini/wiki/howto/adjust-display-scaling#wiki_adjusting_display_scaling_per_application
 
 # Development Tools
 
