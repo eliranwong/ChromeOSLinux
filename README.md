@@ -172,7 +172,7 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 
 e.g. Chinese pinyin
 
-https://github.com/eliranwong/wsl2/blob/master/input_method/backup/fcitx.md
+https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md
 
 # Text Editor
 
