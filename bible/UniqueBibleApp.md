@@ -37,6 +37,8 @@ Reference on the following line: https://wiki.archlinux.org/index.php/wayland<br
 
 > python3 main.py
 
-To use fcitx input method:
+To use fcitx input method, try:
 
 > cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible-master/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+
+> chmod +x ~/UniqueBible-master/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
