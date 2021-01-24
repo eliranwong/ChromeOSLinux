@@ -55,7 +55,7 @@ If the version is not 10 (buster) or above, you'll need to run the update script
 
 6) To enable ADB debugging: Settings > Linux > Develop Android apps > Enable ADB debugging
 
-7) To use microphone with Linux app: Settings > Linux > Allow Linux to access your microphone.
+7) To use microphone with Linux app: Settings > Linux > Allow Linux to access your microphone. [Remarks: Microphone setting here cannot be changed if Linux container is running.  Make sure to shut down Linux container first before changing this option.] 
 
 Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 
@@ -217,6 +217,16 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 # Audio Editor
 
 > sudo apt install audacity
+
+Enable to use microphone for recording:
+
+1) Shutdown Linux container first [right-click Terminal app icon on the shelf & select "Shut down Linux (Beta)"]
+2) Enable to use microphone with Linux app: Settings > Linux > Allow Linux to access your microphone.
+3) Launch Terminal app and audacity
+
+> audacity
+
+4) Select "default: Mic:0" on microphone option
 
 # Scaling Individual Applications
 
