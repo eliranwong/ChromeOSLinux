@@ -117,6 +117,8 @@ To remove old downloaded archive files:
 
 > sudo apt autoclean
 
+[apt autoclean removes the retrieved packages from the local cache only while the apt-get autoremove removes the unneeded packages that were once installed as a dependency.]
+
 To list installed packages:
 
 > apt list --installed
