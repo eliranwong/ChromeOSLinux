@@ -103,8 +103,9 @@ https://github.com/eliranwong/wsl2/blob/master/input_method/backup/fcitx.md
 
 # Text Editor
 
-geany
-> sudo apt install geany -y
+nano, geany
+
+> sudo apt install nano geany -y
 
 # Development Tools
 
