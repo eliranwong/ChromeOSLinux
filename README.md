@@ -75,7 +75,6 @@ To check disk storage, run:
 
 # Package management
 
-
 To manage packages:
 
 To show help of "apt" command:
@@ -158,6 +157,8 @@ To enable Flatpak:
 4) Try to run an app with flatpak, e.g.:
 > flatpak run org.mozilla.firefox
 
+Find more apps at: https://flathub.org
+
 Remarks: To add environment variable with flatpak, e.g. flatpak run --env=QT_QPA_PLATFORM=wayland APP [ARGUMENT?]
 
 # Test Audio
@@ -173,6 +174,20 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 e.g. Chinese pinyin
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md
+
+# Use fcitx in GUI Applications
+
+Add the following variables to work with fcitx (You may read the previous section about fcitx setup.),
+
+> sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+
+Environment="QT_QPA_PLATFORM=wayland"
+Environment="GDK_BACKEND=x11"
+
+> nano ~/.bashrc
+
+export QT_QPA_PLATFORM=wayland
+export GDK_BACKEND=x11
 
 # Text Editor
 
@@ -190,7 +205,11 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/development/AndroidStudioF
 
 # Office Apps
 
-WPS Office
+We prefer WPS office.  It has better compatability with Microsoft documents than libreoffice.
+
+Download the Linux Deb package from https://www.wps.com/
+
+Right click the downloaded deb package and select "Install with Linux (Beta)"
 
 # Bible Apps
 
