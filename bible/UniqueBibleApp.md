@@ -28,9 +28,6 @@ We have developed three versions
 
 > pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans pypinyin langdetect
 
-The Following line is optional:<br>
-> sudo apt install libxcb*
-
 Reference on the following line: https://wiki.archlinux.org/index.php/wayland<br>
 > export QT_QPA_PLATFORM=wayland
 
