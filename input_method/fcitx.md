@@ -1,4 +1,6 @@
-# fcitx on Chrome OS Crostini
+# fcitx on Chrome OS Crostini 
+
+[updated on 23Jan2021; Chrome OS version: 87.0.4280.152]
 
 This article describe how to set up fcitx on Chrome OS Linux container, Crostini.
 
@@ -46,7 +48,7 @@ Close and re-open terminal to make changes effective.
 
 Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
 
-sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+> sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 
 Add the following lines at the end of the file:
 
