@@ -34,6 +34,10 @@ Checked with Chrome browser:
 
 cros-termina - Version: 13495.0.0
 
+<b>CPU:</b>
+
+> dpkg --print-architecture
+
 <b>python3:</b> Python 3.7.3
 
 # Basics
@@ -147,7 +151,7 @@ OR
 
 To install some basic command line tools, run:
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate -y
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev -y
 
 To enable Flatpak:
 1) Run on terminal:
