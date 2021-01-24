@@ -248,6 +248,15 @@ We found the following way is the easiest one to setup Android Studio together w
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/development/AndroidStudioFlutter.md
 
+<b>nvm:</b>
+
+> wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+> source .bashrc
+
+<b>note:</b>
+
+> nvm install node
+
 # Bible Apps
 
 Unique Bible App Desktop
