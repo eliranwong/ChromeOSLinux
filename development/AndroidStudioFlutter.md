@@ -58,8 +58,25 @@ We found the following way is the easiest one to setup Android Studio together w
 
 > flutter doctor --android-licenses
 
-20) To have a final check, run:
+20) At this point, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly. To have a final check, run:
 
 > flutter doctor
 
-With steps above, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly.
+[Optional]
+
+You may encounter the following warning:
+
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 57 package 'android-studio':
+ missing 'Maintainer' field
+
+To get rid of this warning:
+
+1) Run
+
+> sudo nano /var/lib/dpkg/status
+
+2) Use "ctrl + shift + -" key combination to go to line 57
+
+3) Enter "Maintainer: "
+
+3) Save the file (ctrl + o + enter) and exit (ctrl + x)
