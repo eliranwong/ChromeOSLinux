@@ -120,11 +120,11 @@ To remove old downloaded archive files:
 
 To list installed packages:
 
-> sudo apt list --installed
+> apt list --installed
 
 To list upgradable packages:
 
-> sudo apt list --upgradable
+> apt list --upgradable
 
 To show a package information:
 
