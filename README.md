@@ -187,11 +187,61 @@ export GDK_BACKEND=x11
 
 [Remarks: Without these settings, fcitx may still work, but not selection panel of Chinese characters.]
 
+# Add Fonts
+
+To install additional fonts, e.g. ubuntu fonts:
+
+1) Download the latest version of Ubuntu Fonts from http://font.ubuntu.com/ or run:<br>
+> wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
+
+2) Unzip font package:<br>
+> unzip 0cef8205-ubuntu-font-family-0.83.zip
+
+3) Create user fonts directory:<br>
+> mkdir -p ~/.fonts
+
+4) Copy ubuntu fonts to user fonts directory:<br>
+> cp -r ubuntu-font-family-0.83/ ~/.fonts
+
+5) Build fonts information cache files:
+> fc-cache -f -v
+
 # Text Editor
 
 nano, geany
 
 > sudo apt install nano geany -y
+
+# Terminal
+
+The built-in "Terminal" app that comes with Chrome OS is nice, but terrible for typing non-English characters, like Chinese.  Chinese characters are misplaced as one type.  We need a terminal app that have the following features:
+
+* good support of copy & paste feature
+* support unicode
+* works with fcitx (gnome-terminal, unfornately does not work with fcitx)
+* customisable
+
+"urxvt" matches all the requirements listed above.  To install:
+
+> sudo apt install rxvt-unicode -y
+
+To customise, edit the file ~/.Xresources:
+
+> nano ~/.Xresources
+
+Add the following content to the file:
+
+<b>URxvt.background: #000000
+URxvt.foreground: #FFFFFF
+URxvt.color4: #1E90FF
+URxvt.color12: #0081FF
+URxvt.font: xft:Ubuntu Monospace:pixelsize=48
+URxvt.perl-ext-common: selection-to-clipboard
+URxvt.letterSpace: 0</b>
+
+To make the settings effective:
+
+> xrdb -merge ~/.Xresources
 
 # Browser
 
