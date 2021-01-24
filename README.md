@@ -38,6 +38,8 @@ cros-termina - Version: 13495.0.0
 
 > dpkg --print-architecture
 
+amd64
+
 <b>python3:</b> Python 3.7.3
 
 # Basics
