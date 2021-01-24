@@ -250,6 +250,14 @@ We found the following way is the easiest one to setup Android Studio together w
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/development/AndroidStudioFlutter.md
 
+<b>VS Code:</b>
+
+https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md
+
+<b>python3:</b>
+
+sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev -y
+
 <b>nvm:</b>
 
 > wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
