@@ -13,13 +13,13 @@ It is optional, becuase users don't need Chinese locale pack(s) for display of C
 
 An example:
 
-* To edit /etc/locale.gen, run:
+To edit /etc/locale.gen, run:
 
 > sudo nano /etc/locale.gen
 
-* Use ctrl + w key combination to locate "zh_CN.UTF8 UTF8" and uncomment it, by removing the # sign at the beginning of the line.
+Use ctrl + w key combination to locate "zh_CN.UTF8 UTF8" and uncomment it, by removing the # sign at the beginning of the line.
 
-* To download the newly selected language package(s), run:
+To download the newly selected language package(s), run:
 
 > sudo locale-gen
 
@@ -30,7 +30,7 @@ This changes default application menu & interface to Chinese.  It is optional.
 1) To configure default language, run in terminal: sudo dpkg-reconfigure locales
 2) select "zh_CN.UTF8 UTF8" as default locale
 
-* Add variable for running applications launched through entering cmmands in terminal:
+Add variable for running applications launched through entering cmmands in terminal:
 
 Use text editor to edit file ~/.bashrc, for example:
 
@@ -44,7 +44,7 @@ In nano, Ctrl+O to save, Ctrl+X to exit.
 
 Close and re-open terminal to make changes effective.
 
-* Add variable for running applications launched through Chrome OS launcher menu:
+Add variable for running applications launched through Chrome OS launcher menu:
 
 Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
 
@@ -62,10 +62,10 @@ Close and re-open terminal to make changes effective.
 
 # Fonts
 
-* Install available Chinese font packages [essential]:<br>
+Install available Chinese font packages [essential]:<br>
 sudo apt install xfonts-wqy ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-bkai00mp fonts-arphic-bsmi00lp fonts-arphic-gbsn00lp fonts-arphic-gkai00mp xfonts-intl-chinese xfonts-intl-chinese-big
 
-* Install user fonts [optional]:<br>
+Install user fonts [optional]:<br>
 [It is optional, but you may consider it for WPS office to display characters properly.]<br>
 For example, put all fonts in a folder "MyFonts" in "Downloads", then enter in terminal:
 
@@ -73,11 +73,11 @@ For example, put all fonts in a folder "MyFonts" in "Downloads", then enter in t
 > cp -r /mnt/chromeos/MyFiles/Downloads/MyFonts/ ~/.fonts/<br>
 > fc-cache -f -v<br>
 
-* Check all installed font list
+Check all installed font list
 
 >fc-list
 
-* Check installed Chinese font list
+Check installed Chinese font list
 
 > fc-list :lang=zh | cut -d: -f2<br>
 > fc-list :lang=zh | cut -d: -f1<br>
@@ -98,15 +98,15 @@ To avoid potential conficts or free around 80MB of storage, run in terminal:
 
 > im-config<br>
 
-* select "OK"
-* select "Yes" to question "Do you explicitly select the user configuration?"
-* select "fcitx"
-* select "OK"
-* select "OK"
+select "OK"
+select "Yes" to question "Do you explicitly select the user configuration?"
+select "fcitx"
+select "OK"
+select "OK"
 
 3. Add Variables
 
-* For running applications launched through entering cmmands in terminal:
+For running applications launched through entering cmmands in terminal:
 
 Use text editor to edit file ~/.bashrc, for example:
 
@@ -127,7 +127,7 @@ In nano, Ctrl+O to save, Ctrl+X to exit.
 
 Close and re-open terminal to make changes effective.
 
-* For running applications launched through Chrome OS launcher menu:
+For running applications launched through Chrome OS launcher menu:
 
 Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
 
@@ -167,16 +167,16 @@ Run terminal:
 
 > fcitx-config-gtk3
 
-* Uncheck "Only Show Current Language"
-* Add "Google Pinyin" for typing simplified Chinese directly
-* Add "Cangjie5" for typing traditional Chinese directly
-* If you want only one Chinese keyboard for typing both traditional & simplified Chinese, you may choose "Google Pinyin".  Use "ctrl + shift +f" key combination to switch between traditional and simplified Chinese inputs.
+Uncheck "Only Show Current Language"
+Add "Google Pinyin" for typing simplified Chinese directly
+Add "Cangjie5" for typing traditional Chinese directly
+If you want only one Chinese keyboard for typing both traditional & simplified Chinese, you may choose "Google Pinyin".  Use "ctrl + shift +f" key combination to switch between traditional and simplified Chinese inputs.
 
 # Tips on Using "fcitx"
 
 If you put "/usr/bin/fcitx-autostart > /dev/null 2>&1" in "~/.bashrc" or "~/.profile":<br>
-* In order for Linux apps to work properly with "fcitx", open a Linux terminal window before target gui apps.<br>
-* In our testing, terminal needs to be kept opened for "fcitx" to work properly in applications we tested.
+In order for Linux apps to work properly with "fcitx", open a Linux terminal window before target gui apps.<br>
+In our testing, terminal needs to be kept opened for "fcitx" to work properly in applications we tested.
 
 <b>Solution:</b>
 
@@ -221,21 +221,21 @@ Alternatively, consider <b>rxvt-unicode</b> for better copy-and-paste support:
 
 # Conversion between Traditional & Simplified Chinese
 
-* To install opencc:<br>
+To install opencc:<br>
 
 > sudo apt install opencc<br>
 
-* To configure opencc:<br>
+To configure opencc:<br>
 Enter in Linux terminal: 
 
 > fcitx-config-gtk3<br>
 Go to "Addon > Simplified Chinese To Traditional Chinese Convert ..."<br>
 Select "OpenCC" and confirm "OK"<br>
 
-* Enable / Disable conversion in apps, like libreoffice:<br>
+Enable / Disable conversion in apps, like libreoffice:<br>
 Ctrl+Shift+f
 
-* Run opencc in terminal
+Run opencc in terminal
 
 Simplified Chinese to Traditional Chinese:<br>
 > opencc -i inputfile.txt -o outputfile.txt -c s2t.json
@@ -245,7 +245,7 @@ Traditional Chinese to Simplified Chinese<br>
 
 [More at: https://github.com/BYVoid/OpenCC]
 
-* Custom actions in Thunar File Manager
+Custom actions in Thunar File Manager
 
 Traditional Chinese to Simplified Chinese<br>
 > opencc -i %f -o %f_sc.txt -c t2s.json
