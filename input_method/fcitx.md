@@ -184,10 +184,18 @@ Put the command for auto-start of fcitx service in <b>~/.sommelierrc</b> instead
 
 echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
 
+# Default Key Combination
+
+ctrl + SPACE => switch between input methods
+
+ctrl + shift + f => switch between Traditional and Simplified Chinese
+
 # Remarks on Running "fcitx" in Crostini
 
 In our testings, "fcitx" works with the following applications:<br>
 Android Studio, WPS office, Dolphin, Thunar, Atom, Geany, Leafpad, etc.
+
+However, not all applications work nicely with fcitx.
 
 # Qt5 Applications
 
@@ -209,7 +217,7 @@ The trick above does not work with all Qt5 applications.  If your qt5 applicatio
 
 You may read our notes at: https://github.com/eliranwong/ChromeOSLinux#terminal
 
-# Conversion between Traditional & Simplified Chinese
+# Use opencc to convert between Traditional & Simplified Chinese
 
 To install opencc:<br>
 
