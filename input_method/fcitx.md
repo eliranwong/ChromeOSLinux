@@ -205,25 +205,9 @@ The trick above does not work with all Qt5 applications.  If your qt5 applicatio
 
 > export QT_IM_MODULE="qtvirtualkeyboard"
 
-# Typing Chinese on Terminal Emulator
+# Typing Chinese on Terminal
 
-You can type Chinese on Linux terminal emulator built-in with Chrome os.  Input methods assigned in Chrome os settings apply to the built-in Linux terminal emulator.  However, hitting "Ctrl + Space" on built-in terminal emulator does not change input method.  You need to manually change input method from "Keyboard" options.
-
-However, Chinese characters are misplaced on default Terminal app as you type.
-
-Keep reading if you want a solution.
-
-# Use "fcitx" to type Chinese on Terminal
-
-There are several options:
-
-First, install "mlterm":<br>
-
-> sudo apt install mlterm
-
-Alternatively, consider <b>rxvt-unicode</b> for better copy-and-paste support:
-
-> sudo apt install rxvt-unicode
+You may read our notes at: https://github.com/eliranwong/ChromeOSLinux#terminal
 
 # Conversion between Traditional & Simplified Chinese
 
