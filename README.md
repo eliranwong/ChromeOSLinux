@@ -129,6 +129,12 @@ To list installed packages:
 
 > apt list --installed
 
+To check if a package or packages is/are installed, for examples:
+
+> apt -qq list fcitx-frontend-qt5
+
+> apt -qq list fcitx-frontend*
+
 To list upgradable packages:
 
 > apt list --upgradable
@@ -177,15 +183,19 @@ Add the following variables to work with fcitx (You may read the previous sectio
 
 > sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 
-Environment="QT_QPA_PLATFORM=wayland"
+Environment="QT_QPA_PLATFORM=wayland"<br>
 Environment="GDK_BACKEND=x11"
 
 > nano ~/.bashrc
 
-export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORM=wayland<br>
 export GDK_BACKEND=x11
 
 [Remarks: Without these settings, fcitx may still work, but not selection panel of Chinese characters.]
+
+References on wayland: <br>
+https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/vm_tools/sommelier/README.md<br>
+https://wiki.archlinux.org/index.php/wayland
 
 # Add Fonts
 
