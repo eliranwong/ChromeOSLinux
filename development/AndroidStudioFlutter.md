@@ -20,11 +20,11 @@ We found the following way is the easiest one to setup Android Studio together w
 
 9) Restart Android Studio after installing "flutter" plugin
 
-10) On welcome screen, select "Create New Flutter Project" > "Flutter Application"
+10) On welcome screen, select "Create New Flutter Project" > "Flutter Application" > Next
 
-11) On "Configure the new Flutter Application" dialog, you will note that Flutter SDK path is still empty.  Select "Install SDK", right next to the text field of "Flutter SDK path".  REMEMBER the path you choose to install the flutter SDK.
+11) On "Configure the new Flutter Application" dialog, you will note that Flutter SDK path is still empty.  Select "Install SDK", right next to the text field of "Flutter SDK path".  Write down the path you choose to install the flutter SDK.
 
-12) After "Flutter SDK" is installed, close the dialog.  Yes, close it first!  You won't be able to create a new flutter project yet.
+12) AFTER "Flutter SDK" is downloaded, select "Cancel" to close the dialog first.  Yes, close it first!  You won't be able to create a new flutter project yet.
 
 13) Open /etc/profile, e.g.:
 
