@@ -8,17 +8,15 @@ Before you install, make sure you have set variable "QT_QPA_PLATFORM" to "waylan
 
 https://github.com/eliranwong/ChromeOSLinux#use-fcitx-in-gui-applications
 
-To install, run the following command in terminal:
+<b>To install</b>, run the following command in terminal:
 
 > sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev libnss3 -y
 
 > cd ~
 
-> wget https://github.com/eliranwong/UniqueBible/archive/master.zip
+> git clone https://github.com/eliranwong/UniqueBible
 
-> unzip master.zip
-
-> cd UniqueBible-master
+> cd UniqueBible
 
 > python3 -m venv venv
 
@@ -35,9 +33,14 @@ To install, run the following command in terminal:
 * In our testings, command "pip3 install PySide2" encounters memory errors on some low-memory chromebooks.  The above command installs wheel directly from Qt servers with this command.  Find details at: https://wiki.qt.io/Qt_for_Python/GettingStarted
 ]<br>
 
-> pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans pypinyin langdetect
+> pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans langdetect
 
-> cd ~/UniqueBible-master
+[optional Chinese tools]
+> pip3 install OpenCC pypinyin
+
+<b>To launch:</b>
+
+> cd ~/UniqueBible
 
 > source venv/bin/activate
 
@@ -59,7 +62,7 @@ You can use input method fcitx with UBA if:
 
 If you follow our exmaple above to install PySide2 inside venv, the following line should help you copy the file to the right place:
 
-> cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible-master/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+> cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
 > chmod +x ~/UniqueBible-master/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
