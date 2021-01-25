@@ -104,7 +104,11 @@ To run synaptic without root privileges:
 To run synaptic with root privileges:
 
 [First, give your linux container access to the host display.  Please note that chrome OS is the host.]<br>
-> xhost +si:localuser:root
+> xhost +si:localuser:root<br>
+[
+If you do not want to enter the line above each time you run synaptic:
+> echo "xhost +si:localuser:root" >> .profile
+]
 
 > sudo synaptic
 
@@ -114,7 +118,7 @@ To install some basic command line tools and libraries, run:
 
 > sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 -y
 
-# Input Method
+# Input Method - fcitx
 
 e.g. Chinese pinyin
 
