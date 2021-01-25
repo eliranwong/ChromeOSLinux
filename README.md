@@ -167,9 +167,13 @@ To install additional fonts, e.g. ubuntu fonts:
 
 # Text Editor
 
-nano, geany
+nano
 
 > sudo apt install nano -y
+
+Quick jump to the end of the file: "ctrl + _" then "ctrl + v"
+
+Quick jump to the end of the file: "ctrl + _" then "ctrl + y"
 
 # Terminal
 
