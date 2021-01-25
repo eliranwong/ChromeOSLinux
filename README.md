@@ -81,95 +81,29 @@ To check disk storage, run:
 
 # Package management
 
-To manage packages:
+apt:
 
-To show help of "apt" command:
+https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/apt.md
 
-> apt help
+dpkg:
 
-To display policy:
+https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/dpkg.md
 
-> apt policy
+flatpak:
 
-To update package information, upgrade installed packages and install necessary dependencies:
+https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/flatpak.md
 
-> sudo apt update && sudo apt dist-upgrade
+synaptic:
 
-To install a package ("-y" below is optional.  It simply says "yes".):
+> sudo apt install synaptic
 
-> sudo apt -y install [package]
+> synaptic-pkexec
 
-To upgrade a package:
+# Basic Tools & Libaries
 
-> sudo apt upgrade [package]
-
-To upgrade a package and install new dependencies if necessary:
-
-> sudo apt dist-upgrade [package]
-
-To overwrite an installed old version without upgrading:
-
-> sudo apt install [package] --no-upgrade
-
-To remove a package without removing configuration files:
-
-> sudo apt remove [package] && sudo apt autoremove
-
-To remove a package together with configuration files:
-
-> sudo apt purge [package]
-
-To remove old downloaded archive files:
-
-> sudo apt autoclean
-
-[apt autoclean removes the retrieved packages from the local cache only while the apt-get autoremove removes the unneeded packages that were once installed as a dependency.]
-
-To list installed packages:
-
-> apt list --installed
-
-To check if a package or packages is/are installed, for examples:
-
-> apt -qq list fcitx-frontend-qt5
-
-> apt -qq list fcitx-frontend*
-
-To list upgradable packages:
-
-> apt list --upgradable
-
-To show a package information:
-
-> apt show [package]
-
-TO show a package dependency:
-
-> apt depends [package]
-
-To search for a package, e.g.:
-
-> apt search fcitx
-
-OR
-
-> apt-cache search fcitx
-
-# Basic Tools
-
-To install some basic command line tools, run:
+To install some basic command line tools and libraries, run:
 
 > sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 -y
-
-To enable Flatpak:
-1) Run on terminal:
-> sudo apt install flatpak -y
-> flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-2) Restart Linux virtual machine
-
-You may find flatpak packages at: https://flathub.org
-
-Remarks: To add environment variable with flatpak, e.g. flatpak run --env=QT_QPA_PLATFORM=wayland APP [ARGUMENT?]
 
 # Input Method
 
