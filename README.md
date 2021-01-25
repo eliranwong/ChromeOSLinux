@@ -93,11 +93,20 @@ flatpak:
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/flatpak.md
 
-synaptic:
+To install synaptic:
 
 > sudo apt install synaptic
 
+To run synaptic without root privileges:
+
 > synaptic-pkexec
+
+To run synaptic with root privileges:
+
+[First, give your linux container access to the host display.  Please note that chrome OS is the host.]<br>
+> xhost +si:localuser:root
+
+> sudo synaptic
 
 # Basic Tools & Libaries
 
