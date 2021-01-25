@@ -153,7 +153,7 @@ OR
 
 To install some basic command line tools, run:
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev -y
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 -y
 
 To enable Flatpak:
 1) Run on terminal:
@@ -245,14 +245,37 @@ To make the settings effective:
 
 # Browser
 
-Install firefox, for example:
-First make sure you have "flatpak" installed.
+Take firefox as an example.  There are several ways to install firefox.  Firefox website suggests Chrome OS users to use flatpak to install firefox.  However, the firefox installed through flatpak does not work with input method fcitx.
 
-1) Install an app with flatpak:
-> flatpak install firefox
+To work with fcitx, install firefox via either of the following methods:
 
-2) Launch it via Launcher or flatpak on terminal:
-> flatpak run org.mozilla.firefox
+<b>esr version:</b>
+
+> sudo apt install -y firefox-esr
+
+To launch the installed esr version:
+
+> firefox-esr
+
+<b>full version:</b>
+
+Download firefox package (*.tar.bz2) at:
+
+https://www.mozilla.org/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org
+
+Run in terminal:
+
+> sudo apt install -y libstdc++5
+
+> cd ~
+
+> tar xjf firefox-*.tar.bz2
+
+> rm firefox-*.tar.bz2
+
+To launch the installed firefox:
+
+> ~/firefox/firefox
 
 # Office Apps
 
