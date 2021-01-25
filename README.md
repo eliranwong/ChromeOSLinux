@@ -101,14 +101,16 @@ To run synaptic without root privileges:
 
 > synaptic-pkexec
 
-To run synaptic with root privileges:
+Enable root privileges:
 
-[First, give your linux container access to the host display.  Please note that chrome OS is the host.]<br>
-> xhost +si:localuser:root<br>
-[
+First give your linux container access to the host display.  Please note that chrome OS is the host.]<br>
+> xhost +si:localuser:root
+
 If you do not want to enter the line above each time you run synaptic:
-> echo "xhost +si:localuser:root" >> .profile
-]
+
+> echo "xhost +si:localuser:root" >> ~/.profile
+
+Then, you can run synaptic with sudo command:
 
 > sudo synaptic
 
@@ -167,7 +169,7 @@ To install additional fonts, e.g. ubuntu fonts:
 
 nano, geany
 
-> sudo apt install nano geany -y
+> sudo apt install nano -y
 
 # Terminal
 
@@ -198,7 +200,7 @@ URxvt.letterSpace: 0</b>
 
 To make the settings effective:
 
-> xrdb -merge ~/.Xresources
+> echo "xrdb -merge ~/.Xresources" >> ~/.bashrc
 
 # Browser
 
