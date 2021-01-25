@@ -191,9 +191,15 @@ Android Studio, WPS office, Dolphin, Thunar, Atom, Geany, Leafpad, etc.
 
 # Qt5 Applications
 
+First, make sure you have "fcitx-frontend-qt5" installed.  Check with the following command:
+
+> apt -qq list fcitx-frontend-qt5
+
 To work with Qt5 applications, try to copy the file /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so to /Qt/plugins/platforminputcontexts/ folder of Qt5-based applications, but it does not work.
 
 > cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so [ fullpath .../Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ]
+
+We give you an exmaple at: https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#to-use-fcitx-with-uba
 
 The trick above does not work with all Qt5 applications.  If your qt5 application supports virtual keyboard, you may want to use it by export the following variable:
 
