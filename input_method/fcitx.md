@@ -63,7 +63,8 @@ Close and re-open terminal to make changes effective.
 # Fonts
 
 Install available Chinese font packages [essential]:<br>
-sudo apt install xfonts-wqy ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-bkai00mp fonts-arphic-bsmi00lp fonts-arphic-gbsn00lp fonts-arphic-gkai00mp xfonts-intl-chinese xfonts-intl-chinese-big
+
+> sudo apt install xfonts-wqy ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-bkai00mp fonts-arphic-bsmi00lp fonts-arphic-gbsn00lp fonts-arphic-gkai00mp xfonts-intl-chinese xfonts-intl-chinese-big
 
 Install user fonts [optional]:<br>
 [It is optional, but you may consider it for WPS office to display characters properly.]<br>
