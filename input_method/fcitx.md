@@ -167,9 +167,10 @@ Run terminal:
 
 > fcitx-config-gtk3
 
-Uncheck "Only Show Current Language"
-Add "Google Pinyin" for typing simplified Chinese directly
-Add "Cangjie5" for typing traditional Chinese directly
+Select the "+" button, located at the left lower button, to add input methods.<br>
+Uncheck "Only Show Current Language"<br>
+Add "Google Pinyin" for typing simplified Chinese directly<br>
+Add "Cangjie5" for typing traditional Chinese directly<br>
 If you want only one Chinese keyboard for typing both traditional & simplified Chinese, you may choose "Google Pinyin".  Use "ctrl + shift +f" key combination to switch between traditional and simplified Chinese inputs.
 
 # Tips on Using "fcitx"
