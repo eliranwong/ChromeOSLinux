@@ -64,14 +64,14 @@ If you follow our exmaple above to install PySide2 inside venv, the following li
 
 > cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
-> chmod +x ~/UniqueBible-master/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+> chmod +x ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
 In case you do not use venv, the path may be either of the followings, depends on how you install PySide2:
 
-/usr/local/lib/python3.7/dist-packages/PySide2<br>
+/usr/local/lib/python3.7/dist-packages/PySide2/Qt/plugins/platforminputcontexts/<br>
 [if you install PySide2 by running "pip3 install PySide2"]
 
 <i>OR</i>
 
-~/.local/lib/python3.7/site-packages/PySide2
+~/.local/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so<br>
 [if you install PySide2 by running "pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2"]
