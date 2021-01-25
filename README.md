@@ -51,9 +51,9 @@ Go to settings to get the latest version of Chrome OS first, "sudo apt update" d
 
 3) Open Settings > Linux (Beta) > Turn On
 
-4) To check the Linux's version installed, open terminal and type:
-> cat /etc/os-release
-If the version is not 10 (buster) or above, you'll need to run the update script:
+4) To check the Linux's version installed, open terminal and type:<br>
+> cat /etc/os-release<br>
+If the version is not 10 (buster) or above, you'll need to run the update script:<br>
 > sudo bash /opt/google/cros-containers/bin/upgrade_container
 
 5) To update packages, run on terminal app:
@@ -184,12 +184,12 @@ To customise, edit the file ~/.Xresources:
 
 Add the following content to the file:
 
-<b>URxvt.background: #000000
-URxvt.foreground: #FFFFFF
-URxvt.color4: #1E90FF
-URxvt.color12: #0081FF
-URxvt.font: xft:Ubuntu Monospace:pixelsize=48
-URxvt.perl-ext-common: selection-to-clipboard
+<b>URxvt.background: #000000<br>
+URxvt.foreground: #FFFFFF<br>
+URxvt.color4: #1E90FF<br>
+URxvt.color12: #0081FF<br>
+URxvt.font: xft:Ubuntu Monospace:pixelsize=48<br>
+URxvt.perl-ext-common: selection-to-clipboard<br>
 URxvt.letterSpace: 0</b>
 
 To make the settings effective:
