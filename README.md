@@ -146,6 +146,12 @@ References on wayland: <br>
 https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/vm_tools/sommelier/README.md<br>
 https://wiki.archlinux.org/index.php/wayland
 
+# A note on Chrome OS wayland
+
+It is observed that changing accessiblity settings, like "Large mouse cursor", after Linux virtual machine is created can cause display issues with some gui applications.  Some gui applications keep close and reopen and make them unusable.  It is possible that there is a bug that comes with the built-in wayland compositor as the error message indicates, e.g.:
+
+* qt.qpa.wayland: Ignoring unexpected wl_surface.enter received for output with id: 7 screen name: "Screen5" screen model: "202B" This is most likely a bug in the compositor.
+
 # Add Fonts
 
 To install additional fonts, e.g. ubuntu fonts:
