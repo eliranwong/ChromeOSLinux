@@ -241,7 +241,7 @@ First, make sure you have the right environment variable assigned:
 
 If you don't want to set this variable each time you run qt applications, you may read our notes above at:
 
-
+https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md#input-method---fcitx
 
 Second, make sure you have "fcitx-frontend-qt5" installed.  Check with the following command:
 
@@ -259,7 +259,7 @@ The trick above does not work with all Qt5 applications.  If your qt5 applicatio
 
 # Typing Chinese on Terminal
 
-You may read our notes at: https://github.com/eliranwong/ChromeOSLinux#terminal
+You may read our notes at: https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
 # Use opencc to convert between Traditional & Simplified Chinese
 
@@ -303,7 +303,7 @@ To use pypinyin as a direct command in terminal, make sure path is updated:
 
 > echo "export PATH=$PATH:$HOME/.local/bin/" >> .bashrc
 
-# Related Reference
+# Other References
 
 https://wiki.debian.org/gnome-chinese-input
 
