@@ -172,6 +172,8 @@ To install additional fonts, e.g. ubuntu fonts:
 5) Build fonts information cache files:
 > fc-cache -f -v
 
+Remarks: font directory lists are placed in /etc/fonts/fonts.conf
+
 # Text Editor
 
 nano
