@@ -88,3 +88,9 @@ To get rid of this warning:
 3) Enter "Maintainer: "
 
 3) Save the file (ctrl + o + enter) and exit (ctrl + x)
+
+# Create an alias for use in terminal
+
+> echo "alias studio=/opt/android-studio/bin/studio.sh" >> ~/.bashrc
+
+> studio
