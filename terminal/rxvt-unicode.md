@@ -34,3 +34,9 @@ Uncomment by removing the # sign at the beginning of the following lines:
 if [ -f ~/.Xresources ]; then
   xrdb -merge ~/.Xresources
 fi
+
+# Copy & Paste
+
+Select to copy
+
+"alt + ctrl + v" to paste
