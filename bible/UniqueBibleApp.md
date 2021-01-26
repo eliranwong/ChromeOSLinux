@@ -90,7 +90,7 @@ We created two sample shortcut files for you to launch Unique Bible App via term
 
 To create and alias:
 
-> echo "alias uba=$HOME/UniqueBibleApp/shortcut_uba_chromeOS_fcitx.sh" >> ~/.bashrc
+> echo "alias uba=$HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh" >> ~/.bashrc
 
 Close and reopen your terminal app, then you can launch UniqueBibleApp by running:
 
