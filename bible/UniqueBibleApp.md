@@ -120,7 +120,7 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
 To create and alias:
 
-> echo "alias uba='urxvt -e $HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh'" >> ~/.bashrc
+> echo "alias uba='urxvt -e $HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'" >> ~/.bashrc
 
 Close and reopen your terminal app, then you can launch UniqueBibleApp by running:
 
@@ -144,6 +144,10 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md<b
 
 > nano ~/UniqueBible/shortcut_uba_chromeOS.desktop<br>
 > nano ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop
+
+In ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop:<br>
+Exec=urxvt -e /home/yourUserName/UniqueBible/shortcut_uba_chromeOS_fcitx.sh<br>
+We use urxvt to launch Unique Bible App in order to make sure fcitx works.
 
 * Change "yourUserName" to the user name you use to log the Linux virtual machine on your Chrome OS.<br>
 * Copy one of the file to /usr/share/applications/, e.g.
