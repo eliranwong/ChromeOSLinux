@@ -307,9 +307,11 @@ https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md
 
 sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev -y
 
+Read https://github.com/nvm-sh/nvm for the latest script
+
 <b>nvm:</b>
 
-> wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+> wget -qO- [the_latest_script] | bash<br>
 > source .bashrc
 
 <b>note:</b>
