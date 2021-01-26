@@ -43,7 +43,8 @@ amd64
 <b>python3:</b> Python 3.7.3
 
 # Basics
-Go to settings to get the latest version of Chrome OS first, "sudo apt update" does not work in some Chrome OS versions.
+
+Make sure you have the latest version of Chrome OS first, because "sudo apt update" does not work in some old Chrome OS versions.
 
 1) Open Settings > About Chrome OS > Check for updates
 
@@ -190,33 +191,13 @@ The built-in "Terminal" app that comes with Chrome OS is nice, but terrible for 
 * works with fcitx (gnome-terminal, unfornately does not work with fcitx)
 * customisable
 
-"urxvt" matches all the requirements listed above.  To install:
+"urxvt" not matches all the requirements listed above, but also enable some other gui applications to work with fcitx.  You may read our notes about this:
 
-> sudo apt install rxvt-unicode -y
+https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
-To customise, edit the file ~/.Xresources:
+and
 
-> nano ~/.Xresources
-
-Add the following content to the file:
-
-<b>URxvt.background: #000000<br>
-URxvt.foreground: #FFFFFF<br>
-URxvt.color4: #1E90FF<br>
-URxvt.color12: #0081FF<br>
-URxvt.font: xft:Ubuntu Monospace:pixelsize=36<br>
-URxvt.perl-ext-common: selection-to-clipboard<br>
-URxvt.letterSpace: 0</b>
-
-To make the settings effective, edit file ~/.sommelierrc:
-
-> nano ~/.sommelierrc
-
-Uncomment by removing the # sign at the beginning of the following lines:
-
-if [ -f ~/.Xresources ]; then
-  xrdb -merge ~/.Xresources
-fi
+https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md
 
 # Browser
 
