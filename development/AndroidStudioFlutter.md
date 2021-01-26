@@ -52,7 +52,9 @@ We found the following way is the easiest one to setup Android Studio together w
 
 > flutter doctor
 
-18) Authorize flutter to connect your Chromebook upon prompting
+18) Select "Always allow from this computer" to authorize connect flutter to your Chromebook upon prompting "Allow USB debugging?"
+
+<img src="screenshot_connect_chromebook.png">
 
 19) Run on terminal the following command and accept all licenses upon prompting:
 
@@ -61,6 +63,12 @@ We found the following way is the easiest one to setup Android Studio together w
 20) At this point, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly. To have a final check, run:
 
 > flutter doctor
+
+It should looks like:
+
+<img src="flutter_doctor.png">
+
+Please note that VS Code is optional.
 
 [Optional]
 
