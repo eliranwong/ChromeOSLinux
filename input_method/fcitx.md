@@ -174,23 +174,57 @@ Add "Google Pinyin" for typing simplified Chinese directly<br>
 Add "Cangjie5" for typing traditional Chinese directly<br>
 If you want only one Chinese keyboard for typing both traditional & simplified Chinese, you may choose "Google Pinyin".  Use "ctrl + shift +f" key combination to switch between traditional and simplified Chinese inputs.
 
-# Tips on Using "fcitx"
-
-If you put "/usr/bin/fcitx-autostart > /dev/null 2>&1" in "~/.bashrc" or "~/.profile":<br>
-In order for Linux apps to work properly with "fcitx", open a Linux terminal window before target gui apps.<br>
-In our testing, terminal needs to be kept opened for "fcitx" to work properly in applications we tested.
-
-<b>Solution:</b>
-
-Put the command for auto-start of fcitx service in <b>~/.sommelierrc</b> instead:
-
-echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
-
 # Default Key Combination
 
 ctrl + SPACE => switch between input methods
 
 ctrl + shift + f => switch between Traditional and Simplified Chinese
+
+To change these settings, run the following line and change with gui:
+
+> fcitx-config-gtk3
+
+# Troubleshooting 1: fcitx does not work with Terminal closed
+
+You may find fcitx works with gui applications only when Terminal app is opened.  One possible reason is that you have fcitx-autostart placed in ~/.bashrc or ~/.profile.
+
+<b>Solution:</b>
+
+Put the command to auto-start fcitx service in file <b>~/.sommelierrc</b> instead:
+
+> echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
+
+# Troubleshooting 2: Input selection panel is hidden "sometimes"
+
+fcitx behaves in 3 possible ways with gui applications:
+
+1) fcitx works as expected
+2) Input selection panel is hidden, any input always take the first candidate.
+3) fcitx does not work at all
+
+Situation (2) may be fixed.  Take Chinese pinyin as an example, you may see Chinese characters coming out as you type pinyin, but you cannot select any candidates because the selection panel is hidden.  This behaviour makes fcitx unsable for practical reason.  However, you may sometimes note that the selection panel works as expected but sometimes not.  We puzzled about this behaviour until we observed that when a gui application that can work perfectly with fcitx is opened [i.e. category (1) described above], applications that are in the category (2) describe above work too.  It is possible that some have been enabled with those category (1) applications are opened but we have not figured out what exactly that is.  [If you know what it is, please kindly let us know.]
+
+The good news is that we can at least have a workaround to make category (2) applications work as expected by sideloading a category (1) application.  For example, if you have urxvt installed, it makes things easier because urxvt works perfectly with fcitx.  If you are interested in our notes about urxvt, you may read:
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
+
+To make category (2) applications to work with fcitx, simply launch those applications through urxvt.  There are two ways:
+
+1) Launch urxvt first, then launch your gui application by running command on urxvt
+
+2) Edit .desktop shortcut file to launch urxvt and your application together
+
+* Edit the file /usr/share/applications/[applicaiton-name].desktop
+
+* Prefix the entry Exec= with "urxvt -e", for example, change:
+
+from:
+
+> Exec=[command-running-your-application]
+
+to:
+
+> Exec=urxvt -e [command-running-your-application]
 
 # Remarks on Running "fcitx" in Crostini
 
@@ -201,7 +235,15 @@ However, not all applications work nicely with fcitx.
 
 # Qt5 Applications
 
-First, make sure you have "fcitx-frontend-qt5" installed.  Check with the following command:
+First, make sure you have the right environment variable assigned:
+
+> export QT_QPA_PLATFORM=wayland
+
+If you don't want to set this variable each time you run qt applications, you may read our notes above at:
+
+
+
+Second, make sure you have "fcitx-frontend-qt5" installed.  Check with the following command:
 
 > apt -qq list fcitx-frontend-qt5
 
