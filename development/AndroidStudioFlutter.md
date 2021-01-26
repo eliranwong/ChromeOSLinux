@@ -91,6 +91,14 @@ To get rid of this warning:
 
 # Create an alias for use in terminal
 
-> echo "alias studio=/opt/android-studio/bin/studio.sh" >> ~/.bashrc
+> echo "alias studio=/opt/android-studio/bin/studio.sh & disown" >> ~/.bashrc
 
 > studio
+
+# Trouble-shooting: integrated terminal does not have flutter path
+
+If you lanch Android Studio by click its icon on Launch, you may find flutter command now available.  You may need to set assign further variables.  A simple solution is to launch studio from terminal you can find flutter command works directly from Android Studio's integrated terminal.
+
+You may read the section above on creating an alias:
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/AndroidStudioFlutter.md#create-an-alias-for-use-in-terminal
+
