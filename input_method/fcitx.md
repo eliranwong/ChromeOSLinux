@@ -227,7 +227,7 @@ to:
 > Exec=urxvt -e [command-running-your-application]
 
 We have an example for applying this workaround to create a desktop shortcut at:<br>
-https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#create-a-desktop-shortcut-on-chrome-os
+https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#create-a-shortcut-alias-for-command-line-input
 
 # Remarks on Running "fcitx" in Crostini
 
@@ -264,7 +264,9 @@ If you find the trick above does not work with all Qt5 applications and if your 
 
 You may read our notes at: https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
-# Use opencc to convert between Traditional & Simplified Chinese
+# Suplementary packages
+
+# Use opencc with fcitx to convert between Traditional & Simplified Chinese
 
 To install opencc:<br>
 
@@ -298,7 +300,7 @@ Traditional Chinese to Simplified Chinese<br>
 Simplified Chinese to Traditional Chinese:<br>
 > opencc -i %f -o %f_tc.txt -c s2t.json
 
-# Pinyin Package
+# Use pypinyin to check pinyin on Chinese words
 
 https://pypi.org/project/pypinyin/
 
@@ -311,4 +313,3 @@ To use pypinyin as a direct command in terminal, make sure path is updated:
 https://wiki.debian.org/gnome-chinese-input
 
 https://wiki.debian.org/InputMethodBuster
-
