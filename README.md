@@ -277,6 +277,18 @@ If you find the installed audacity too small on screen, you may want to scale it
 
 > echo 'alias audacity="sommelier -X --scale=0.5 --dpi=120 audacity"' >> ~/.bashrc
 
+Edit the desktop shortcut file:
+
+> sudo nano /usr/share/applications/audacity.desktop
+
+Change from:
+
+> Exec=audacity %F
+
+to:
+
+> Exec=sommelier -X --scale=0.5 --dpi=120 audacity
+
 Read more at: https://www.reddit.com/r/Crostini/wiki/howto/adjust-display-scaling#wiki_adjusting_display_scaling_per_application
 
 # Development Tools
