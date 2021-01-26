@@ -120,7 +120,7 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
 To create and alias:
 
-> echo "alias uba=$HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh" >> ~/.bashrc
+> echo "alias uba='urxvt -e $HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh'" >> ~/.bashrc
 
 Close and reopen your terminal app, then you can launch UniqueBibleApp by running:
 
