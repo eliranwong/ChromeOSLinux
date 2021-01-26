@@ -31,8 +31,8 @@ To make the settings effective, edit file ~/.sommelierrc:
 
 Uncomment by removing the # sign at the beginning of the following lines:
 
-if [ -f ~/.Xresources ]; then
-  xrdb -merge ~/.Xresources
+if [ -f ~/.Xresources ]; then<br>
+  xrdb -merge ~/.Xresources<br>
 fi
 
 # Copy & Paste
