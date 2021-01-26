@@ -204,13 +204,19 @@ Add the following content to the file:
 URxvt.foreground: #FFFFFF<br>
 URxvt.color4: #1E90FF<br>
 URxvt.color12: #0081FF<br>
-URxvt.font: xft:Ubuntu Monospace:pixelsize=48<br>
+URxvt.font: xft:Ubuntu Monospace:pixelsize=36<br>
 URxvt.perl-ext-common: selection-to-clipboard<br>
 URxvt.letterSpace: 0</b>
 
-To make the settings effective:
+To make the settings effective, edit file ~/.sommelierrc:
 
-> echo "xrdb -merge ~/.Xresources" >> ~/.bashrc
+> nano ~/.sommelierrc
+
+Uncomment by removing the # sign at the beginning of the following lines:
+
+if [ -f ~/.Xresources ]; then
+  xrdb -merge ~/.Xresources
+fi
 
 # Browser
 
