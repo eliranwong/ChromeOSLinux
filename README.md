@@ -182,9 +182,9 @@ Move down a page: "ctrl + v"
 
 Move up a page: "ctrl + y"
 
-Quick jump to the end of the file: "ctrl + shift + v"
+Quick jump to the end of the file: "ctrl + _" & "shift + v"
 
-Quick jump to the end of the file: "ctrl + shift + y"
+Quick jump to the end of the file: "ctrl + _" & "shift + y"
 
 # Terminal
 
