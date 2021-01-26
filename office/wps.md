@@ -8,3 +8,7 @@ Right click the downloaded deb package and select "Install with Linux (Beta)"
 
 # Trouble-shooting: missing fonts at launch
 
+If you are warned of missing fonts when you launch wps, download and install the following fonts for wps
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/office/wps-fonts.zip
+
