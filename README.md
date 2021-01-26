@@ -243,13 +243,11 @@ Set a shortcut:
 
 > echo "alias firefox=$HOME/firefox/firefox" >> ~/.bashrc
 
-# Office Apps
+# Office Apps - wps
 
-We prefer WPS office.  It has better compatability with Microsoft documents than libreoffice.
+We prefer WPS office.  It has better compatability with Microsoft documents than libreoffice.  You may read our notes about wps at:
 
-Download the Linux Deb package from https://www.wps.com/
-
-Right click the downloaded deb package and select "Install with Linux (Beta)"
+https://github.com/eliranwong/ChromeOSLinux/blob/main/office/wps.md
 
 # Test Audio
 
