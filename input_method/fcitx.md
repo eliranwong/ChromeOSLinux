@@ -226,6 +226,9 @@ to:
 
 > Exec=urxvt -e [command-running-your-application]
 
+We have an example for applying this workaround to create a desktop shortcut at:<br>
+https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#create-a-desktop-shortcut-on-chrome-os
+
 # Remarks on Running "fcitx" in Crostini
 
 In our testings, "fcitx" works with the following applications:<br>
