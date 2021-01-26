@@ -90,7 +90,7 @@ dpkg:
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/dpkg.md
 
-flatpak:
+flatpak [avoid flatpak if possible if you want your downloaded apps to work with fcitx]:
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/flatpak.md
 
