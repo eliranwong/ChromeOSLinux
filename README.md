@@ -275,7 +275,7 @@ Enable to use microphone for recording:
 
 If you find the installed audacity too small on screen, you may want to scale it up.
 
-> echo 'alias audacity="sommelier -X --scale=0.8 --dpi=200 audacity"' >> ~/.bashrc
+> echo 'alias audacity="sommelier -X --scale=0.5 --dpi=120 audacity"' >> ~/.bashrc
 
 Read more at: https://www.reddit.com/r/Crostini/wiki/howto/adjust-display-scaling#wiki_adjusting_display_scaling_per_application
 
