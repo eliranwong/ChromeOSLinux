@@ -76,25 +76,46 @@ In case you do not use venv, the path may be either of the followings, depends o
 ~/.local/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so<br>
 [if you install PySide2 by running "pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2"]
 
+# Create a shortcut alias for command line input:
+
+We created two sample shortcut files for you to launch Unique Bible App via terminal:
+
+1) shortcut_uba_chromeOS.sh<br>
+2) shortcut_uba_chromeOS_fcitx.sh
+
+<b>IMPORTANT NOTES:</b><br>
+* Both of these files are located in your UniqueBible folder
+* Use the first one if you don't need to use fcitx<br>
+* Use the second one if you need to use fcitx
+
+To create and alias:
+
+> echo "alias uba=$HOME/UniqueBibleApp/shortcut_uba_chromeOS_fcitx.sh" >> ~/.bashrc
+
+Close and reopen your terminal app, then you can launch UniqueBibleApp by running:
+
+> uba
+
 # Create a Desktop Shortcut on Chrome OS
 
-Create a plain text file /usr/share/applications/UniqueBibleApp.desktop
+We created two sample shortcut files for you to launch Unique Bible App via Chrome OS launcher:
 
-For example, if you use nano,
+1) shortcut_uba_chromeOS.desktop<br>
+2) shortcut_uba_chromeOS_fcitx.desktop
 
-> sudo nano /usr/share/applications/UniqueBibleApp.desktop
+<b>IMPORTANT NOTES:</b><br>
+* Both of these files are located in your UniqueBible folder
+* Use the first one if you don't need to use fcitx<br>
+* Use the second one if you need to use fcitx<br>
+* The second one assumes you have "fcitx" and "urxvt" installed, read in case you haven't installed them:<br>
+https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md<br>
+https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md<br>
+* Edit these .desktop files before you use them, e.g.
 
-Paste the following content (by right-clicking on terminal), but replace [your-username] with your usename appeared on your device:
+> nano ~/UniqueBible/shortcut_uba_chromeOS.desktop<br>
+> nano ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop
 
-> [Desktop Entry]<br>
-> Version=1.0<br>
-> Type=Application<br>
-> Terminal=false<br>
-> Path=/home/[your-username]/UniqueBible/<br>
-> Exec=source venv/bin/activate; python3 /home/[your-username]/UniqueBible/main.py<br>
-> Icon=/home/[your-username]/UniqueBible/htmlResources/theText.png<br>
-> Name=Unique Bible App<br>
+* Change "yourUserName" to the user name you use to log the Linux virtual machine on your Chrome OS.<br>
+* Copy one of the file to /usr/share/applications/, e.g.
 
-Saves changes by pressing "Ctrl + O"
-
-Exit nano by pressing "Ctrl + X"
+> sudo cp ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop /usr/share/applications/UniqueBibleApp.desktop
