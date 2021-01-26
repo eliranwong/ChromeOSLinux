@@ -317,3 +317,8 @@ https://github.com/eliranwong/UniqueBibleAppHybrid
 # Useful Command Line Tools
 
 https://github.com/eliranwong/wsl2/tree/master/cli_tools
+
+# More Linux softwares
+
+https://github.com/luong-komorebi/Awesome-Linux-Software
+
