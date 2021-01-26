@@ -1,6 +1,6 @@
 # fcitx on Chrome OS Crostini 
 
-[updated on 23Jan2021; Chrome OS version: 87.0.4280.152]
+[updated on 26Jan2021; Chrome OS version: 87.0.4280.152]
 
 This article describe how to set up fcitx on Chrome OS Linux container, Crostini.
 
@@ -196,13 +196,13 @@ Put the command to auto-start fcitx service in file <b>~/.sommelierrc</b> instea
 
 # Troubleshooting 2: Input selection panel is hidden "sometimes"
 
-fcitx behaves in 3 possible ways with gui applications:
+fcitx behaves in 3 possible ways with gui applications on Chrome OS:
 
 1) fcitx works as expected
 2) Input selection panel is hidden, any input always take the first candidate.
 3) fcitx does not work at all
 
-Situation (2) may be fixed.  Take Chinese pinyin as an example, you may see Chinese characters coming out as you type pinyin, but you cannot select any candidates because the selection panel is hidden.  This behaviour makes fcitx unsable for practical reason.  However, you may sometimes note that the selection panel works as expected but sometimes not.  We puzzled about this behaviour until we observed that when a gui application that can work perfectly with fcitx is opened [i.e. category (1) described above], applications that are in the category (2) describe above work too.  It is possible that some have been enabled with those category (1) applications are opened but we have not figured out what exactly that is.  [If you know what it is, please kindly let us know.]
+Situation (2) may be fixed.  Take Chinese pinyin as an example, you may see Chinese characters coming out as you type pinyin, but you cannot select any candidates because the selection panel is hidden.  This behaviour makes fcitx unsable for practical reason.  However, you may sometimes note that the selection panel works as expected but sometimes not.  We puzzled about this behaviour until we observed that when a gui application that can work perfectly with fcitx is opened [i.e. category (1) described above], applications that are in the category (2) describe above work too.  It is possible that something have been enabled with those category (1) applications are opened but we have not figured out what exactly that is.  [If you know what it is, please kindly let us know.]
 
 The good news is that we can at least have a workaround to make category (2) applications work as expected by sideloading a category (1) application.  For example, if you have urxvt installed, it makes things easier because urxvt works perfectly with fcitx.  If you are interested in our notes about urxvt, you may read:
 
@@ -253,7 +253,7 @@ To work with Qt5 applications, try to copy the file /usr/lib/x86_64-linux-gnu/qt
 
 We give you an exmaple at: https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#to-use-fcitx-with-uba
 
-The trick above does not work with all Qt5 applications.  If your qt5 application supports virtual keyboard, you may want to use it by export the following variable:
+If you find the trick above does not work with all Qt5 applications and if your qt5 application supports virtual keyboard, you may want to use qt virtual keyboard for input instead.  You can do that by exporting the following variable:
 
 > export QT_IM_MODULE="qtvirtualkeyboard"
 
