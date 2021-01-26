@@ -229,6 +229,12 @@ to:
 We have an example for applying this workaround to create a desktop shortcut at:<br>
 https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#create-a-shortcut-alias-for-command-line-input
 
+# Troubleshooting 3: Installed firefox does not work with fcitx
+
+Please read our notes at: https://github.com/eliranwong/ChromeOSLinux#browser
+
+Firefox website recommends users to use flatpak to install firefox, but in order to use fcitx, do not use faltpak to install it.
+
 # Remarks on Running "fcitx" in Crostini
 
 In our testings, "fcitx" works with the following applications:<br>
