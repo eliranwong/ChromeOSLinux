@@ -9,3 +9,7 @@ Check CPU and download a suitable package:
 > dpkg --print-architecture
 
 https://code.visualstudio.com/download
+
+# Opt out of reporting [optional]
+
+search "telemetry" in preferences and uncheck options.
