@@ -46,6 +46,29 @@ https://github.com/eliranwong/ChromeOSLinux#use-fcitx-in-gui-applications
 
 > python3 main.py
 
+# Special Tweaks for Chrome OS
+
+We have noted an issue about Chrome OS wayland.  It is possible that there is a bug in the wayland copositor causes an issue with our application:<br>
+https://github.com/eliranwong/UniqueBible/issues/68
+
+We have special tweaks for Chrome OS users:
+
+1) Go to menu: UniqueBible > Select More ...
+
+<img src="screenshot_menu_select_more.png">
+[screenshot_menu_select_more.png]
+
+2) On "Select More ..." dialog, check the option "preferRemoteControlForCommandLineEntry"
+
+<img src="screenshot_select_more.png">
+[screenshot_select_more.png]
+
+3) For "fcitx" users, please also select "fcitx" on the "Select More ..." dialog
+
+4) Options "addBreakAfterTheFirstToolBar" and "addBreakBeforeTheLastToolBar" are optional.  You may consider to use them to make the tool bars look nice or save space after you select "preferRemoteControlForCommandLineEntry".
+
+5) Restart the app to make the changes in settings effective.
+
 # To use fcitx with UBA
 
 You can use input method fcitx with UBA if:
@@ -76,6 +99,10 @@ In case you do not use venv, the path may be either of the followings, depends o
 ~/.local/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so<br>
 [if you install PySide2 by running "pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2"]
 
+<b>Troubleshooting fcitx:</b> You may notice fcitx selection panel sometimes disappear, we have a workaround to this issue at:
+https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md#troubleshooting-2-input-selection-panel-is-hidden-sometimes<br>
+To save you time, you may consider using the shortcuts to launch UBA, in order to work with fcitx.
+
 # Create a shortcut alias for command line input:
 
 We created two sample shortcut files for you to launch Unique Bible App via terminal:
@@ -87,6 +114,9 @@ We created two sample shortcut files for you to launch Unique Bible App via term
 * Both of these files are located in your UniqueBible folder
 * Use the first one if you don't need to use fcitx<br>
 * Use the second one if you need to use fcitx
+* The second one assumes you have "fcitx" and "urxvt" installed, read in case you haven't installed them:<br>
+https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md<br>
+https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
 To create and alias:
 
