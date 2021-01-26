@@ -75,3 +75,26 @@ In case you do not use venv, the path may be either of the followings, depends o
 
 ~/.local/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so<br>
 [if you install PySide2 by running "pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2"]
+
+# Create a Desktop Shortcut on Chrome OS
+
+Create a plain text file /usr/share/applications/UniqueBibleApp.desktop
+
+For example, if you use nano,
+
+> sudo nano /usr/share/applications/UniqueBibleApp.desktop
+
+Paste the following content (by right-clicking on terminal), but replace [your-username] with your usename appeared on your device:
+
+> [Desktop Entry]<br>
+> Version=1.0<br>
+> Type=Application<br>
+> Terminal=false<br>
+> Path=/home/[your-username]/UniqueBible/<br>
+> Exec=source venv/bin/activate; python3 /home/[your-username]/UniqueBible/main.py<br>
+> Icon=/home/[your-username]/UniqueBible/htmlResources/theText.png<br>
+> Name=Unique Bible App<br>
+
+Saves changes by pressing "Ctrl + O"
+
+Exit nano by pressing "Ctrl + X"
