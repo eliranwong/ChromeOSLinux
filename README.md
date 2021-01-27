@@ -290,9 +290,9 @@ https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md
 
 sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev -y
 
-Read https://github.com/nvm-sh/nvm for the latest script
-
 <b>nvm:</b>
+
+Read https://github.com/nvm-sh/nvm for the latest script for installation
 
 > wget -qO- [the_latest_script] | bash<br>
 > source .bashrc
@@ -319,3 +319,22 @@ https://github.com/eliranwong/wsl2/tree/master/cli_tools
 
 https://github.com/luong-komorebi/Awesome-Linux-Software
 
+# Enable / Disable swap memory for Chrome OS
+
+To enable virtual memory:
+
+1) Press "CTRL + ALT + T" key combination to open chrome os terminal and run:
+
+> enable swap<br>
+or to specify a certain amound:
+> enable swap 2048
+
+2) Restart your Chromebook.
+
+To disable:
+
+1) Press "CTRL + ALT + T" key combination to open chrome os terminal and run:
+
+> disable swap
+
+2) Restart your Chromebook.
