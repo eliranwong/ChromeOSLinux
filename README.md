@@ -54,6 +54,8 @@ Press "ctrl + alt + t" key combination to open a crosh session and run:
 
 > free -ht
 
+Can use "swap" command to allocate the size of virtual memory instead of the default one, but it is unnecessary in common cases.
+
 # Turn ON Linux
 
 Make sure you have the latest version of Chrome OS first, because "sudo apt update" does not work in some old Chrome OS versions.
