@@ -48,6 +48,12 @@ Cog is a nice extension to view system information:
 
 https://chrome.google.com/webstore/detail/cog-system-info-viewer/difcjdggkffcfgcfconafogflmmaadco?hl=en
 
+# Check the zRam enabled by default
+
+Press "ctrl + alt + t" key combination to open a crosh session and run:
+
+> free -ht
+
 # Turn ON Linux
 
 Make sure you have the latest version of Chrome OS first, because "sudo apt update" does not work in some old Chrome OS versions.
@@ -324,23 +330,3 @@ https://github.com/eliranwong/wsl2/tree/master/cli_tools
 # More Linux softwares
 
 https://github.com/luong-komorebi/Awesome-Linux-Software
-
-# Enable / Disable swap memory for Chrome OS
-
-To enable virtual memory:
-
-1) Press "CTRL + ALT + T" key combination to open chrome os terminal and run:
-
-> enable swap<br>
-or to specify a certain amound:
-> enable swap 2048
-
-2) Restart your Chromebook.
-
-To disable:
-
-1) Press "CTRL + ALT + T" key combination to open chrome os terminal and run:
-
-> disable swap
-
-2) Restart your Chromebook.
