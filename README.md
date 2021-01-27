@@ -40,8 +40,6 @@ cros-termina - Version: 13495.0.0
 
 amd64
 
-<b>python3:</b> Python 3.7.3
-
 # System Info Viewer
 
 Cog is a nice extension to view system information:
