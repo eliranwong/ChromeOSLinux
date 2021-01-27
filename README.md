@@ -10,7 +10,7 @@ Notes in this repository are tested with the following device and os versions:
 
 <b>Device: Pixelbook Go</b>
 
-<b>Chrome OS Version:</b> 87.0.4280.152 (Official Build) (64-bit)
+<b>Chrome OS Version:</b> 88.0.4324.109 (Official Build) (64-bit)
 
 <b>Linux version:</b> 
 
@@ -42,7 +42,13 @@ amd64
 
 <b>python3:</b> Python 3.7.3
 
-# Basics
+# System Info Viewer
+
+Cog is a nice extension to view system information:
+
+https://chrome.google.com/webstore/detail/cog-system-info-viewer/difcjdggkffcfgcfconafogflmmaadco?hl=en
+
+# Turn ON Linux
 
 Make sure you have the latest version of Chrome OS first, because "sudo apt update" does not work in some old Chrome OS versions.
 
