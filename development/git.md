@@ -28,4 +28,8 @@ e.g.
 
 > git commit -m "update file(s)"
 
+> git push
+
+or
+
 > git push --set-upstream origin main
