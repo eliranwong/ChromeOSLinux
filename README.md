@@ -302,16 +302,9 @@ https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md
 
 sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev -y
 
-<b>nvm:</b>
+<b>nvm & node</b>
 
-Read https://github.com/nvm-sh/nvm for the latest script for installation
-
-> wget -qO- [the_latest_script] | bash<br>
-> source .bashrc
-
-<b>note:</b>
-
-> nvm install node
+https://github.com/eliranwong/wsl2/blob/master/programming/nvm_node.md
 
 # Bible Apps
 
