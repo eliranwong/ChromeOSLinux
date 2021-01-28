@@ -110,6 +110,10 @@ We created two sample shortcut files for you to launch Unique Bible App via term
 1) shortcut_uba_chromeOS.sh<br>
 2) shortcut_uba_chromeOS_fcitx.sh
 
+<b>FIRST</b>, make sure these two files are executable by running:
+
+> chmod u+x *.sh
+
 <b>IMPORTANT NOTES:</b><br>
 * Both of these files are located in your UniqueBible folder
 * Use the first one if you don't need to use fcitx<br>
