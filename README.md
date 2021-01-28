@@ -306,6 +306,10 @@ sudo apt install build-essential python3 python-setuptools python3-pip python3-d
 
 https://github.com/eliranwong/wsl2/blob/master/programming/nvm_node.md
 
+<b>git</b>
+
+https://github.com/eliranwong/wsl2/blob/master/programming/git.md
+
 # Bible Apps
 
 Unique Bible App Desktop
@@ -320,10 +324,10 @@ https://github.com/eliranwong/UniqueBibleAppHybrid
 
 https://github.com/eliranwong/wsl2/tree/master/cli_tools
 
-# Git Handbook
-
-https://guides.github.com/introduction/git-handbook/
-
 # More Linux softwares
 
 https://github.com/luong-komorebi/Awesome-Linux-Software
+
+# User Configurations
+
+> ls ~/.config
