@@ -327,6 +327,10 @@ https://github.com/eliranwong/UniqueBibleAppHybrid
 
 https://github.com/eliranwong/wsl2/tree/master/cli_tools
 
+# Git Handbook
+
+https://guides.github.com/introduction/git-handbook/
+
 # More Linux softwares
 
 https://github.com/luong-komorebi/Awesome-Linux-Software
