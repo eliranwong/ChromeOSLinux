@@ -15,13 +15,14 @@ To customise, edit the file ~/.Xresources:
 
 > nano ~/.Xresources
 
-Add the following content to the file:
+Add the following content to the file:<br>
+(Remarks: Use your favourite font by changing "NSimSun", please make sure the font is installed on your system.)
 
 <b>URxvt.background: #000000<br>
 URxvt.foreground: #FFFFFF<br>
 URxvt.color4: #1E90FF<br>
 URxvt.color12: #0081FF<br>
-URxvt.font: xft:Ubuntu Monospace:pixelsize=36<br>
+URxvt.font: xft:NSimSun:pixelsize=36<br>
 URxvt.perl-ext-common: selection-to-clipboard<br>
 URxvt.letterSpace: 0</b>
 
