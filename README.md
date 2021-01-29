@@ -228,7 +228,7 @@ https://www.mozilla.org/firefox/linux/?utm_medium=referral&utm_source=support.mo
 
 Run in terminal:
 
-> sudo apt install -y libstdc++5
+> sudo apt install -y libstdc++5 libdbus-glib*
 
 > cd ~
 
