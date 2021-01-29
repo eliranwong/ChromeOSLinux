@@ -120,9 +120,9 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/synaptic.md
 
 To install some basic command line tools and libraries, run:
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 -y
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils libglu1-mesa lsb-release binutils youtube-dl ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 -y
 
-Remarks: We try to avoid installing libqt5xml5 libqt5x11extras5 if possible, because some qt5 applications looks blurrier after installing these packages.  We haven't checked the reason for it.
+Remarks: ??? libqt5xml5 libqt5x11extras5
 
 # Input Method - fcitx
 
