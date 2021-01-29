@@ -210,7 +210,11 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md
 
 # Browser
 
-Take firefox as an example.  There are several ways to install firefox.  Firefox website suggests Chrome OS users to use flatpak to install firefox.  However, the firefox installed through flatpak does not work with input method fcitx.
+Two examples: Firefox and Chrome.  Both of these browsers work with fcitx on Chrome OS Linux.
+
+<b>Firefox</b>
+
+There are several ways to install firefox.  Firefox website suggests Chrome OS users to use flatpak to install firefox.  However, the firefox installed through flatpak does not work with input method fcitx.
 
 To work with fcitx, install firefox via either of the following methods:
 
@@ -246,6 +250,24 @@ Set a shortcut:
 
 > echo "alias firefox=$HOME/firefox/firefox" >> ~/.bashrc
 
+<b>Chrome</b>
+
+Download the .deb package from: https://www.google.com/chrome/browser/desktop/index.html
+
+Run the following command to complete the installation:
+
+> sudo apt --fix-broken install
+
+To run chrome:
+
+> google-chrome-stable
+
+# File organisers
+
+nautilus for general purpose; gthumb to work with images:
+
+> sudo apt install nautilus gthumb -y
+
 # Office Apps - wps
 
 We prefer WPS office.  It has better compatability with Microsoft documents than libreoffice.  You may read our notes about wps at:
@@ -259,6 +281,10 @@ Update to the latest Chrome OS to get audio support for Linux apps.
 Test: Open a youtube video with Linux firefox.
 
 Remarks: Audio is not supported in some old versions of Chrome OS.
+
+# Media Player
+
+> sudo apt install vlc -y
 
 # Audio Editor
 
@@ -336,6 +362,7 @@ Edit file ~/.bashrc
 
 At the end of the file, add, for examples:
 
+alias update='sudo apt update && sudo apt dist-upgrade'<br>
 alias uba='urxvt -e /home/eliranwong/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'<br>
 alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'<br>
 alias firefox='/home/eliranwong/.Apps/firefox/firefox &>/dev/null & disown'<br>
