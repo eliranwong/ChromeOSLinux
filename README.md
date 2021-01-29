@@ -320,6 +320,20 @@ Unique Bible App Hybrid
 
 https://github.com/eliranwong/UniqueBibleAppHybrid
 
+# Setup alias
+
+Edit file ~/.bashrc
+
+> nano ~/.bashrc
+
+At the end of the file, add, for examples:
+
+alias uba='urxvt -e /home/eliranwong/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'<br>
+alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'<br>
+alias firefox='/home/eliranwong/.Apps/firefox/firefox &>/dev/null & disown'<br>
+alias chrome='google-chrome-stable &>/dev/null & disown'<br>
+alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'
+
 # Useful Command Line Tools
 
 https://github.com/eliranwong/wsl2/tree/master/cli_tools
