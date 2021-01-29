@@ -2,7 +2,7 @@
 
 We found the following way is the easiest one to setup Android Studio together with flutter and dart.  Overall, it is easier to first install Android Studio then flutter and dart.
 
-1) Go to https://developer.android.com/studio
+1) Go to https://developer.android.com/studio (with a Chrome OS browser, not with a Linux browser, so that it automatically directs to a download link for the Chrome os version of Android Studio.)
 
 2) Download Chrome OS installation file for Chrome OS
 
