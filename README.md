@@ -344,6 +344,12 @@ https://github.com/eliranwong/wsl2/blob/master/programming/nvm_node.md
 
 https://github.com/eliranwong/wsl2/blob/master/programming/git.md
 
+# Microsoft Teams
+
+Download the .deb package of Microsoft Teams at: https://aka.ms/get-teams-linux
+
+> dpkg -i [package-name]
+
 # Bible Apps
 
 Unique Bible App Desktop
