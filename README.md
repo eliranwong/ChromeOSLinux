@@ -278,7 +278,13 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/office/wps.md
 
 Update to the latest Chrome OS to get audio support for Linux apps.
 
-Test: Open a youtube video with Linux firefox.
+Test: run a espeak command:
+
+> sudo apt install espeak -y
+
+> espeak "testing audio"
+
+[To install additional data for espeak: https://github.com/eliranwong/ChromeOSLinux/blob/main/multimedia/espeak.md]
 
 Remarks: Audio is not supported in some old versions of Chrome OS.
 
