@@ -61,3 +61,13 @@ Therefore, we download the 1.48 version of Russian data and install it:
 > unzip ru_dict-48.zip
 
 > sudo espeak --compile=ru
+
+# Install & Setup espeakedit
+
+> sudo apt install espeakedit -y
+
+> cp -r /usr/lib/x86_64-linux-gnu/espeak-data/* ~/espeak-data/
+
+To run:
+
+> espeakedit
