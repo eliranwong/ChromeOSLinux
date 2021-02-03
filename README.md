@@ -275,6 +275,16 @@ Install extensions for nautilus
 
 Note: To get a full path on nautils, press "ctrl + l".
 
+# Access All Chrome OS Files from Linux
+
+1) Launch Chrome OS "Files" app
+
+2) Right-click "My Files" > Share folder with Linux > OK
+
+3) Launch Linux "nautilus", add a bookmark to /mnt/chromeos, so that "My Files" appears on nautilus side bar.
+
+Remarks: Chrome OS "Files" app can only read Linux home folder, but not other directories.  It is better to use nautilus to access all Linux files as well as all chrome os files.
+
 # Office Apps - wps
 
 We prefer WPS office.  It has better compatability with Microsoft documents than libreoffice.  You may read our notes about wps at:
