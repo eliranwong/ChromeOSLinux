@@ -424,7 +424,7 @@ alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'
 
 # Useful Command Line Tools
 
-https://github.com/eliranwong/wsl2/tree/master/cli_tools
+https://github.com/eliranwong/ChromeOSLinux/blob/main/cli/common.md
 
 # More Linux softwares
 
