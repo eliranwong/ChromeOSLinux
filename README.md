@@ -436,3 +436,7 @@ https://github.com/luong-komorebi/Awesome-Linux-Software
 # User Configurations
 
 > ls ~/.config
+
+# Desktop Shortcuts
+
+> ls /usr/share/applications
