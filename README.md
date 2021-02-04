@@ -290,6 +290,20 @@ We prefer WPS office.  It has better compatability with Microsoft documents than
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/office/wps.md
 
+# ePub Reader & Editor
+
+<b>Reader:</b>
+
+> sudo flatpak install --from https://flathub.org/repo/appstream/com.github.babluboy.bookworm.flatpakref
+
+> echo "alias bookworm='flatpak run com.github.babluboy.bookworm &>/dev/null & disown'" >> ~/.bashrc
+
+<b>Editor:</b>
+
+> sudo apt install sigil
+
+> echo "alias sigil='env QT_QPA_PLATFORM=xcb sigil'" >> ~/.bashrc
+
 # Test Audio
 
 Update to the latest Chrome OS to get audio support for Linux apps.
