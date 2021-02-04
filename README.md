@@ -422,15 +422,15 @@ Edit file ~/.bashrc
 
 At the end of the file, add, for examples:
 
-alias update='sudo apt update && sudo apt dist-upgrade && updatedb && youtube-dl -U'
-alias uba='urxvt -e /home/eliranwong/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'
-alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'
-alias firefox='/home/eliranwong/.Applications/firefox/firefox &>/dev/null & disown'
-alias chrome='google-chrome-stable &>/dev/null & disown'
-alias sigil='env QT_QPA_PLATFORM=xcb sigil'
-alias sqlitebrowser='env QT_QPA_PLATFORM=xcb sqlitebrowser'
-alias kdenlive='env QT_QPA_PLATFORM=xcb ~/.Applications/kdenlive-20.12.1b-x86_64.appimage &>/dev/null & disown'
-alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'
+alias update='sudo apt update && sudo apt dist-upgrade && updatedb && youtube-dl -U'<br>
+alias uba='urxvt -e /home/eliranwong/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'<br>
+alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'<br>
+alias firefox='/home/eliranwong/.Applications/firefox/firefox &>/dev/null & disown'<br>
+alias chrome='google-chrome-stable &>/dev/null & disown'<br>
+alias sigil='env QT_QPA_PLATFORM=xcb sigil'<br>
+alias sqlitebrowser='env QT_QPA_PLATFORM=xcb sqlitebrowser'<br>
+alias kdenlive='env QT_QPA_PLATFORM=xcb ~/.Applications/kdenlive-20.12.1b-x86_64.appimage &>/dev/null & disown'<br>
+alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'<br>
 alias pyside2examples='cd ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/examples
 
 # Useful Command Line Tools
