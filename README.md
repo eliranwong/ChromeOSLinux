@@ -431,7 +431,7 @@ alias sigil='env QT_QPA_PLATFORM=xcb sigil'<br>
 alias sqlitebrowser='env QT_QPA_PLATFORM=xcb sqlitebrowser'<br>
 alias kdenlive='env QT_QPA_PLATFORM=xcb ~/.Applications/kdenlive-20.12.1b-x86_64.appimage &>/dev/null & disown'<br>
 alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'<br>
-alias pyside2examples='cd ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/examples
+alias pyside2examples='cd ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/examples'
 
 # Useful Command Line Tools
 
