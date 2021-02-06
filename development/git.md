@@ -33,3 +33,19 @@ e.g.
 or
 
 > git push --set-upstream origin main
+
+To manage branches:
+
+To create:
+
+> git checkout -b new_branch
+
+To switch to a remote branch:
+
+> git branch -r
+
+> git checkout branch_name
+
+To delete:
+
+> git branch -D branch_name
