@@ -274,15 +274,39 @@ Install extensions for nautilus
 
 Note: To get a full path on nautils, press "ctrl + l".
 
-# Access All Chrome OS Files from Linux
+# Access ALL Files from Linux
+
+Chrome OS "Files" app can only read Linux home folder, but not other directories.
+
+It is better to use nautilus to access all Linux files as well as all chrome os + Android files.
+
+# Access ALL Chrome OS Files from Linux
 
 1) Launch Chrome OS "Files" app
 
 2) Right-click "My Files" > Share folder with Linux > OK
 
-3) Launch Linux "nautilus", add a bookmark to /mnt/chromeos, so that "My Files" appears on nautilus side bar.
+3) Launch Linux "nautilus", add a bookmark to /mnt/chromeos/MyFiles, so that "My Files" appears on nautilus side bar.
 
-Remarks: Chrome OS "Files" app can only read Linux home folder, but not other directories.  It is better to use nautilus to access all Linux files as well as all chrome os files.
+4) To add an alias for use with commands:
+
+> echo "alias myfiles='cd /mnt/chromeos/MyFiles'" >> ~/.bashrc
+
+# Access ALL Android Folders from Linux
+
+By default, chrome OS "Files" app shows only 4 Android folders Documents, Movies, Music, Pictures.  To access the rest of the folders:
+
+1) Launch Chrome OS "Files" app
+
+2) Click the three-vertical-dot button, located at the righter upper corner.
+
+3) Select "Show all Play folders"
+
+4) Launch Linux "nautilus", add a bookmark to /mnt/chromeos/PlayFiles, so that "My Files" appears on nautilus side bar.
+
+5) To add an alias
+
+> echo "alias playfiles='cd /mnt/chromeos/PlayFiles'" >> ~/.bashrc
 
 # Office Apps - wps
 
@@ -364,30 +388,6 @@ to:
 
 Read more at: https://www.reddit.com/r/Crostini/wiki/howto/adjust-display-scaling#wiki_adjusting_display_scaling_per_application
 
-# Sqlite DB Browser
-
-To install:
-
-> sudo apt install sqlitebrowser
-
-To edit desktop shortcut:
-
-> nano /usr/share/applications/sqlitebrowser.desktop
-
-<b>change from:</b>
-
-Exec=sqlitebrowser %f
-
-<b>to:</b>
-
-Exec=env QT_QPA_PLATFORM=xcb sqlitebrowser %f
-
-To assign an alias:
-
-> echo "alias sqlitebrowser=env QT_QPA_PLATFORM=xcb sqlitebrowser" >> ~/.bashrc
-
-The change above is necessary, becuase we set Environment="QT_QPA_PLATFORM=wayland", which works better for most application.
-
 # Development Tools
 
 <b>Android Studio + Flutter + Dart + connecting flutter to chromebook</b>
@@ -411,6 +411,10 @@ https://github.com/eliranwong/wsl2/blob/master/programming/nvm_node.md
 <b>git</b>
 
 https://github.com/eliranwong/wsl2/blob/master/programming/git.md
+
+<b>sqlitebrowser</b>
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/sqlitebrowser.md
 
 # Microsoft Teams
 
@@ -463,3 +467,8 @@ https://github.com/luong-komorebi/Awesome-Linux-Software
 # Desktop Shortcuts
 
 > ls /usr/share/applications
+
+Desktop shortcuts created by Chrome are stored at
+
+> ls ~/.local/share/applications
+
