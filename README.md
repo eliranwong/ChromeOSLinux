@@ -144,6 +144,14 @@ Environment="GDK_BACKEND=x11"
 export QT_QPA_PLATFORM=wayland<br>
 export GDK_BACKEND=x11
 
+<b>Exceptions:</b>
+
+We found that a few qt applications does not works with "" (e.g. https://github.com/eliranwong/ChromeOSLinux/blob/main/development/sqlitebrowser.md).
+
+In such cases, we use the following prefix to run those qt applications:
+
+> env QT_QPA_PLATFORM=xcb [qt_application]
+
 [Remarks: Without these settings, fcitx may still work, but not selection panel of Chinese characters.]
 
 References on wayland: <br>
