@@ -20,4 +20,4 @@ To assign an alias:
 
 > echo "alias sqlitebrowser=env QT_QPA_PLATFORM=xcb sqlitebrowser" >> ~/.bashrc
 
-The change above is necessary, becuase we set Environment="QT_QPA_PLATFORM=wayland", which works better for most application.
+The change above is necessary, becuase we set Environment="QT_QPA_PLATFORM=wayland", which works better for most applications that we need.
