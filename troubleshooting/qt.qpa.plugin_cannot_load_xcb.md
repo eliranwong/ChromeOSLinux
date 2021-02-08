@@ -33,7 +33,7 @@ If your application works after running this command, you may want to make it mo
 
 The above solution works with some applications.  <b>HOWEVER,</b> some other applications have issues with chrome os wayland compositor that:
 
-1) main window open and closes again
+1) main window open and closes repetitively
 
 2) input method "fcitx" breaks
 
@@ -45,7 +45,7 @@ If one of these problems happen with your application, you may try the following
 
 # Before you continue:
 
-If you change the varaible of QT_QPA_PLATFORM to wayland, you may want to change back to xcb:
+If you changed the varaible of QT_QPA_PLATFORM to wayland, you may want to change it back to xcb:
 
 > echo "export QT_QPA_PLATFORM=xcb" >> ~/.bashrc
 
