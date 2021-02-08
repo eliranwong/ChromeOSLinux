@@ -136,27 +136,29 @@ Add the following variables to work with fcitx (You may read the previous sectio
 
 > sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 
-Environment="QT_QPA_PLATFORM=wayland"<br>
+Environment="QT_QPA_PLATFORM=xcb"<br>
 Environment="GDK_BACKEND=x11"
 
 > nano ~/.bashrc
 
-export QT_QPA_PLATFORM=wayland<br>
+export QT_QPA_PLATFORM=xcb<br>
 export GDK_BACKEND=x11
 
 <b>Exceptions:</b>
 
-We found that a few qt applications does not works with "" (e.g. https://github.com/eliranwong/ChromeOSLinux/blob/main/development/sqlitebrowser.md).
+In case QT_QPA_PLATFORM=xcb does not work with an applications, we use the following prefix to run that qt application:
 
-In such cases, we use the following prefix to run those qt applications:
-
-> env QT_QPA_PLATFORM=xcb [qt_application]
+> env QT_QPA_PLATFORM=wayland [qt_application]
 
 [Remarks: Without these settings, fcitx may still work, but not selection panel of Chinese characters.]
 
 References on wayland: <br>
 https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/vm_tools/sommelier/README.md<br>
 https://wiki.archlinux.org/index.php/wayland
+
+# Troubleshooting qt.qpa.plugin
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plugin_cannot_load_xcb.md
 
 # A note on Chrome OS wayland
 
@@ -422,7 +424,7 @@ https://github.com/eliranwong/wsl2/blob/master/programming/git.md
 
 <b>sqlitebrowser</b>
 
-https://github.com/eliranwong/ChromeOSLinux/blob/main/development/sqlitebrowser.md
+> sudo apt install sqlitebrowser
 
 # Microsoft Teams
 
@@ -448,17 +450,16 @@ Edit file ~/.bashrc
 
 At the end of the file, add, for examples:
 
-alias update='sudo apt update && sudo apt dist-upgrade && updatedb && youtube-dl -U'
-alias uba='urxvt -e /home/eliranwong/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'
-alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'
-alias chrome='google-chrome-stable &>/dev/null & disown'
-alias firefox='/home/eliranwong/.Applications/firefox/firefox &>/dev/null & disown'
-alias kdenlive='env QT_QPA_PLATFORM=xcb ~/.Applications/kdenlive-20.12.1b-x86_64.appimage &>/dev/null & disown'
-alias sigil='env QT_QPA_PLATFORM=xcb sigil'
-alias sqlitebrowser='env QT_QPA_PLATFORM=xcb sqlitebrowser'
-alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'
-alias bookworm='flatpak run com.github.babluboy.bookworm &>/dev/null & disown'
-alias pyside2examples='cd ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/examples'
+alias update='sudo apt update && sudo apt dist-upgrade && updatedb && youtube-dl -U'<br>
+alias uba='/home/eliranwong/UniqueBible/shortcut_uba_chromeOS.sh & disown'<br>
+alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'<br>
+alias chrome='google-chrome-stable &>/dev/null & disown'<br>
+alias firefox='/home/eliranwong/.Applications/firefox/firefox &>/dev/null & disown'<br>
+alias studio='urxvt -e /opt/android-studio/bin/studio.sh &>/dev/null & disown'<br>
+alias bookworm='flatpak run com.github.babluboy.bookworm &>/dev/null & disown'<br>
+alias pyside2examples='source ~/UniqueBible/venv/bin/activate && cd ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/examples'<br>
+alias myfiles='cd /mnt/chromeos/MyFiles'<br>
+alias playfiles='cd /mnt/chromeos/PlayFiles'<br>
 
 # Useful Command Line Tools
 

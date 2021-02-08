@@ -121,7 +121,7 @@ export XIM_PROGRAM="/usr/bin/fcitx"<br>
 export GTK_IM_MODULE="fcitx"<br>
 export QT_IM_MODULE="fcitx"<br>
 export XMODIFIERS="@im=fcitx"<br>
-export QT_QPA_PLATFORM=wayland<br>
+export QT_QPA_PLATFORM=xcb<br>
 export GDK_BACKEND=x11
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
@@ -142,7 +142,7 @@ Environment="XIM_PROGRAM=/usr/bin/fcitx"<br>
 Environment="GTK_IM_MODULE=fcitx"<br>
 Environment="QT_IM_MODULE=fcitx"<br>
 Environment="XMODIFIERS=@im=fcitx"<br>
-Environment="QT_QPA_PLATFORM=wayland"<br>
+Environment="QT_QPA_PLATFORM=xcb"<br>
 Environment="GDK_BACKEND=x11"
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
@@ -246,11 +246,9 @@ However, not all applications work nicely with fcitx.
 
 First, make sure you have the right environment variable assigned:
 
-> export QT_QPA_PLATFORM=wayland
+> export QT_QPA_PLATFORM=xcb
 
-If you don't want to set this variable each time you run qt applications, you may read our notes above at:
-
-https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md#input-method---fcitx
+[You may read an issue of QT_QPA_PLATFORM with fcitx at https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plugin_cannot_load_xcb.md]
 
 Second, make sure you have "fcitx-frontend-qt5" installed.  Check with the following command:
 

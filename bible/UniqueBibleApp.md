@@ -1,12 +1,12 @@
 # Unique Bible App
 
-We have developed three versions
+We have developed three versions of Unique Bible App.
 
 # Desktop Version
 
-Before you install, make sure you have set variable "QT_QPA_PLATFORM" to "wayland", you may read our notes about this at:
+Before you install, make sure you have set variable "QT_QPA_PLATFORM" to "xcb", you may read more about this at:
 
-https://github.com/eliranwong/ChromeOSLinux#use-fcitx-in-gui-applications
+https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plugin_cannot_load_xcb.md
 
 <b>To install</b>, run the following command in terminal:
 
@@ -46,29 +46,6 @@ https://github.com/eliranwong/ChromeOSLinux#use-fcitx-in-gui-applications
 
 > python3 main.py
 
-# Special Tweaks for Chrome OS
-
-We have noted an issue about Chrome OS wayland.  It is possible that there is a bug in the wayland copositor causes an issue with our application:<br>
-https://github.com/eliranwong/UniqueBible/issues/68
-
-We have special tweaks for Chrome OS users:
-
-1) Go to menu: UniqueBible > Select More ...
-
-<img src="screenshot_menu_select_more.png">
-[screenshot_menu_select_more.png]
-
-2) On "Select More ..." dialog, check the option "preferRemoteControlForCommandLineEntry"
-
-<img src="screenshot_select_more.png">
-[screenshot_select_more.png]
-
-3) For "fcitx" users, please also select "fcitx" on the "Select More ..." dialog
-
-4) Options "addBreakAfterTheFirstToolBar" and "addBreakBeforeTheLastToolBar" are optional.  You may consider to use them to make the tool bars look nice or save space after you select "preferRemoteControlForCommandLineEntry".
-
-5) Restart the app to make the changes in settings effective.
-
 # To use fcitx with UBA
 
 You can use input method fcitx with UBA if:
@@ -89,7 +66,7 @@ If you follow our exmaple above to install PySide2 inside venv, the following li
 
 > chmod +x ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
-In case you do not use venv, the path may be either of the followings, depends on how you install PySide2:
+In case you do not use venv, the path may be one of the followings, depends on how you install PySide2:
 
 /usr/local/lib/python3.7/dist-packages/PySide2/Qt/plugins/platforminputcontexts/<br>
 [if you install PySide2 by running "pip3 install PySide2"]
@@ -99,32 +76,23 @@ In case you do not use venv, the path may be either of the followings, depends o
 ~/.local/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so<br>
 [if you install PySide2 by running "pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2"]
 
-<b>Troubleshooting fcitx:</b> You may notice fcitx selection panel sometimes disappear, we have a workaround to this issue at:
-https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md#troubleshooting-2-input-selection-panel-is-hidden-sometimes<br>
-To save you time, you may consider using the shortcuts to launch UBA, in order to work with fcitx.
+<b>Finally,</b> to make sure you use fcitx in UniqueBible.app, select "fcitx" on the "Select More ..." dialog.
 
 # Create a shortcut alias for command line input:
 
-We created two sample shortcut files for you to launch Unique Bible App via terminal:
+We created a sample shortcut file for you to launch Unique Bible App via terminal, i.e.:
 
-1) shortcut_uba_chromeOS.sh<br>
-2) shortcut_uba_chromeOS_fcitx.sh
+> shortcut_uba_chromeOS.sh
 
-<b>FIRST</b>, make sure these two files are executable by running:
+This file is located in the UniqueBible folder at the location you installed.
 
-> chmod u+x *.sh
+<b>FIRST</b>, make sure these this file is executable by running the following commands inside your UniqueBible folder:
 
-<b>IMPORTANT NOTES:</b><br>
-* Both of these files are located in your UniqueBible folder
-* Use the first one if you don't need to use fcitx<br>
-* Use the second one if you need to use fcitx
-* The second one assumes you have "fcitx" and "urxvt" installed, read in case you haven't installed them:<br>
-https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md<br>
-https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
+> chmod u+x shortcut_uba_chromeOS.sh
 
-To create and alias:
+To create an alias [The following command assums that UniqueBible.app is installed in home folder, change it in case you install at a different location.]:
 
-> echo "alias uba='urxvt -e $HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'" >> ~/.bashrc
+> echo "alias uba='$HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'" >> ~/.bashrc
 
 Close and reopen your terminal app, then you can launch UniqueBibleApp by running:
 
@@ -132,28 +100,17 @@ Close and reopen your terminal app, then you can launch UniqueBibleApp by runnin
 
 # Create a Desktop Shortcut on Chrome OS
 
-We created two sample shortcut files for you to launch Unique Bible App via Chrome OS launcher:
+We created a sample shortcut file for you to launch Unique Bible App via Chrome OS launcher, i.e.:
 
-1) shortcut_uba_chromeOS.desktop<br>
-2) shortcut_uba_chromeOS_fcitx.desktop
+> shortcut_uba_chromeOS.desktop
 
-<b>IMPORTANT NOTES:</b><br>
-* Both of these files are located in your UniqueBible folder
-* Use the first one if you don't need to use fcitx<br>
-* Use the second one if you need to use fcitx<br>
-* The second one assumes you have "fcitx" and "urxvt" installed, read in case you haven't installed them:<br>
-https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md<br>
-https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md<br>
-* Edit these .desktop files before you use them, e.g.
+This file is located in the UniqueBible folder at the location you installed.
 
-> nano ~/UniqueBible/shortcut_uba_chromeOS.desktop<br>
-> nano ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop
+* <b>EDIT</b> this .desktop files before you use them, e.g.
 
-[<i><b>Remarks:</b></i> In ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop:<br>
-Exec=urxvt -e /home/yourUserName/UniqueBible/shortcut_uba_chromeOS_fcitx.sh<br>
-We use urxvt to launch Unique Bible App in order to make sure fcitx works.]
+> nano ~/UniqueBible/shortcut_uba_chromeOS.desktop
 
 * Change "yourUserName" to the user name you use to log the Linux virtual machine on your Chrome OS.<br>
 * Copy one of the file to /usr/share/applications/, e.g.
 
-> sudo cp ~/UniqueBible/shortcut_uba_chromeOS_fcitx.desktop /usr/share/applications/UniqueBibleApp.desktop
+> sudo cp ~/UniqueBible/shortcut_uba_chromeOS.desktop /usr/share/applications/UniqueBibleApp.desktop

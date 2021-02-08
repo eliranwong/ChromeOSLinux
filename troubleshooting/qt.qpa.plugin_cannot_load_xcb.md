@@ -13,7 +13,7 @@ The following error messages comes up when we try to launch some qt applications
 
 # Proposed Solutions
 
-Solution 1 is simpler than solution 2, but solution has some drawbacks on some qt applications.
+Solution 1 is simpler than solution 2, but solution 1 has some drawbacks on some qt applications.
 
 You may try solution 1 first.  If solution does not work for you, you may try solution 2.
 
@@ -31,7 +31,7 @@ If your application works after running this command, you may want to make it mo
 
 > sudo echo "Environment='QT_QPA_PLATFORM=wayland'" >> /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 
-The above solution works with some applications.  <b>HOWEVER,</b> some applications has issues with chrome os wayland compositor that:
+The above solution works with some applications.  <b>HOWEVER,</b> some other applications have issues with chrome os wayland compositor that:
 
 1) main window open and closes again
 
