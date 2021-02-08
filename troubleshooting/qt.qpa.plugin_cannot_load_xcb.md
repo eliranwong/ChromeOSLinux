@@ -53,6 +53,8 @@ If you change the varaible of QT_QPA_PLATFORM to wayland, you may want to change
 
 # Solution 2
 
+Simply run the following command to fix the issue:
+
 > sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-util.so.0 /usr/lib/x86_64-linux-gnu/libxcb-util.so.1
 
 <b>Explanation about this solution (if you are interested):</b>
