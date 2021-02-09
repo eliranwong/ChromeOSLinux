@@ -481,3 +481,6 @@ Desktop shortcuts created by Chrome are stored at
 
 > ls ~/.local/share/applications
 
+# apt-repository
+
+/etc/apt/sources.list.d
