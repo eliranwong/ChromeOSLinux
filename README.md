@@ -432,6 +432,14 @@ Download the .deb package of Microsoft Teams at: https://aka.ms/get-teams-linux
 
 > dpkg -i [package-name]
 
+# Signal Desktop
+
+> wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+
+> echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+
+> sudo apt update && sudo apt install signal-desktop
+
 # Bible Apps
 
 Unique Bible App Desktop
