@@ -33,7 +33,7 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plu
 * In our testings, command "pip3 install PySide2" encounters memory errors on some low-memory chromebooks.  The above command installs wheel directly from Qt servers with this command.  Find details at: https://wiki.qt.io/Qt_for_Python/GettingStarted
 ]<br>
 
-> pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans langdetect
+> pip3 install PyPDF2 python-docx gdown diff_match_patch googletrans langdetect qt-material
 
 [optional Chinese tools]
 > pip3 install OpenCC pypinyin
