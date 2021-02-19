@@ -70,6 +70,8 @@ Therefore, we download the 1.48 version of Russian data and install it:
 
 > sudo apt install espeakedit -y
 
+> mkdir -p ~/espeak-data
+
 > cp -r /usr/lib/x86_64-linux-gnu/espeak-data/* ~/espeak-data/
 
 To run:
