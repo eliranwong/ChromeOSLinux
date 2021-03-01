@@ -34,7 +34,7 @@ You simply need to download and run.  Everything else will be set up for you aut
 
 > git clone https://github.com/eliranwong/UniqueBible
 
-<b>To run:<b>
+<b>To run:</b>
 
 > python3 UniqueBible/uba.py
 
