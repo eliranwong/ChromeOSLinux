@@ -1,66 +1,116 @@
 # Unique Bible App
 
-We have developed three versions of Unique Bible App.
+We have developed three versions of Unique Bible App (UBA).  Below is description on desktop version.
 
-# Desktop Version
+# Prepare for Installation
 
-Before you install, make sure you have set variable "QT_QPA_PLATFORM" to "xcb", you may read more about this at:
+<b>Get python ready!</b>
 
-https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plugin_cannot_load_xcb.md
+UBA is a python-based application, so you need to have Python installed to run UBA.
 
-<b>To install</b>, run the following command in terminal:
+Minimum Python verion for running UBA: 3.7
 
-> sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev libnss3 -y
+There are several different ways to install Python, read more information at: https://www.python.org/downloads/
 
-> cd ~
+Below is one of the options we tested:
+
+> sudo apt install -y build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev libnss3
+
+<b>Get git ready! [optional]</b>
+
+There are different ways to download UBA, we use git in the following example.
+
+To install git, run on terminal:
+
+> sudo apt install -y git
+
+Don't want to use git?  You can download a zip package of UBA and unzip it instead of using git.  Read: https://github.com/eliranwong/UniqueBible/wiki/installation#download-code
+
+# Download UBA & Run
+
+You simply need to download and run.  Everything else will be set up for you automatically the first time you run UBA.
+
+<b>To download:</b>
 
 > git clone https://github.com/eliranwong/UniqueBible
 
-> cd UniqueBible
+<b>To run:<b>
 
-> python3 -m venv venv
+> python3 UniqueBible/uba.py
 
-> source venv/bin/activate
+A screenshot is provide here, so you may know what to expect during the first-time setup:
+
+<img src="https://github.com/eliranwong/UniqueBible/blob/master/screenshots/download_and_run.png">
+
+UBA should look like this screenshot below the first time you run it:
+
+<img src="https://github.com/eliranwong/UniqueBible/blob/master/screenshots/fresh_install_1st_screen.png">
+
+# Desktop Application Shortcut
+
+A desktop shortcut "UniqueBibleApp.desktop" is generated for you automatically the first time you run UBA.
+
+The shortcut file is automatically copied to ~/.local/share/applications
+
+You should be able to find it with application Launcher on Chrome OS.
+
+# Create a command alias [optional]:
+
+You can run UBA with terminal without typing a fullpath, by creating an alias.
+
+Below is an example:
+
+This example only works if:
+
+1) You use bash (for example, if you use "zsh" on macOS, you need to change "~/.bashrc" to "~/.zshenv")
+
+2) The following example assumes that you install UBA in your home directory.  You need to change the path if you install at a different location.
+
+> echo "alias uba='$HOME/UniqueBible/uba.py'" >> ~/.bashrc
+
+Close and reopen your terminal app, you should then be able to run UBA with this simple command:
+
+> uba
+
+Our setup script automatically makes file "uba.py" executable, but in case it is not running, you may need to set permission on it manually:
+
+> chmod u+x $HOME/UniqueBible/uba.py
+
+# A Note about Installing PySide2 [optional]
+
+PySide2 is a python package required for running UBA.  It is automatically set up for you the first time you run UBA.
+
+In case you find that you cannot run UBA with error message telling you that PySide2 is not installed, you may need to manually install PySide2.
+
+We observed that some low-memory chromebooks failed to instead PySide2 by running:
 
 > pip3 install PySide2
 
-* [Remarks: If you fail to use the line above to install PySide2 on low-memory devices, use the following line instead of "pip3 install PySide2":
+If this is your case, run the following command instead to install PySide2:
 
-* > pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2 --trusted-host download.qt.io
+> pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2 --trusted-host download.qt.io
 
-* "PySide2" folder, installed with the command above, is located at "~/.local/lib/python3.7/site-packages/PySide2"<br>
-[instead of "/usr/local/lib/python3.7/dist-packages/PySide2"]<br>
-* In our testings, command "pip3 install PySide2" encounters memory errors on some low-memory chromebooks.  The above command installs wheel directly from Qt servers with this command.  Find details at: https://wiki.qt.io/Qt_for_Python/GettingStarted
-]<br>
+<i>Remarks:</i> If you install "PySide2" this way, its directory is located at "~/.local/lib/python3.x/site-packages/PySide2" rather than "/usr/local/lib/python3.x/dist-packages/PySide2" as you install with pip3 command.
 
-> pip3 install PyPDF2 python-docx gdown diff_match_patch langdetect qt-material ibm-watson
+Read more at: https://wiki.qt.io/Qt_for_Python/GettingStarted]
 
-[optional Chinese tools]
-> pip3 install OpenCC pypinyin
-
-<b>To launch:</b>
-
-> cd ~/UniqueBible
-
-> source venv/bin/activate
-
-> python3 main.py
-
-# To use fcitx with UBA
+# Use fcitx with UBA [optional]
 
 You can use input method fcitx with UBA if:
 
-* You have "fcitx" installed
+<b>1)</b> You have "fcitx" installed
 
 [You may read our notes on installing fcitx on Chrome OS Linux at: https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md]
 
-* You have "fcitx-frontend-qt5" installed, use the following command to check:
+<b>2)</b> You have "fcitx-frontend-qt5" installed, use the following command to check:
 
 > apt -qq list fcitx-frontend-qt5
 
-* You have the file "libfcitxplatforminputcontextplugin.so" placed properly inside folder "PySide2/Qt/plugins/platforminputcontexts/":
+<b>3)</b> You have the file "libfcitxplatforminputcontextplugin.so" placed properly inside folder "PySide2/Qt/plugins/platforminputcontexts/":
 
-If you follow our exmaple above to install PySide2 inside venv, the following line should help you copy the file to the right place:
+<b><i>[You may skip this step (3) if you select "fcitx" on "Set Config Flags" Window in UBA]</i></b>
+
+If you have UniqueBible installed in home directory and have PySide2 installed inside venv, the following line should help you copy the file to the right place:
 
 > cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
@@ -76,41 +126,9 @@ In case you do not use venv, the path may be one of the followings, depends on h
 ~/.local/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so<br>
 [if you install PySide2 by running "pip3 install --index-url=https://download.qt.io/official_releases/QtForPython/ pyside2"]
 
-<b>Finally,</b> to make sure you use fcitx in UniqueBible.app, select "fcitx" on the "Select More ..." dialog.
+# Trouble-shooting
 
-# Create a shortcut alias for command line input:
+UBA has a script that automates fixes on the issues mentioned below:
 
-We created a sample shortcut file for you to launch Unique Bible App via terminal, i.e.:
+https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plugin_cannot_load_xcb.md
 
-> shortcut_uba_chromeOS.sh
-
-This file is located in the UniqueBible folder at the location you installed.
-
-<b>FIRST</b>, make sure these this file is executable by running the following commands inside your UniqueBible folder:
-
-> chmod u+x shortcut_uba_chromeOS.sh
-
-To create an alias [The following command assums that UniqueBible.app is installed in home folder, change it in case you install at a different location.]:
-
-> echo "alias uba='$HOME/UniqueBible/shortcut_uba_chromeOS_fcitx.sh & disown'" >> ~/.bashrc
-
-Close and reopen your terminal app, then you can launch UniqueBibleApp by running:
-
-> uba
-
-# Create a Desktop Shortcut on Chrome OS
-
-We created a sample shortcut file for you to launch Unique Bible App via Chrome OS launcher, i.e.:
-
-> shortcut_uba_chromeOS.desktop
-
-This file is located in the UniqueBible folder at the location you installed.
-
-* <b>EDIT</b> this .desktop files before you use them, e.g.
-
-> nano ~/UniqueBible/shortcut_uba_chromeOS.desktop
-
-* Change "yourUserName" to the user name you use to log the Linux virtual machine on your Chrome OS.<br>
-* Copy one of the file to /usr/share/applications/, e.g.
-
-> sudo cp ~/UniqueBible/shortcut_uba_chromeOS.desktop /usr/share/applications/UniqueBibleApp.desktop
