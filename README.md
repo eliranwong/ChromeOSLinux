@@ -459,7 +459,7 @@ Edit file ~/.bashrc
 At the end of the file, add, for examples:
 
 alias update='sudo apt update && sudo apt dist-upgrade && updatedb && youtube-dl -U'<br>
-alias uba='/home/eliranwong/UniqueBible/shortcut_uba_chromeOS.sh & disown'<br>
+alias uba='/home/eliranwong/UniqueBible/uba.py'<br>
 alias audacity='sommelier -X --scale=0.5 --dpi=120 audacity &>/dev/null & disown'<br>
 alias chrome='google-chrome-stable &>/dev/null & disown'<br>
 alias firefox='/home/eliranwong/.Applications/firefox/firefox &>/dev/null & disown'<br>
