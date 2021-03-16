@@ -27,7 +27,7 @@ or
 
 e.g. find an item in current directory
 
-> mlocate [search_item] | grep $(echo | pwd)
+> mlocate [search_item] | grep $(pwd)
 
 # Common tasks of text processing
 
