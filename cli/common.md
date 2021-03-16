@@ -19,11 +19,15 @@ To manually update the database:<br>
 
 To run:
 
-> locate
+> locate [search_item]
 
 or
 
-> mlocate
+> mlocate [search_item]
+
+e.g. find an item in current directory
+
+> mlocate [search_item] | grep $(echo | pwd)
 
 # Common tasks of text processing
 
