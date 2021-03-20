@@ -481,6 +481,22 @@ https://github.com/luong-komorebi/Awesome-Linux-Software
 
 > ls ~/.config
 
+# Assign Default Applications
+
+Manually edit '/usr/share/applications/mimeapps.list' or '.config/mimeapps.list'
+
+Alternatively, use xdg-mime command, e.g.:
+
+> xdg-mime default org.gnome.Nautilus.desktop inode/directory
+
+> xdg-mime default wps-office-pdf.desktop application/pdf
+
+> cat .config/mimeapps.list
+
+[Default Applications]<br>
+inode/directory=org.gnome.Nautilus.desktop<br>
+application/pdf=wps-office-pdf.desktop
+
 # Desktop Shortcuts
 
 > ls /usr/share/applications
