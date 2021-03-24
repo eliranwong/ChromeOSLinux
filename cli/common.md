@@ -4,7 +4,7 @@
 
 To download this repository
 
-wget https://github.com/eliranwong/wsl2/archive/master.zip
+wget https://github.com/eliranwong/ChromeOSLinux/archive/master.zip
 
 # Setup mlocate
 
@@ -156,11 +156,11 @@ Convert simplified Chinese to traditional Chinese:<br>
 
 # Download Video / Audio from YouTube
 
-https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
+https://github.com/eliranwong/ChromeOSLinux/blob/main/multimedia/youtube-dl.md
 
 # Examples of ffmpeg
 
-https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
+https://github.com/eliranwong/ChromeOSLinux/blob/main/multimedia/ffmpeg.md
 
 # Working on Xresources
 
