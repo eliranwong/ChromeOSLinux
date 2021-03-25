@@ -66,9 +66,9 @@ Please note that VS Code is optional.
 
 2) Download Chrome OS installation file for Chrome OS
 
-3) Open "Files" app, go to "Downloads" folder and locate the downloaded file.  In our testing, the file name is "android-studio-ide-201.7042882-cros.deb".
+3) Open "Files" app, go to "Downloads" folder and locate the downloaded file.  In our testing, the file name is "android-studio-ide-201.7199119-cros.deb".
 
-4) Right click and select "Install with Linux (Beta)"
+4) Right click and select "Install with Linux"
 
 5) Launch after installation is finished, via either launcher or running "/opt/android-studio/bin/studio.sh" on terminal
 
