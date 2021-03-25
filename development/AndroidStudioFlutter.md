@@ -30,11 +30,35 @@ Locate the following section, add your path and save the file:
 
 > export PATH
 
-4) Restart Linux virtual machine
+4) Make sure ADB debugging is enabled: Settings > Linux > Develop Android apps > Enable ADB debugging
 
-5) Pre-download development binaries:
+5) Restart Linux virtual machine
+
+6) Pre-download development binaries:
 
 > flutter precache
+
+7) Run on terminal:
+
+> flutter doctor
+
+8) Select "Always allow from this computer" to authorize connect flutter to your Chromebook upon prompting "Allow USB debugging?"
+
+<img src="screenshot_connect_chromebook.png">
+
+9) Run on terminal the following command and accept all licenses upon prompting:
+
+> flutter doctor --android-licenses
+
+10) At this point, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly. To have a final check, run:
+
+> flutter doctor
+
+It should looks like:
+
+<img src="flutter_doctor.png">
+
+Please note that VS Code is optional.
 
 # Install Android Studio
 
@@ -55,32 +79,6 @@ Locate the following section, add your path and save the file:
 8) Search for "flutter" and install flutter plugin
 
 9) Restart Android Studio after installing "flutter" plugin
-
-10) Make sure ADB debugging is enabled: Settings > Linux > Develop Android apps > Enable ADB debugging
-
-11) Restart Linux virtual machine.
-
-12) Run on terminal:
-
-> flutter doctor
-
-13) Select "Always allow from this computer" to authorize connect flutter to your Chromebook upon prompting "Allow USB debugging?"
-
-<img src="screenshot_connect_chromebook.png">
-
-14) Run on terminal the following command and accept all licenses upon prompting:
-
-> flutter doctor --android-licenses
-
-15) At this point, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly. To have a final check, run:
-
-> flutter doctor
-
-It should looks like:
-
-<img src="flutter_doctor.png">
-
-Please note that VS Code is optional.
 
 # [Optional]
 
