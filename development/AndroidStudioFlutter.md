@@ -1,6 +1,42 @@
 # Android Studio + Flutter + Dart + Connecting flutter to Chromebook
 
-We found the following way is the easiest one to setup Android Studio together with flutter and dart.  Overall, it is easier to first install Android Studio then flutter and dart.
+We found the following way is the easiest one to setup Android Studio together with flutter and dart.
+
+# Install Flutter + Dart
+
+1) Download a copy
+
+> git clone https://github.com/flutter/flutter.git
+
+2) Edit /etc/profile,
+
+> sudo nano /etc/profile
+
+3) Update path
+
+[Read more at: https://flutter.dev/docs/get-started/install/chromeos#update-your-path]
+
+Locate the following section, add your path and save the file:
+
+> if [ "`id -u`" -eq 0 ]; then
+
+>   PATH="..."
+
+> else
+
+>   PATH="/usr/local/bin:...:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+
+> fi
+
+> export PATH
+
+4) Restart Linux virtual machine
+
+5) Pre-download development binaries:
+
+> flutter precache
+
+# Install Android Studio
 
 1) Go to https://developer.android.com/studio (with a Chrome OS browser, not with a Linux browser, so that it automatically directs to a download link for the Chrome os version of Android Studio.)
 
@@ -20,47 +56,23 @@ We found the following way is the easiest one to setup Android Studio together w
 
 9) Restart Android Studio after installing "flutter" plugin
 
-10) On welcome screen, select "Create New Flutter Project" > "Flutter Application" > Next
+10) Make sure ADB debugging is enabled: Settings > Linux > Develop Android apps > Enable ADB debugging
 
-11) On "Configure the new Flutter Application" dialog, you will note that Flutter SDK path is still empty.  Select "Install SDK", right next to the text field of "Flutter SDK path".  Write down the path you choose to install the flutter SDK.
+11) Restart Linux virtual machine.
 
-12) AFTER "Flutter SDK" is downloaded, select "Cancel" to close the dialog first.  Yes, close it first!  You won't be able to create a new flutter project yet.
-
-13) Open /etc/profile, e.g.:
-
-> sudo nano /etc/profile
-
-14) Locate the following section, add your path and save the file:
-
-> if [ "`id -u`" -eq 0 ]; then
-
->   PATH="..."
-
-> else
-
->   PATH="/usr/local/bin:...:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
-
-> fi
-
-> export PATH
-
-15) Make sure ADB debugging is enabled: Settings > Linux > Develop Android apps > Enable ADB debugging
-
-16) Restart Linux virtual machine.
-
-17) Run on terminal:
+12) Run on terminal:
 
 > flutter doctor
 
-18) Select "Always allow from this computer" to authorize connect flutter to your Chromebook upon prompting "Allow USB debugging?"
+13) Select "Always allow from this computer" to authorize connect flutter to your Chromebook upon prompting "Allow USB debugging?"
 
 <img src="screenshot_connect_chromebook.png">
 
-19) Run on terminal the following command and accept all licenses upon prompting:
+14) Run on terminal the following command and accept all licenses upon prompting:
 
 > flutter doctor --android-licenses
 
-20) At this point, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly. To have a final check, run:
+15) At this point, you should be able to create a new flutter project in Android Studio and test your project with your chromebook directly. To have a final check, run:
 
 > flutter doctor
 
@@ -70,7 +82,7 @@ It should looks like:
 
 Please note that VS Code is optional.
 
-[Optional]
+# [Optional]
 
 You may encounter the following warning:
 
