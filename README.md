@@ -272,6 +272,10 @@ To run chrome:
 
 > google-chrome-stable
 
+To tweak (enter in url):
+
+> chrome://flags
+
 # File organisers
 
 nautilus for general purpose; gthumb to work with images:
