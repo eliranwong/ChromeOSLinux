@@ -276,6 +276,16 @@ To tweak (enter in url):
 
 > chrome://flags
 
+<b>Tor Browser</b>
+
+> echo "deb http://ftp.debian.org/debian buster-backports main contrib" | sudo tee /etc/apt/sources.list.d/backports.list
+
+> sudo apt update
+
+> sudo apt install torbrowser-launcher -t buster-backports -y
+
+> torbrowser-launcher
+
 # File organisers
 
 nautilus for general purpose; gthumb to work with images:
