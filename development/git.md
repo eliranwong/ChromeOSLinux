@@ -49,3 +49,7 @@ To switch to a remote branch:
 To delete:
 
 > git branch -D branch_name
+
+To list all non-staged files:
+
+> git ls-files --other --modified --exclude-standard
