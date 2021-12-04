@@ -372,7 +372,7 @@ Remarks: Audio is not supported in some old versions of Chrome OS.
 
 # Youtube Downloader
 
-https://github.com/eliranwong/ChromeOSLinux/tree/main/multimedia
+https://github.com/eliranwong/ChromeOSLinux/blob/main/multimedia/yt-dlp.md
 
 # Video Editor
 
