@@ -10,7 +10,7 @@ Notes in this repository are tested with the following device and os versions:
 
 <b>Device: Pixelbook Go</b>
 
-<b>Chrome OS Version:</b> 88.0.4324.109 (Official Build) (64-bit)
+<b>Chrome OS Version:</b> 97.0.4692.102 (Official Build) (64-bit)
 
 <b>Linux version:</b> 
 
@@ -25,14 +25,6 @@ ID=debian<br>
 HOME_URL="https://www.debian.org/"<br>
 SUPPORT_URL="https://www.debian.org/support"<br>
 BUG_REPORT_URL="https://bugs.debian.org/"
-
-<b>Virtual machine:</b>
-
-Checked with Chrome browser:
-
-> chrome://components
-
-cros-termina - Version: 13495.0.0
 
 <b>CPU:</b>
 
@@ -62,7 +54,7 @@ Make sure you have the latest version of Chrome OS first, because "sudo apt upda
 
 2) Restart after updates if any
 
-3) Open Settings > Linux (Beta) > Turn On
+3) Open Settings > Linux > Turn On
 
 4) To check the Linux's version installed, open terminal and type:<br>
 > cat /etc/os-release<br>
@@ -81,7 +73,7 @@ Reference: https://support.google.com/chromebook/answer/9145439?hl=en-GB
 # How to restart Linux virtual machine?
 
 1) Right-click "Terminal" app icon on the "shelf".
-2) Shut down Linux (Beta)
+2) Shut down Linux
 3) Start the "Terminal" app again
 
 # Where to adjust disk size of Linux container?
