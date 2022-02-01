@@ -292,6 +292,8 @@ Install extensions for nautilus
 
 Note: To get a full path on nautils, press "ctrl + l".
 
+Note: To show/hide hidden files on nautils, press "ctrl + h".
+
 # Access ALL Files from Linux
 
 Chrome OS "Files" app can only read Linux home folder, but not other directories.
@@ -310,7 +312,7 @@ It is better to use nautilus to access all Linux files as well as all chrome os 
 
 > echo "alias myfiles='cd /mnt/chromeos/MyFiles'" >> ~/.bashrc
 
-# Access ALL Android Folders from Linux
+# Access Android Folders from Linux
 
 By default, chrome OS "Files" app shows only 4 Android folders Documents, Movies, Music, Pictures.  To access the rest of the folders:
 
@@ -320,11 +322,7 @@ By default, chrome OS "Files" app shows only 4 Android folders Documents, Movies
 
 3) Select "Show all Play folders"
 
-4) Launch Linux "nautilus", add a bookmark to /mnt/chromeos/PlayFiles, so that "My Files" appears on nautilus side bar.
-
-5) To add an alias
-
-> echo "alias playfiles='cd /mnt/chromeos/PlayFiles'" >> ~/.bashrc
+4) Right-click Folder(s) under "Play Files"  > Share folder with Linux > OK
 
 # Office Apps - wps
 
