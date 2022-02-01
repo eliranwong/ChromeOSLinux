@@ -268,6 +268,8 @@ To tweak (enter in url):
 
 > chrome://flags
 
+> chrome://components
+
 <b>Tor Browser</b>
 
 > echo "deb http://ftp.debian.org/debian buster-backports main contrib" | sudo tee /etc/apt/sources.list.d/backports.list
