@@ -555,4 +555,4 @@ To setup firefox addon "video-downloadhelper" on Alpine webtop:
 
 To install Arch Linux:
 
-> sudo docker run -d   --name=webtop   --security-opt seccomp=unconfined `#optional`   -e PUID=1000   -e PGID=1000   -e TZ=Europe/London   -e SUBFOLDER=/ `#optional`   -e KEYBOARD=en-gb-qwerty `#optional` -p 3000:3000   -v /home/\<user\>/development/webtops/Arch:/config   -v /var/run/docker.sock:/var/run/docker.sock `#optional`   --shm-size="1gb" `#optional`   --restart unless-stopped   lscr.io/linuxserver/webtop:arch-xfce
+> sudo docker run -d   --name=webtop   --security-opt seccomp=unconfined \`#optional\`   -e PUID=1000   -e PGID=1000   -e TZ=Europe/London   -e SUBFOLDER=/ \`#optional\`   -e KEYBOARD=en-gb-qwerty \`#optional\` -p 3000:3000   -v /home/\<user\>/development/webtops/Arch:/config   -v /var/run/docker.sock:/var/run/docker.sock \`#optional\`   --shm-size="1gb" \`#optional\`   --restart unless-stopped   lscr.io/linuxserver/webtop:arch-xfce
