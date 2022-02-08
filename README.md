@@ -533,4 +533,22 @@ To run webtop:
 
 > http://localhost:3000/
 
+To fix "No such file or directory" issue on Alphine webtop:
 
+Reference: https://stackoverflow.com/questions/66963068/docker-alpine-executable-binary-not-found-even-if-in-path/66974607
+
+> apk add gcompat
+
+Note: Tried "apk add libc6-compat" but it doesn't work.
+
+To setup firefox addon "video-downloadhelper" on Alphine webtop:
+
+1) Install addon at: https://addons.mozilla.org/en-GB/firefox/addon/video-downloadhelper/
+
+2) "Video Downloader Companion App" is prompted to download, the first time when a video, e.g. a vimeo video, is downloaded.  Select "Linux - 64 bits - targz other linux distributions"
+
+3) To setup the companion app, open webtop Alphine terminal (not chromeOS Linux terminal) at download folder and run:
+
+> sudo tar xf net.downloadhelper.coapp-1.6.3-1_amd64.tar.gz -C /usr/local
+
+> sudo /usr/local/net.downloadhelper.coapp-1.6.3/bin/net.downloadhelper.coapp-linux-64 install --system
