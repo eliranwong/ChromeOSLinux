@@ -324,6 +324,12 @@ By default, chrome OS "Files" app shows only 4 Android folders Documents, Movies
 
 4) Right-click Folder(s) under "Play Files"  > Share folder with Linux > OK
 
+# Access USB Files
+
+Access USB content at:
+
+> /mnt/chromeos/removable
+
 # Office Apps - wps
 
 We prefer WPS office.  It has better compatability with Microsoft documents than libreoffice.  You may read our notes about wps at:
