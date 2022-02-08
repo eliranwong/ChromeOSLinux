@@ -514,3 +514,17 @@ Desktop shortcuts created by Chrome are stored at
 # apt-repository
 
 /etc/apt/sources.list.d
+
+# setup docker
+
+https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook/
+
+# setup webtops
+
+https://tech.davidfield.co.uk/webtops-linux-desktop-in-a-web-browser/
+
+To run webtop:
+
+> http://localhost:3000/
+
+
