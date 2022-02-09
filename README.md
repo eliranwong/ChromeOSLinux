@@ -529,30 +529,26 @@ https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
 
 https://tech.davidfield.co.uk/webtops-linux-desktop-in-a-web-browser/
 
+To install Arch Linux webtop:
+
+> sudo docker run -d   --name=webtop   --security-opt seccomp=unconfined \`#optional\`   -e PUID=1000   -e PGID=1000   -e TZ=Europe/London   -e SUBFOLDER=/ \`#optional\`   -e KEYBOARD=en-gb-qwerty \`#optional\` -p 3000:3000   -v /home/\<user\>/development/webtops/Arch:/config   -v /var/run/docker.sock:/var/run/docker.sock \`#optional\`   --shm-size="1gb" \`#optional\`   --restart unless-stopped   lscr.io/linuxserver/webtop:arch-xfce
+
 To run webtop:
 
 > http://localhost:3000/
 
-To fix "No such file or directory" issue on Alpine webtop:
+To setup firefox addon "video-downloadhelper" on Arch Linux webtop:
 
-Reference: https://stackoverflow.com/questions/66963068/docker-alpine-executable-binary-not-found-even-if-in-path/66974607
-
-> apk add gcompat
-
-Note: Tried "apk add libc6-compat" but it doesn't work.
-
-To setup firefox addon "video-downloadhelper" on Alpine webtop:
+Note: Addon "video-downloadhelper" and its companion app are tested on Alpine, Ubuntu, Fedora and Arch webtop images.  They work properly only on Arch without installing extra components.
 
 1) Install addon at: https://addons.mozilla.org/en-GB/firefox/addon/video-downloadhelper/
 
-2) "Video Downloader Companion App" is prompted to download, the first time when a video, e.g. a vimeo video, is downloaded.  Select "Linux - 64 bits - targz other linux distributions"
+2) "Install Companion App" is prompted, the first time when a video, e.g. a vimeo video, is downloaded.  Select "Linux - 64 bits - targz other linux distributions"
 
-3) To setup the companion app, open webtop Alpine terminal (not chromeOS Linux terminal) at download folder and run:
+3) To install the companion app, open webtop terminal (not chromeOS Linux terminal) at download folder and run:
 
-> sudo tar xf net.downloadhelper.coapp-1.6.3-1_amd64.tar.gz -C /usr/local
+> cd ~/Downloads
 
-> sudo /usr/local/net.downloadhelper.coapp-1.6.3/bin/net.downloadhelper.coapp-linux-64 install --system
+> tar xf net.downloadhelper.coapp-1.6.3-1_amd64.tar.gz -C ~
 
-To install Arch Linux:
-
-> sudo docker run -d   --name=webtop   --security-opt seccomp=unconfined \`#optional\`   -e PUID=1000   -e PGID=1000   -e TZ=Europe/London   -e SUBFOLDER=/ \`#optional\`   -e KEYBOARD=en-gb-qwerty \`#optional\` -p 3000:3000   -v /home/\<user\>/development/webtops/Arch:/config   -v /var/run/docker.sock:/var/run/docker.sock \`#optional\`   --shm-size="1gb" \`#optional\`   --restart unless-stopped   lscr.io/linuxserver/webtop:arch-xfce
+> ~/net.downloadhelper.coapp-1.6.3/bin/net.downloadhelper.coapp-linux-64 install --user
