@@ -529,7 +529,7 @@ https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
 
 https://tech.davidfield.co.uk/webtops-linux-desktop-in-a-web-browser/
 
-To install Arch Linux webtop:
+To install Arch Linux webtop, where "/home/<user>/development/webtops/Arch" specifies the local path to store webtop user home directory [change it according to your own needs]:
 
 > sudo docker run -d   --name=webtop   --security-opt seccomp=unconfined \`#optional\`   -e PUID=1000   -e PGID=1000   -e TZ=Europe/London   -e SUBFOLDER=/ \`#optional\`   -e KEYBOARD=en-gb-qwerty \`#optional\` -p 3000:3000   -v /home/\<user\>/development/webtops/Arch:/config   -v /var/run/docker.sock:/var/run/docker.sock \`#optional\`   --shm-size="1gb" \`#optional\`   --restart unless-stopped   lscr.io/linuxserver/webtop:arch-xfce
 
