@@ -202,7 +202,7 @@ The built-in "Terminal" app that comes with Chrome OS is nice, but terrible for 
 * works with fcitx (gnome-terminal, unfornately does not work with fcitx)
 * customisable
 
-"urxvt" not matches all the requirements listed above, but also enable some other gui applications to work with fcitx.  You may read our notes about this:
+"urxvt" not only matches all the requirements listed above, but also enable some other gui applications to work with fcitx.  You may read our notes about this:
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
