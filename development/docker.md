@@ -66,6 +66,16 @@ Remove uniquebibleapp data, depending on what local path you specified in docker
 
 > rm -rf ~/uniquebibleapp-webtop
 
+# Check storage
+
+* Check Chrome OS Linux container storage
+
+> df -h
+
+* Check docker storage
+
+> docker system df
+
 # Clean docker all types of cache
 
 > docker system prune --volumes
