@@ -53,3 +53,9 @@ To delete:
 To list all non-staged files:
 
 > git ls-files --other --modified --exclude-standard
+
+To overwrite changes in local files:
+
+> git fetch --all
+
+> git reset
