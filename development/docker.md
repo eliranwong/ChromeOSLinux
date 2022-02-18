@@ -22,7 +22,51 @@ https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
 
 https://docs.docker.com/engine/install/debian/
 
-# Clean docker cache
+# Build Unique Bible App docker image
+
+> git clone https://github.com/eliranwong/uniquebibleapp-webtop.git
+
+> cd uniquebibleapp-webtop
+
+> sudo docker build -t uniquebibleapp .
+
+# Run docker image
+
+e.g. uniquebibleapp
+
+> sudo docker run -d --name=uniquebibleapp --security-opt seccomp=unconfined -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e SUBFOLDER=/ -e KEYBOARD=en-gb-qwerty -p 3000:3000 -v ~/uniquebibleapp-webtop:/config -v /var/run/docker.sock:/var/run/docker.sock --shm-size="1gb" --restart unless-stopped uniquebibleapp
+
+# Share docker image
+
+e.g. uniquebibleapp image
+
+Create a repository at https://hub.docker.com/
+
+> sudo docker login -u username
+
+Enter password
+
+> sudo docker tag uniquebibleapp [username]/uniquebibleapp
+
+> sudo docker push [username]/uniquebibleapp
+
+# Remove Unique Bible App docker image
+
+> sudo docker rm -f uniquebibleapp
+
+Find uniquebibleapp image id with:
+
+> sudo docker images
+
+Remove image file
+
+> sudo docker rmi [imageid]
+
+Remove uniquebibleapp data, depending on what local path you specified in docker build command, e.g.:
+
+> rm -rf ~/uniquebibleapp-webtop
+
+# Clean docker all types of cache
 
 > docker system prune --volumes
 
