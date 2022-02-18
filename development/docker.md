@@ -54,7 +54,7 @@ Enter password
 
 > sudo docker rm -f uniquebibleapp
 
-Find uniquebibleapp image id with:
+Check uniquebibleapp image id with:
 
 > sudo docker images
 
