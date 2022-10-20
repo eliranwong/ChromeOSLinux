@@ -69,3 +69,9 @@ To overwrite changes in local files:
 > git fetch --all
 
 > git reset
+
+Trouble-shoot hanging for pushing large files:
+
+> git config --global http.postBuffer 157286400
+
+read more about this solution at https://stackoverflow.com/questions/15843937/git-push-hangs-after-total-line
