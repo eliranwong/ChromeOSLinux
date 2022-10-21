@@ -112,7 +112,7 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/synaptic.md
 
 To install some basic command line tools and libraries, run:
 
-> sudo apt -y install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils libglu1-mesa lsb-release binutils ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 libpci3 libpci-dev python3-pip
+> sudo apt -y install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils libglu1-mesa lsb-release binutils ffmpeg gawk opencc mlocate gnome-keyring libssl-dev libffi-dev libstdc++5 libpci3 libpci-dev python3-pip python3-venv zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 
 Remarks: ??? libqt5xml5 libqt5x11extras5
 
