@@ -34,9 +34,7 @@ or
 
 > git push --set-upstream origin main
 
-Trouble-shooting git push large files: https://stackoverflow.com/questions/15843937/git-push-hangs-after-total-line
-
-solution:
+or
 
 > git push -u origin main
 
