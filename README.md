@@ -10,17 +10,17 @@ Notes in this repository are tested with the following device and os versions:
 
 <b>Device: Pixelbook Go</b>
 
-<b>Chrome OS Version:</b> 97.0.4692.102 (Official Build) (64-bit)
+<b>Chrome OS Version:</b> 107.0.5304.92 (Official Build) (64-bit)
 
 <b>Linux version:</b> 
 
 > cat /etc/os-release
 
-PRETTY_NAME="Debian GNU/Linux 10 (buster)"<br>
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"<br>
 NAME="Debian GNU/Linux"<br>
-VERSION_ID="10"<br>
-VERSION="10 (buster)"<br>
-VERSION_CODENAME=buster<br>
+VERSION_ID="11"<br>
+VERSION="11 (bullseye)"<br>
+VERSION_CODENAME=bullseye<br>
 ID=debian<br>
 HOME_URL="https://www.debian.org/"<br>
 SUPPORT_URL="https://www.debian.org/support"<br>
