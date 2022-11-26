@@ -412,6 +412,10 @@ Read more at: https://www.reddit.com/r/Crostini/wiki/howto/adjust-display-scalin
 
 # Development Tools
 
+<b>go</b>
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/go.md
+
 <b>Android Studio + Flutter + Dart + connecting flutter to chromebook</b>
 
 We found the following way is the easiest one to setup Android Studio together with flutter and dart.  Overall, it is easier to first install Android Studio then flutter and dart.
