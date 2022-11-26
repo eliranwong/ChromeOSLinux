@@ -11,3 +11,7 @@ For example, install go version go1.19.3 linux/amd64
 > sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
 
 > echo "PATH=$PATH:/usr/local/go/bin" >> ~/.profile
+
+# Install Packages for GUI
+
+> sudo apt gcc libgl1-mesa-dev xorg-dev
