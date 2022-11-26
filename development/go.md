@@ -20,4 +20,6 @@ For example, install go version go1.19.3 linux/amd64
 
 > go mod tidy
 
+> go install fyne.io/fyne/v2/cmd/fyne@latest
+
 > go install fyne.io/fyne/v2/cmd/fyne_demo@latest
