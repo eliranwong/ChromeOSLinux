@@ -16,10 +16,16 @@ For example, install go version go1.19.3 linux/amd64
 
 > sudo apt gcc libgl1-mesa-dev xorg-dev
 
+> go install fyne.io/fyne/v2/cmd/fyne@latest
+
+> go install fyne.io/fyne/v2/cmd/fyne_demo@latest
+
+# Install Fyne Module in a Project
+
 > go get fyne.io/fyne/v2
 
 > go mod tidy
 
-> go install fyne.io/fyne/v2/cmd/fyne@latest
+# Set GOPATH
 
-> go install fyne.io/fyne/v2/cmd/fyne_demo@latest
+https://github.com/golang/go/wiki/SettingGOPATH#zsh
