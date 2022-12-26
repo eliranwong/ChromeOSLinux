@@ -438,6 +438,10 @@ https://github.com/eliranwong/wsl2/blob/master/programming/nvm_node.md
 
 https://github.com/eliranwong/wsl2/blob/master/programming/git.md
 
+<b>Qt</b>
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/qt.md
+
 <b>sqlitebrowser</b>
 
 > sudo apt install sqlitebrowser
