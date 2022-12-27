@@ -106,15 +106,19 @@ You can use input method fcitx with UBA if:
 
 > apt -qq list fcitx-frontend-qt5
 
-<b>3)</b> You have the file "libfcitxplatforminputcontextplugin.so" placed properly inside folder "PySide2/Qt/plugins/platforminputcontexts/":
+<b>3)</b> You have the file "libfcitxplatforminputcontextplugin.so" and/or "libfcitx5platforminputcontextplugin.so" placed properly inside folder "PySide2/Qt/plugins/platforminputcontexts/":
 
 <b><i>[You may skip this step (3) if you select "fcitx" on "Set Config Flags" Window in UBA]</i></b>
 
 If you have UniqueBible installed in home directory and have PySide2 installed inside venv, the following line should help you copy the file to the right place:
 
-> cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+> cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ~/UniqueBible/venv_Linux_3.9.2/lib/python3.9/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 
-> chmod +x ~/UniqueBible/venv/lib/python3.7/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+> chmod +x ~/UniqueBible/venv_Linux_3.9.2/lib/python3.9/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+
+> cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so ~/UniqueBible/venv_Linux_3.9.2/lib/python3.9/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
+
+> chmod +x ~/UniqueBible/venv_Linux_3.9.2/lib/python3.9/site-packages/PySide2/Qt/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
 
 In case you do not use venv, the path may be one of the followings, depends on how you install PySide2:
 
