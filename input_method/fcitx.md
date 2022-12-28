@@ -229,6 +229,8 @@ to:
 We have an example for applying this workaround to create a desktop shortcut at:<br>
 https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#create-a-shortcut-alias-for-command-line-input
 
+Alternately, use 'ffocos' as a workaround: https://github.com/eliranwong/ffocos
+
 # Troubleshooting 3: Installed firefox does not work with fcitx
 
 Please read our notes at: https://github.com/eliranwong/ChromeOSLinux#browser
