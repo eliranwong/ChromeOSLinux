@@ -254,9 +254,11 @@ Second, make sure you have "fcitx-frontend-qt5" installed.  Check with the follo
 
 > apt -qq list fcitx-frontend-qt5
 
-To work with Qt5 applications, try to copy the file /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so to /Qt/plugins/platforminputcontexts/ folder of Qt5-based applications:
+To work with Qt5 applications, try to copy the files libfcitxplatforminputcontextplugin.so and libfcitx5platforminputcontextplugin.so from /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/ to /Qt/plugins/platforminputcontexts/ folder of Qt5-based applications:
 
 > cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so [ fullpath .../Qt/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so ]
+
+> cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so [ fullpath .../Qt/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so ]
 
 We give you an exmaple at: https://github.com/eliranwong/ChromeOSLinux/blob/main/bible/UniqueBibleApp.md#to-use-fcitx-with-uba
 
