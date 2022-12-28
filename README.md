@@ -46,6 +46,20 @@ Press "ctrl + alt + t" key combination to open a crosh session and run:
 
 Can use "swap" command to allocate the size of virtual memory instead of the default one, but it is unnecessary in common cases.
 
+To change virtual memory, e.g.:
+
+> swap enable 2048
+
+To change to factory default:
+
+(If the size is omitted, the factory default is chosen)
+
+> swap enable
+
+Remarks: Restart device for change in virtual memory to take effect.
+
+Read https://support.google.com/chromebook/thread/93286060/want-to-increase-virtual-ram-memory-in-chromebook?hl=en
+
 # Turn ON Linux
 
 Make sure you have the latest version of Chrome OS first, because "sudo apt update" does not work in some old Chrome OS versions.
