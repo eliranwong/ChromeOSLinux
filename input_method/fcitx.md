@@ -103,7 +103,16 @@ DO NOT RUN BOTH AT THE SAME TIME!
 
 <b>DO NOT run both fcitx and fcitx5 AT THE SAME TIME!</b>
 
-... updating ...
+1. Configure fcitx5 as default input:<br>
+
+> sudo apt install im-config
+
+> im-config<br>
+
+select "OK"<br>
+select "Yes"<br>
+select "fcitx5"<br>
+select "OK"<br>
 
 2. Add variables
 
@@ -121,6 +130,25 @@ Add the following lines and save the file:
 > export QT_QPA_PLATFORM=xcb<br>
 > export GDK_BACKEND=x11
 
+3. Setup autostart of "fcitx5" service
+
+> mkdir -p ~/.config/autostart && cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart
+
+<b>Restart Linux to make changes effective.</b><br>
+
+4. Setup keyboards
+
+<b>IMPORTANT!</b> Please make sure fcitx5 service is running first.  RESTART Linux container AFTER the step 3 above.
+
+Run:
+
+> fcitx5-frontend-qt5
+
+Select the "+" button, located at the left lower button, to add input methods.<br>
+Uncheck "Only Show Current Language"<br>
+Enter "Pinyin" in search field<br>
+Select "Pinyin"
+
 # Set up fcitx
 
 <b>DO NOT run both fcitx and fcitx5 AT THE SAME TIME!</b>
@@ -132,7 +160,7 @@ Add the following lines and save the file:
 > im-config<br>
 
 select "OK"<br>
-select "Yes" to question "Do you explicitly select the user configuration?"<br>
+select "Yes"<br>
 select "fcitx"<br>
 select "OK"<br>
 select "OK"
@@ -181,7 +209,7 @@ In nano, Ctrl+O to save, Ctrl+X to exit.
 
 Close and re-open terminal to make changes effective.
 
-[<b>Remarks:</b> This file might be overwritten in future updates.]
+[<b>Remarks:</b> This file might be overwritten in Chrome OS future updates.  You may consider to use ~/.config/environment.d/im.conf instead as we illustrated above fore fcitx5 setup.]
 
 3. Setup autostart of "fcitx" service
 
@@ -194,7 +222,7 @@ Close and re-open terminal to make changes effective.
 
 4. Setup keyboards
 
-<b>IMPORTANT!</b> Please make sure fcitx service is running first.  RESTART Linux container AFTER the step 4 above.
+<b>IMPORTANT!</b> Please make sure fcitx service is running first.  RESTART Linux container AFTER the step 3 above.
 
 Run terminal:
 
