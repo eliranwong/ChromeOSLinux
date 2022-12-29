@@ -201,7 +201,7 @@ Move down a page: "ctrl + v"
 
 Move up a page: "ctrl + y"
 
-Quick jump to the end of the file: "alt + \"
+Quick jump to the end of the file: "alt + \\"
 
 Quick jump to the end of the file: "alt + /"
 
