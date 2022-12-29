@@ -107,18 +107,18 @@ DO NOT RUN BOTH AT THE SAME TIME!
 
 2. Add variables
 
-> mkdir -p ~/.config/environment.d
+> mkdir -p ~/.config/environment.d<br>
 > nano ~/.config/environment.d/im.conf
 
 Add the following lines and save the file:
 
-> export LC_CTYPE=zh_CN.UTF-8
-> export XIM=fcitx5
-> export XIM_PROGRAM=/usr/bin/fcitx5
-> export GTK_IM_MODULE=fcitx5
-> export QT_IM_MODULE=fcitx5
-> export XMODIFIERS=@im=fcitx5
-> export QT_QPA_PLATFORM=xcb
+> export LC_CTYPE=zh_CN.UTF-8<br>
+> export XIM=fcitx5<br>
+> export XIM_PROGRAM=/usr/bin/fcitx5<br>
+> export GTK_IM_MODULE=fcitx5<br>
+> export QT_IM_MODULE=fcitx5<br>
+> export XMODIFIERS=@im=fcitx5<br>
+> export QT_QPA_PLATFORM=xcb<br>
 > export GDK_BACKEND=x11
 
 # Set up fcitx
