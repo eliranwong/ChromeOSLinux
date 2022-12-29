@@ -142,12 +142,13 @@ Add the following lines and save the file:
 
 Run:
 
-> fcitx5-frontend-qt5
+> fcitx5-config-qt
 
+For example, to add "Pinyin":<br>
 Select the "+" button, located at the left lower button, to add input methods.<br>
 Uncheck "Only Show Current Language"<br>
 Enter "Pinyin" in search field<br>
-Select "Pinyin"
+Select "Pinyin" and click the left arrow to add
 
 # Set up fcitx
 
@@ -240,7 +241,11 @@ ctrl + SPACE => switch between input methods
 
 ctrl + shift + f => switch between Traditional and Simplified Chinese
 
-To change these settings, run the following line and change with gui:
+To change these settings for fcitx5, run:
+
+> fcitx5-config-qt
+
+To change these settings for fcitx, run:
 
 > fcitx-config-gtk3
 
