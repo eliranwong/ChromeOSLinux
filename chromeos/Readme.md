@@ -21,3 +21,7 @@ Enable reverse scolling
 # Hand Gestures
 
 https://support.google.com/chromebook/answer/1047367?hl=en-GB
+
+# Chrome OS and Chrome OS Flex
+
+https://support.google.com/chromeosflex/answer/11542901
