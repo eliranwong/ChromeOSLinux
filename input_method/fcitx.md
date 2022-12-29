@@ -1,6 +1,6 @@
 # fcitx on Chrome OS Crostini 
 
-[updated on 26Jan2021; Chrome OS version: 87.0.4280.152]
+[updated on 29DEC2022; Chrome OS version: 108.0.5359.111]
 
 This article describe how to set up fcitx on Chrome OS Linux container, Crostini.
 
@@ -114,21 +114,51 @@ select "Yes"<br>
 select "fcitx5"<br>
 select "OK"<br>
 
-2. Add variables
+2. Add Variables
 
-> mkdir -p ~/.config/environment.d<br>
-> nano ~/.config/environment.d/im.conf
+For running applications launched through entering cmmands in terminal:
 
-Add the following lines and save the file:
+Use text editor to edit file ~/.bashrc, for example:
 
-> export LC_CTYPE=zh_CN.UTF-8<br>
-> export XIM=fcitx5<br>
-> export XIM_PROGRAM=/usr/bin/fcitx5<br>
-> export GTK_IM_MODULE=fcitx5<br>
-> export QT_IM_MODULE=fcitx5<br>
-> export XMODIFIERS=@im=fcitx5<br>
-> export QT_QPA_PLATFORM=xcb<br>
-> export GDK_BACKEND=x11
+> nano ~/.bashrc
+
+Add the following lines at the end of the file:
+
+export LC_CTYPE=zh_CN.UTF-8<br>
+export XIM=fcitx5<br>
+export XIM_PROGRAM=/usr/bin/fcitx5<br>
+export GTK_IM_MODULE=fcitx5<br>
+export QT_IM_MODULE=fcitx5<br>
+export XMODIFIERS=@im=fcitx5<br>
+export QT_QPA_PLATFORM=xcb<br>
+export GDK_BACKEND=x11
+
+In nano, Ctrl+O to save, Ctrl+X to exit.
+
+Close and re-open terminal to make changes effective.
+
+For running applications launched through Chrome OS launcher menu:
+
+Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
+
+> sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+
+Add the following lines at the end of the file:
+
+Environment="LC_CTYPE=zh_CN.UTF-8"<br>
+Environment="XIM=fcitx5"<br>
+Environment="XIM_PROGRAM=/usr/bin/fcitx5"<br>
+Environment="GTK_IM_MODULE=fcitx5"<br>
+Environment="QT_IM_MODULE=fcitx5"<br>
+Environment="XMODIFIERS=@im=fcitx5"<br>
+Environment="QT_QPA_PLATFORM=xcb"<br>
+Environment="GDK_BACKEND=x11"
+
+In nano, Ctrl+O to save, Ctrl+X to exit.
+
+Close and re-open terminal to make changes effective.
+
+[<b>Remarks:</b> This file might be overwritten in Chrome OS future updates.]
 
 3. Setup autostart of "fcitx5" service
 
@@ -197,20 +227,20 @@ Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon
 
 Add the following lines at the end of the file:
 
-Environment=LC_CTYPE=zh_CN.UTF-8<br>
-Environment=XIM=fcitx<br>
-Environment=XIM_PROGRAM=/usr/bin/fcitx<br>
-Environment=GTK_IM_MODULE=fcitx<br>
-Environment=QT_IM_MODULE=fcitx<br>
-Environment=XMODIFIERS=@im=fcitx<br>
-Environment=QT_QPA_PLATFORM=xcb<br>
-Environment=GDK_BACKEND=x11
+Environment="LC_CTYPE=zh_CN.UTF-8"<br>
+Environment="XIM=fcitx"<br>
+Environment="XIM_PROGRAM=/usr/bin/fcitx"<br>
+Environment="GTK_IM_MODULE=fcitx"<br>
+Environment="QT_IM_MODULE=fcitx"<br>
+Environment="XMODIFIERS=@im=fcitx"<br>
+Environment="QT_QPA_PLATFORM=xcb"<br>
+Environment="GDK_BACKEND=x11"
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
 Close and re-open terminal to make changes effective.
 
-[<b>Remarks:</b> This file might be overwritten in Chrome OS future updates.  You may consider to use ~/.config/environment.d/im.conf instead as we illustrated above fore fcitx5 setup.]
+[<b>Remarks:</b> This file might be overwritten in Chrome OS future updates.]
 
 3. Setup autostart of "fcitx" service
 
