@@ -84,28 +84,44 @@ Check installed Chinese font list
 > fc-list :lang=zh | cut -d: -f1<br>
 > fc-list -f '%{family}\n' :lang=zh<br>
 
-# Input Method - fcitx
+# Input Method - fcitx5 and fcitx
 
-1. Install fcitx:<br>
-> sudo apt install fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* -y<br>
+1. Install both fcitx5 and fcitx:<br>
+> sudo apt install fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* kde-config-fcitx5 -y
 
 To avoid potential conficts or free around 80MB of storage, run in terminal:
 
 > sudo apt -y remove fcitx-module-kimpanel
 
-2. Config fcitx as default input:<br>
+# Before You Continue
+
+Choose EITHER fcitx5 or fcitx!
+
+DO NOT RUN BOTH AT THE SAME TIME!
+
+# Set up fcitx5
+
+<b>DO NOT run both fcitx and fcitx5 AT THE SAME TIME!</b>
+
+... updating ...
+
+# Set up fcitx
+
+<b>DO NOT run both fcitx and fcitx5 AT THE SAME TIME!</b>
+
+1. Configure fcitx as default input:<br>
 
 > sudo apt install im-config
 
 > im-config<br>
 
-select "OK"
-select "Yes" to question "Do you explicitly select the user configuration?"
-select "fcitx"
-select "OK"
+select "OK"<br>
+select "Yes" to question "Do you explicitly select the user configuration?"<br>
+select "fcitx"<br>
+select "OK"<br>
 select "OK"
 
-3. Add Variables
+2. Add Variables
 
 For running applications launched through entering cmmands in terminal:
 
@@ -115,12 +131,12 @@ Use text editor to edit file ~/.bashrc, for example:
 
 Add the following lines at the end of the file:
 
-export LC_CTYPE="zh_CN.UTF-8"<br>
-export XIM="fcitx"<br>
-export XIM_PROGRAM="/usr/bin/fcitx"<br>
-export GTK_IM_MODULE="fcitx"<br>
-export QT_IM_MODULE="fcitx"<br>
-export XMODIFIERS="@im=fcitx"<br>
+export LC_CTYPE=zh_CN.UTF-8<br>
+export XIM=fcitx<br>
+export XIM_PROGRAM=/usr/bin/fcitx<br>
+export GTK_IM_MODULE=fcitx<br>
+export QT_IM_MODULE=fcitx<br>
+export XMODIFIERS=@im=fcitx<br>
 export QT_QPA_PLATFORM=xcb<br>
 export GDK_BACKEND=x11
 
@@ -136,14 +152,14 @@ Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon
 
 Add the following lines at the end of the file:
 
-Environment="LC_CTYPE=zh_CN.UTF-8"<br>
-Environment="XIM=fcitx"<br>
-Environment="XIM_PROGRAM=/usr/bin/fcitx"<br>
-Environment="GTK_IM_MODULE=fcitx"<br>
-Environment="QT_IM_MODULE=fcitx"<br>
-Environment="XMODIFIERS=@im=fcitx"<br>
-Environment="QT_QPA_PLATFORM=xcb"<br>
-Environment="GDK_BACKEND=x11"
+Environment=LC_CTYPE=zh_CN.UTF-8<br>
+Environment=XIM=fcitx<br>
+Environment=XIM_PROGRAM=/usr/bin/fcitx<br>
+Environment=GTK_IM_MODULE=fcitx<br>
+Environment=QT_IM_MODULE=fcitx<br>
+Environment=XMODIFIERS=@im=fcitx<br>
+Environment=QT_QPA_PLATFORM=xcb<br>
+Environment=GDK_BACKEND=x11
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
@@ -151,7 +167,7 @@ Close and re-open terminal to make changes effective.
 
 [<b>Remarks:</b> This file might be overwritten in future updates.]
 
-4. Setup autostart of "fcitx" service
+3. Setup autostart of "fcitx" service
 
 > echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
 
@@ -160,7 +176,7 @@ Close and re-open terminal to make changes effective.
 [Description on /dev/null: https://medium.com/@codenameyau/step-by-step-breakdown-of-dev-null-a0f516f53158]<br>
 [Description on 2>&1: https://www.brianstorti.com/understanding-shell-script-idiom-redirect/]<br>
 
-5. Setup keyboards
+4. Setup keyboards
 
 <b>IMPORTANT!</b> Please make sure fcitx service is running first.  RESTART Linux container AFTER the step 4 above.
 
@@ -317,6 +333,8 @@ To use pypinyin as a direct command in terminal, make sure path is updated:
 > echo "export PATH=$PATH:$HOME/.local/bin/" >> .bashrc
 
 # Other References
+
+https://fcitx-im.org/wiki/Setup_Fcitx_5
 
 https://wiki.debian.org/gnome-chinese-input
 
