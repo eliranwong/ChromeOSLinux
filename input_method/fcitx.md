@@ -139,8 +139,6 @@ Close and re-open terminal to make changes effective.
 
 For running applications launched through Chrome OS launcher menu:
 
-Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
-
 > nano ~/.config/environment.d/im.config
 
 Write and save the following lines:
