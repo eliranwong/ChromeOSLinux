@@ -162,7 +162,9 @@ Close and re-open terminal to make changes effective.
 
 3. Setup autostart of "fcitx5" service
 
-> mkdir -p ~/.config/autostart && cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart
+> sudo apt install -y exo-utils
+
+> echo "exo-open /usr/share/applications/org.fcitx.Fcitx5.desktop" >> ~/.sommelierrc
 
 <b>Restart Linux to make changes effective.</b><br>
 
