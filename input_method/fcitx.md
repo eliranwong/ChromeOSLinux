@@ -164,7 +164,7 @@ Restart Linux container to make changes effective.
 
 > sudo apt install -y exo-utils
 
-> echo "/usr/bin/fcitx5 -s 5 > /dev/null 2>&1" >> ~/.sommelierrc
+> echo "/usr/bin/fcitx5 -d -s 5 > /dev/null 2>&1" >> ~/.sommelierrc
 
 <b>Restart Linux to make changes effective.</b><br>
 
