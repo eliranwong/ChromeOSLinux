@@ -8,9 +8,13 @@ We also wrote some note about WSL2 setup on Windows: https://github.com/eliranwo
 
 Notes in this repository are tested with the following device and os versions:
 
-<b>Device: Pixelbook Go</b>
+<b>Device 1: Google Pixelbook Go</b>
 
-<b>Chrome OS Version:</b> 107.0.5304.92 (Official Build) (64-bit)
+<b>Chrome OS Version:</b> 107.0.5304.110 (Official Build) (64-bit)
+
+<b>Device 2: Apple mac mini (2012)</b>
+
+<b>Chrome OS Flex Version:</b> 108.0.5359.111 (Official Build) (64-bit)
 
 <b>Linux version:</b> 
 
