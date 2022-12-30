@@ -215,20 +215,24 @@ Quick jump to the end of the file: "alt + /"
 
 # Terminal
 
-The built-in "Terminal" app that comes with Chrome OS is nice, but terrible for typing non-English characters, like Chinese.  Chinese characters are misplaced as one type.  We need a terminal app that have the following features:
+The built-in "Terminal" app that comes with Chrome OS is generally nice.  However, it is not good for typing non-English characters, like Chinese.  Chinese characters are misplaced as one type.  We want a terminal app that:
 
-* good support of copy & paste feature
-* support unicode
-* works with fcitx (gnome-terminal, unfornately does not work with fcitx)
-* customisable
+* supports copy & paste operations
+* supports unicode
+* works with fcitx
+* allow customisation
 
-"urxvt" not only matches all the requirements listed above, but also enable some other gui applications to work with fcitx.  You may read our notes about this:
+We tested different terminal app on Chrome OS.  The best options we found are 'konsole' and 'rxvt-unicode'.
+
+To install 'konsole', run:
+
+> sudo apt install -y konsole
+
+For 'rxvt-unicode', read:
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
 
-and
-
-https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md
+Remarks: Gnome-terminal is a popular choice, however, it does not fully work with fcitx on chrome os.
 
 # Browser
 
@@ -308,7 +312,7 @@ nautilus for general purpose; gthumb to work with images:
 
 Install extensions for nautilus
 
-> sudo apt install nautilus-admin nautilus-extension-gnome-terminal nautilus-image-converter
+> sudo apt install nautilus-admin nautilus-extension-gnome-terminal nautilus-image-converter nautilus-font-manager
 
 Note: To get a full path on nautils, press "ctrl + l".
 
