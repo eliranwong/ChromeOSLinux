@@ -136,9 +136,13 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/input_method/fcitx.md
 
 # Use fcitx in GUI Applications
 
+There is a known issue that some Qt applications does not work on touchscreen devices with wayland.  For example, https://github.com/eliranwong/UniqueBible/wiki/QT_QPA_PLATFORM#touchscreen-users
+
 Add the following variables to work with fcitx (You may read the previous section about fcitx setup.),
 
 > sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+
+(On non-touchscreen devices, you may assign QT_QPA_PLATFORM=wayland directly)
 
 Environment="QT_QPA_PLATFORM=xcb"<br>
 Environment="GDK_BACKEND=x11"
