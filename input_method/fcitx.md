@@ -2,7 +2,7 @@
 
 [updated on 30DEC2022; Chrome OS version: 108.0.5359.111]
 
-This article describe how to set up fcitx5 and/or fcitx on Chrome OS Linux container, Crostini.
+This article describe how to set up fcitx5 / fcitx on Chrome OS Linux container, Crostini.
 
 [ ibus works better than fcitx on WSL2. If you use WSL2, you may read the following article on setting up ibus for WSL2:<br>
 https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md ]
@@ -164,7 +164,7 @@ Restart Linux container to make changes effective.
 
 > sudo apt install -y exo-utils
 
-> echo "exo-open /usr/share/applications/org.fcitx.Fcitx5.desktop" >> ~/.sommelierrc
+> echo "/usr/bin/fcitx5 -s 5 > /dev/null 2>&1" >> ~/.sommelierrc
 
 <b>Restart Linux to make changes effective.</b><br>
 
