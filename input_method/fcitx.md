@@ -141,22 +141,22 @@ For running applications launched through Chrome OS launcher menu:
 
 Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
 
-> sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+> nano ~/.config/environment.d/im.config
 
-Add the following lines at the end of the file:
+Write and save the following lines:
 
-Environment="LC_CTYPE=zh_CN.UTF-8"<br>
-Environment="XIM=fcitx5"<br>
-Environment="XIM_PROGRAM=/usr/bin/fcitx5"<br>
-Environment="GTK_IM_MODULE=fcitx5"<br>
-Environment="QT_IM_MODULE=fcitx5"<br>
-Environment="XMODIFIERS=@im=fcitx5"<br>
-Environment="QT_QPA_PLATFORM=xcb"<br>
-Environment="GDK_BACKEND=x11"
+LC_CTYPE=zh_CN.UTF-8<br>
+XIM=fcitx5<br>
+XIM_PROGRAM=/usr/bin/fcitx5<br>
+GTK_IM_MODULE=fcitx5<br>
+QT_IM_MODULE=fcitx5<br>
+XMODIFIERS=@im=fcitx5<br>
+QT_QPA_PLATFORM=xcb<br>
+GDK_BACKEND=x11
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
-Close and re-open terminal to make changes effective.
+Restart Linux container to make changes effective.
 
 [<b>Remarks:</b> This file might be overwritten in Chrome OS future updates.]
 
