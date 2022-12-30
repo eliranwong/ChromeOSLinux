@@ -2,7 +2,7 @@
 
 [updated on 30DEC2022; Chrome OS version: 108.0.5359.111]
 
-This article describe how to set up fcitx on Chrome OS Linux container, Crostini.
+This article describe how to set up fcitx5 and/or fcitx on Chrome OS Linux container, Crostini.
 
 [ ibus works better than fcitx on WSL2. If you use WSL2, you may read the following article on setting up ibus for WSL2:<br>
 https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md ]
