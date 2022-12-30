@@ -1,6 +1,6 @@
 # fcitx on Chrome OS Crostini 
 
-[updated on 29DEC2022; Chrome OS version: 108.0.5359.111]
+[updated on 30DEC2022; Chrome OS version: 108.0.5359.111]
 
 This article describe how to set up fcitx on Chrome OS Linux container, Crostini.
 
@@ -116,6 +116,8 @@ select "OK"<br>
 
 2. Add Variables
 
+(You may also read https://github.com/eliranwong/ChromeOSLinux/blob/main/README.md#use-fcitx-in-gui-applications)
+
 For running applications launched through entering cmmands in terminal:
 
 Use text editor to edit file ~/.bashrc, for example:
@@ -197,6 +199,8 @@ select "OK"<br>
 select "OK"
 
 2. Add Variables
+
+(You may also read https://github.com/eliranwong/ChromeOSLinux/blob/main/README.md#use-fcitx-in-gui-applications)
 
 For running applications launched through entering cmmands in terminal:
 
@@ -331,6 +335,10 @@ Alternately, use 'ffocos' as a workaround: https://github.com/eliranwong/ffocos
 Please read our notes at: https://github.com/eliranwong/ChromeOSLinux#browser
 
 Firefox website recommends users to use flatpak to install firefox, but in order to use fcitx, do not use faltpak to install it.
+
+# Troubleshooting 4: fcitx does not work on touchscreen devices
+
+Read https://github.com/eliranwong/ChromeOSLinux/blob/main/README.md#use-fcitx-in-gui-applications
 
 # Remarks on Running "fcitx" in Crostini
 
