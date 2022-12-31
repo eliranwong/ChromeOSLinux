@@ -6,7 +6,7 @@ Remarks: use xcb instead of wayland on touchscreen devices, as some qt applicati
 
 # Additional packages
 
-> sudo apt install -y libglfw3-wayland xwayland qt5ct
+> sudo apt install -y libglfw3-wayland xwayland qt5ct clipman wl-clipboard
 
 # environment.d
 
