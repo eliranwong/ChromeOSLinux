@@ -230,6 +230,10 @@ To install 'konsole', run:
 
 > sudo apt install -y konsole
 
+To copy, press 'ctrl+shift+c'
+
+To paste, press 'ctrl+shift+v'
+
 To run 'konsole' as login shell by default:
 
 Settings > Configure Konsole > Profiles > Profile 1 (Default) > Edit > General > Command > /bin/bash -l
@@ -237,6 +241,18 @@ Settings > Configure Konsole > Profiles > Profile 1 (Default) > Edit > General >
 To change 'konsole' font, e.g. to Noto Sans Mono:
 
 Settings > Configure Konsole > Profiles > Profile 1 (Default) > Edit > Appearance > Font > Noto Sans Mono
+
+To support fcitx when konsole is launched via desktop file:
+
+> sudo nano /usr/share/applications/org.kde.konsole.desktop
+
+Change from:
+
+> Exec=konsole
+
+to:
+
+> Exec=env QT_IM_MODULE=fcitx5 /usr/bin/konsole
 
 For 'rxvt-unicode', read:
 
