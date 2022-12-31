@@ -146,7 +146,7 @@ Add the following variables to work with fcitx (You may read the previous sectio
 
 > sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 
-(On non-touchscreen devices, you may assign QT_QPA_PLATFORM=wayland directly)
+(On non-touchscreen devices, read https://github.com/eliranwong/ChromeOSLinux/blob/main/display/wayland.md)
 
 Environment="QT_QPA_PLATFORM=xcb"<br>
 Environment="GDK_BACKEND=x11"
