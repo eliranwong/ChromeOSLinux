@@ -322,19 +322,22 @@ or
 
 > pcmanfm-qt
 
-To edit preference, run:
+To integrate terminal 'konsole' with 'pcmanfm':
 
-> pcmanfm --desktop-pref
+1. Install 'konsole' by running 'sudo apt install konsole'
+2. Go to Edit > Preferences > Advanced > Terminal emulator
+3. Change from 'x-terminal-emulator %s' to '/usr/bin/konsole %s'
 
-or
-
-> pcmanfm-qt --desktop-pref=general
+To integrate archiver manager 'file-roller' with 'pcmanfm':
+1. Install 'file-roller' by running 'sudo apt install file-roller'
+2. Go to Edit > Preferences > Advanced > Archiver integration
+3. Select file-roller
 
 Remarks: use 'pcmanfm' instead of 'pcmanfm-qt' on wayland, as Wayland does not support QWindow::requestActivate().
 
 We also tested several other file managers on Chome OS:
 
-* nautilus does not fully work with fcitx.  If you want nautilus without fcitx, run:
+* nautilus does not fully work with fcitx.  If you want to install nautilus anyway, run:
 
 > sudo apt install -y nautilus nautilus-admin nautilus-extension-gnome-terminal nautilus-image-converter nautilus-font-manager
 
