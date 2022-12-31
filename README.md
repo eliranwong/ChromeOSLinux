@@ -150,11 +150,13 @@ Add the following variables to work with fcitx (You may read the previous sectio
 
 Environment="QT_QPA_PLATFORM=xcb"<br>
 Environment="GDK_BACKEND=x11"
+Environment="WINIT_UNIX_BACKEND=x11"
 
 > nano ~/.bashrc
 
 export QT_QPA_PLATFORM=xcb<br>
 export GDK_BACKEND=x11
+export WINIT_UNIX_BACKEND=x11
 
 <b>Exceptions:</b>
 
