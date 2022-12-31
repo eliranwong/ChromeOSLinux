@@ -328,6 +328,8 @@ or
 
 > pcmanfm-qt --desktop-pref=general
 
+Remarks: use 'pcmanfm' instead of 'pcmanfm-qt' on wayland, as Wayland does not support QWindow::requestActivate().
+
 We also tested several other file managers on Chome OS:
 
 * nautilus does not work with fcitx
