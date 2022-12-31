@@ -230,6 +230,14 @@ To install 'konsole', run:
 
 > sudo apt install -y konsole
 
+To run 'konsole' as login shell by default:
+
+Settings > Configure Konsole > Profiles > Profile 1 (Default) > Edit > General > Command > /bin/bash -l
+
+To change 'konsole' font, e.g. to Noto Sans Mono:
+
+Settings > Configure Konsole > Profiles > Profile 1 (Default) > Edit > Appearance > Font > Noto Sans Mono
+
 For 'rxvt-unicode', read:
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/terminal/rxvt-unicode.md
@@ -326,7 +334,7 @@ To integrate terminal 'konsole' with 'pcmanfm':
 
 1. Install 'konsole' by running 'sudo apt install konsole'
 2. Go to Edit > Preferences > Advanced > Terminal emulator
-3. Change from 'x-terminal-emulator %s' to '/usr/bin/konsole %s'
+3. Change from 'x-terminal-emulator %s' to '/usr/bin/konsole %s' or 'env QT_IM_MODULE=fcitx5 /usr/bin/konsole %s' to use fcitx5 on konsole windows, opened via 'pcmanfm'
 
 To integrate archiver manager 'file-roller' with 'pcmanfm':
 1. Install 'file-roller' by running 'sudo apt install file-roller'
