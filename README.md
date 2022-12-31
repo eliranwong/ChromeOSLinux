@@ -334,7 +334,9 @@ Remarks: use 'pcmanfm' instead of 'pcmanfm-qt' on wayland, as Wayland does not s
 
 We also tested several other file managers on Chome OS:
 
-* nautilus does not work with fcitx
+* nautilus does not fully work with fcitx.  If you want nautilus without fcitx, run:
+
+> sudo apt install -y nautilus nautilus-admin nautilus-extension-gnome-terminal nautilus-image-converter nautilus-font-manager
 
 * thunar and nemo does not work with clipboard
 
