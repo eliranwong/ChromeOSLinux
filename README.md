@@ -304,37 +304,47 @@ To tweak (enter in url):
 
 > torbrowser-launcher
 
-# File organisers
+# File Manager
 
-nautilus for general purpose; gthumb to work with images:
+We prefer 'pcmanfm'
 
-> sudo apt install nautilus gthumb -y
-
-Install extensions for nautilus
-
-> sudo apt install nautilus-admin nautilus-extension-gnome-terminal nautilus-image-converter nautilus-font-manager
-
-Note: To get a full path on nautils, press "ctrl + l".
-
-Note: To show/hide hidden files on nautils, press "ctrl + h".
-
-# Other File Managers
-
-As 'nautilus' does not fully work with fcitx / fcitx on Chrome os, fcitx users may use 'nemo' or 'pcmanfm' instead:
-
-To install pcmanfm, run:
+To install, run:
 
 > sudo apt install -y pcmanfm pcmanfm-qt pcmanfm-qt-l10n libfm-qt-dev libfm-qt8
 
-To install nemo, run:
+To run:
 
-> sudo apt install -y nemo nemo-font-manager nemo-gtkhash nemo-nextcloud nemo-python
+> pcmanfm
+
+or
+
+> pcmanfm-qt
+
+To edit preference, run:
+
+> pcmanfm --desktop-pref
+
+or
+
+> pcmanfm-qt --desktop-pref=general
+
+We also tested several other file managers on Chome OS:
+
+* nautilus does not work with fcitx
+
+* thunar and nemo does not work with clipboard
+
+# Image Orangiser
+
+> sudo apt install gthumb -y
+
+> gthumb
 
 # Access ALL Files from Linux
 
 Chrome OS "Files" app can only read Linux home folder, but not other directories.
 
-It is better to use nautilus to access all Linux files as well as all chrome os + Android files.
+It is better to use 'pcmanfm' to access all Linux files as well as all chrome os + Android files.
 
 # Access ALL Chrome OS Files from Linux
 
@@ -342,7 +352,7 @@ It is better to use nautilus to access all Linux files as well as all chrome os 
 
 2) Right-click "My Files" > Share folder with Linux > OK
 
-3) Launch Linux "nautilus", add a bookmark to /mnt/chromeos/MyFiles, so that "My Files" appears on nautilus side bar.
+3) Launch Linux "pcmanfm" or "pcmanfm-qt", go to /mnt/chromeos/, right-click "MyFiles" to add a bookmark, so that "My Files" appears on pcmanfm side bar.
 
 4) To add an alias for use with commands:
 
@@ -541,17 +551,17 @@ https://github.com/luong-komorebi/Awesome-Linux-Software
 
 Manually edit '/usr/share/applications/mimeapps.list' or '.config/mimeapps.list'
 
+[Default Applications]<br>
+inode/directory=pcmanfm-qt.desktop<br>
+application/pdf=wps-office-pdf.desktop
+
 Alternatively, use xdg-mime command, e.g.:
 
-> xdg-mime default org.gnome.Nautilus.desktop inode/directory
+> xdg-mime default pcmanfm-qt.desktop inode/directory
 
 > xdg-mime default wps-office-pdf.desktop application/pdf
 
 > cat .config/mimeapps.list
-
-[Default Applications]<br>
-inode/directory=org.gnome.Nautilus.desktop<br>
-application/pdf=wps-office-pdf.desktop
 
 # Desktop Shortcuts
 
