@@ -318,6 +318,18 @@ Note: To get a full path on nautils, press "ctrl + l".
 
 Note: To show/hide hidden files on nautils, press "ctrl + h".
 
+# Other File Managers
+
+As 'nautilus' does not fully work with fcitx / fcitx on Chrome os, fcitx users may use 'nemo' or 'pcmanfm' instead:
+
+To install pcmanfm, run:
+
+> sudo apt install -y pcmanfm pcmanfm-qt pcmanfm-qt-l10n libfm-qt-dev libfm-qt8
+
+To install nemo, run:
+
+> sudo apt install -y nemo nemo-font-manager nemo-gtkhash nemo-nextcloud nemo-python
+
 # Access ALL Files from Linux
 
 Chrome OS "Files" app can only read Linux home folder, but not other directories.
