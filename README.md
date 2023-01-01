@@ -488,7 +488,7 @@ sudo apt install build-essential python3 python-setuptools python3-pip python3-d
 
 <b>nvm & node</b>
 
-https://github.com/eliranwong/wsl2/blob/master/programming/nvm_node.md
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/nvm_node.md
 
 <b>git</b>
 
