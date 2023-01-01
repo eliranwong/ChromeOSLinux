@@ -37,6 +37,12 @@ add the following lines (without empty lines):
 --enable-features=WaylandWindowDecorations<br>
 --ozone-platform-hint=auto
 
+# A note on Chrome OS wayland
+
+It is observed that changing accessiblity settings, like "Large mouse cursor", after Linux virtual machine is created can cause display issues with some gui applications.  Some gui applications keep close and reopen and make them unusable.  It is possible that there is a bug that comes with the built-in wayland compositor as the error message indicates, e.g.:
+
+* qt.qpa.wayland: Ignoring unexpected wl_surface.enter received for output with id: 7 screen name: "Screen5" screen model: "202B" This is most likely a bug in the compositor.
+
 # Reference
 
 https://wiki.archlinux.org/title/wayland
