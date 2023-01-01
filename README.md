@@ -376,7 +376,15 @@ By default, chrome OS "Files" app shows only 4 Android folders Documents, Movies
 
 Access USB content at:
 
-> /mnt/chromeos/removable
+To share USB content with Linux:
+
+1) Launch Chrome OS 'Files' app
+2) Right-click USB device, appeared on side panel
+3) Select 'Share with Linux'
+
+To access via Linus, run on Linux terminal:
+
+> cd /mnt/chromeos/removable
 
 # Office Apps - wps
 
