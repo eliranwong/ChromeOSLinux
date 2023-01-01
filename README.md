@@ -201,6 +201,15 @@ To install additional fonts, e.g. ubuntu fonts:
 
 Remarks: font directory lists are placed in /etc/fonts/fonts.conf
 
+# Add Fonts with Gui
+
+For example:
+
+1. download Hebrew fonts from https://www.1001fonts.com/hebrew-fonts.html
+2. unzip the downloaded zip files
+3. double click a font file in pcmanfm to launch '/usr/libexec/font-manager/font-viewer'
+4. press 'install font'
+
 # Text Editor
 
 nano
