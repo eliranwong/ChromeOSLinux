@@ -127,9 +127,7 @@ export XIM=fcitx5<br>
 export XIM_PROGRAM=/usr/bin/fcitx5<br>
 export GTK_IM_MODULE=fcitx5<br>
 export QT_IM_MODULE=fcitx5<br>
-export XMODIFIERS=@im=fcitx5<br>
-export QT_QPA_PLATFORM=xcb<br>
-export GDK_BACKEND=x11
+export XMODIFIERS=@im=fcitx5
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
@@ -146,9 +144,7 @@ XIM=fcitx5<br>
 XIM_PROGRAM=/usr/bin/fcitx5<br>
 GTK_IM_MODULE=fcitx5<br>
 QT_IM_MODULE=fcitx5<br>
-XMODIFIERS=@im=fcitx5<br>
-QT_QPA_PLATFORM=xcb<br>
-GDK_BACKEND=x11
+XMODIFIERS=@im=fcitx5
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
@@ -211,9 +207,7 @@ export XIM=fcitx<br>
 export XIM_PROGRAM=/usr/bin/fcitx<br>
 export GTK_IM_MODULE=fcitx<br>
 export QT_IM_MODULE=fcitx<br>
-export XMODIFIERS=@im=fcitx<br>
-export QT_QPA_PLATFORM=xcb<br>
-export GDK_BACKEND=x11
+export XMODIFIERS=@im=fcitx
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
@@ -232,9 +226,7 @@ Environment="XIM=fcitx"<br>
 Environment="XIM_PROGRAM=/usr/bin/fcitx"<br>
 Environment="GTK_IM_MODULE=fcitx"<br>
 Environment="QT_IM_MODULE=fcitx"<br>
-Environment="XMODIFIERS=@im=fcitx"<br>
-Environment="QT_QPA_PLATFORM=xcb"<br>
-Environment="GDK_BACKEND=x11"
+Environment="XMODIFIERS=@im=fcitx"
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
