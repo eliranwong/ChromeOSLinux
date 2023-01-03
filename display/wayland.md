@@ -38,12 +38,39 @@ add the following lines (without empty lines):
 --enable-features=WaylandWindowDecorations<br>
 --ozone-platform-hint=auto
 
-# A note on Chrome OS wayland
+# Troubleshot Qt Applications
 
-It is observed that changing accessiblity settings, like "Large mouse cursor", after Linux virtual machine is created can cause display issues with some gui applications.  Some gui applications keep close and reopen and make them unusable.  It is possible that there is a bug that comes with the built-in wayland compositor as the error message indicates, e.g.:
+<u>Known issues:</u>
+* Changing accessiblity settings, like "Large mouse cursor", after Linux virtual machine is created can cause display issues with some gui applications.  Some gui applications keep close and reopen and make them unusable.
 
-* qt.qpa.wayland: Ignoring unexpected wl_surface.enter received for output with id: 7 screen name: "Screen5" screen model: "202B" This is most likely a bug in the compositor.
+* Some qt applications run with the following error.  It is possible that there is a bug that comes with the built-in wayland compositor as the error message indicates, e.g.:
+
+qt.qpa.wayland: Ignoring unexpected wl_surface.enter received for output with id: 7 screen name: "Screen5" screen model: "202B" This is most likely a bug in the compositor.
+
+* Some Qt applications does not work on touchscreen devices with wayland.  For example, https://github.com/eliranwong/UniqueBible/wiki/QT_QPA_PLATFORM#touchscreen-users
+
+* https://github.com/eliranwong/ChromeOSLinux/blob/main/troubleshooting/qt.qpa.plugin_cannot_load_xcb.md
+
+<u>Workaround:</u>
+
+If a particular Qt application does not work with wayland, run it with:
+
+> env QT_QPA_PLATFORM=xcb [application]
+
+# Troubleshot GTK Applications
+
+If a particular GTK application does not work with wayland, run it with:
+
+> env GDK_BACKEND=x11 [application]
+
+# Troubleshot Rust Applications
+
+If a particular Rust application does not work with wayland, run it with:
+
+> env WINIT_UNIX_BACKEND=x11 [application]
 
 # Reference
+
+https://wiki.debian.org/Wayland
 
 https://wiki.archlinux.org/title/wayland
