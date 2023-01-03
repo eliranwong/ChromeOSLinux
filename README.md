@@ -197,7 +197,7 @@ We tested different terminal app on Chrome OS.  The best options we found are 'k
 
 To install 'konsole', run:
 
-> sudo apt install -y konsole
+> sudo apt install -y konsole breeze-icon-theme
 
 To copy, press 'ctrl+shift+c'
 
