@@ -87,11 +87,7 @@ Check installed Chinese font list
 # Input Method - fcitx5 and fcitx
 
 1. Install both fcitx5 and fcitx:<br>
-> sudo apt install fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* kde-config-fcitx5 -y
-
-To avoid potential conficts or free around 80MB of storage, run in terminal:
-
-> sudo apt -y remove fcitx-module-kimpanel
+> sudo apt install -y fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* kde-config-fcitx5 gnome-shell-extension-kimpanel libime-bin
 
 # Before You Continue
 
