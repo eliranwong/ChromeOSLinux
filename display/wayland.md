@@ -26,7 +26,7 @@ add the following lines:
 export QT_QPA_PLATFORM="wayland;xcb"<br>
 export QT_QPA_PLATFORMTHEME=qt5ct<br>
 export CLUTTER_BACKEND=wayland<br>
-export SDL_VIDEODRIVER=x11
+export SDL_VIDEODRIVER=x11<br>
 xrdb -load .Xsession
 
 # config
