@@ -38,6 +38,10 @@ To remove a package together with configuration files:
 
 > sudo apt purge [package]
 
+To remove a package, unused packages, and configs:
+
+> sudo apt --purge autoremove [package]
+
 To remove old downloaded archive files:
 
 > sudo apt autoclean
