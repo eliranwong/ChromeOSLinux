@@ -1,8 +1,12 @@
 # Setup
 
-> sudo apt install -y python-gi-dev
+Try:
 
 > pip3 install PyGObject
+
+If the pip package cannot be installed, use:
+
+> sudo apt install -y python-gi-dev
 
 # Examples
 
