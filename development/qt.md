@@ -15,3 +15,9 @@
 # Qt6 for Python
 
 > pip3 install PySide6
+
+# Package with PyInstaller
+
+> pip3 install --upgrade PyInstaller pyinstaller-hooks-contrib
+
+Read https://doc.qt.io/qtforpython/deployment-pyinstaller.html
