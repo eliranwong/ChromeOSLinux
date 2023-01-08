@@ -11,3 +11,7 @@
 # Debian Packages
 
 > sudo apt-get --no-install-recommends install libqt\*5-dev qt\*5-dev qml-module-qtquick-* qt*5-doc-html libqt5xml5 libqt5x11extras5 libqt5x11extras5-dev
+
+# Qt6 for Python
+
+> pip3 install PySide6
