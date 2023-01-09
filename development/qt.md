@@ -14,7 +14,19 @@
 
 # Qt6 for Python
 
+> cd $HOME
+
+> mkdir playqt6
+
+> cd playqt6
+
+> python3 -m venv venv
+
+> source venv/bin/activate
+
 > pip3 install PySide6
+
+> echo 'alias qt6examples="source $HOME/playqt6/venv/bin/activate && cd $HOME/playqt6/venv/lib/python3.10/site-packages/PySide6/examples"' >> $HOME/.bashrc
 
 # Tutorials
 
