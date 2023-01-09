@@ -16,6 +16,14 @@
 
 > pip3 install PySide6
 
+# Tutorials
+
+https://doc.qt.io/qtforpython/
+
+https://www.pythonguis.com/pyside6/
+
+https://doc.qt.io/qtforpython/
+
 # Package with PyInstaller
 
 > pip3 install --upgrade PyInstaller pyinstaller-hooks-contrib
