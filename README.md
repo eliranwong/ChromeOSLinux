@@ -620,3 +620,8 @@ Note: Addon "video-downloadhelper" and its companion app are tested on Alpine, U
 > tar xf net.downloadhelper.coapp-1.6.3-1_amd64.tar.gz -C ~
 
 > ~/net.downloadhelper.coapp-1.6.3/bin/net.downloadhelper.coapp-linux-64 install --user
+
+# Restart Network
+
+> sudo /etc/init.d/networking restart
+
