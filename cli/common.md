@@ -270,3 +270,18 @@ ZZ - Save and exit<br>
 SPACE = next page<br>
 b = previous page<br>
 q = quit
+
+
+# Restart Network
+
+> sudo /etc/init.d/networking restart
+
+or
+
+> sudo /etc/init.d/networking stop
+
+> sudo /etc/init.d/networking start
+
+or
+
+> sudo systemctl restart networkin
