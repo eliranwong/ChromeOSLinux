@@ -277,15 +277,19 @@ Set a shortcut:
 
 <b>Chrome</b>
 
-Download the .deb package from: https://www.google.com/chrome/browser/desktop/index.html
+To download, install and set up:
 
-Run the following command to complete the installation:
+> sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-> sudo apt --fix-broken install
+> sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-To run chrome:
+> sudo apt install --fix-broken -y
 
-> google-chrome-stable
+> sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+To run:
+
+> google-chrome
 
 To tweak (enter in url):
 
