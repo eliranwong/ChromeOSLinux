@@ -270,7 +270,9 @@ ZZ - Save and exit<br>
 SPACE = next page<br>
 b = previous page<br>
 q = quit
-
+-i = swap case-sensitive searches
+/ = search for plain text
+? = search for a pattern
 
 # Restart Network
 
