@@ -506,10 +506,10 @@ sudo apt install build-essential python3 python-setuptools python3-pip python3-d
 
 at the following lines at the end of the file:
 
-```export PYENV_ROOT="$HOME/.pyenv"```
-```command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"```
-```eval "$(pyenv init -)"```
-```eval "$(pyenv virtualenv-init -)"```
+export PYENV_ROOT="$HOME/.pyenv"<br>
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"<br>
+eval "$(pyenv init -)"<br>
+eval "$(pyenv virtualenv-init -)"
 
 More about pyenv at: https://github.com/pyenv/pyenv/wiki
 
