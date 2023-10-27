@@ -494,6 +494,29 @@ https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md
 
 sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev -y
 
+<b>pyenv:</b>
+
+> sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
+> curl https://pyenv.run | bash
+
+> git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+
+> micro .bashrc
+
+at the following lines at the end of the file:
+
+```export PYENV_ROOT="$HOME/.pyenv"```
+```command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"```
+```eval "$(pyenv init -)"```
+```eval "$(pyenv virtualenv-init -)"```
+
+More about pyenv at: https://github.com/pyenv/pyenv/wiki
+
+More about pyenv-virtualenv at: https://github.com/pyenv/pyenv-virtualenv
+
+More about pyenv plugins at: https://github.com/pyenv/pyenv/wiki/Plugins
+
 <b>nvm & node</b>
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/development/nvm_node.md
