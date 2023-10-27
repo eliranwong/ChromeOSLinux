@@ -504,12 +504,14 @@ sudo apt install build-essential python3 python-setuptools python3-pip python3-d
 
 > micro .bashrc
 
-at the following lines at the end of the file:
+copy the following lines at the end of the file:
 
 export PYENV_ROOT="$HOME/.pyenv"<br>
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"<br>
 eval "$(pyenv init -)"<br>
 eval "$(pyenv virtualenv-init -)"
+
+Press "ctrl+s" & "ctrl+q" to save and close the file
 
 More about pyenv at: https://github.com/pyenv/pyenv/wiki
 
