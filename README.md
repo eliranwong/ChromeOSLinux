@@ -130,7 +130,7 @@ https://github.com/eliranwong/ChromeOSLinux/blob/main/package_mx/synaptic.md
 
 To install some basic command line tools and libraries, run:
 
-> sudo apt -y install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano micro w3m lynx lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils libglu1-mesa lsb-release binutils ffmpeg gawk opencc plocate gnome-keyring libssl-dev libffi-dev libstdc++5 libpci3 libpci-dev python3 python-setuptools python3-pip python3-dev python3-venv zlib1g-dev libgdbm-dev libnss3-dev libreadline-dev libbz2-dev gcc xorg-dev exo-utils dex xdg-utils libavcodec-extra libportaudio2 moreutils llvm libncursesw5-dev tk-dev liblzma-dev python3-openssl
+> sudo apt -y install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano micro w3m lynx lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils libglu1-mesa lsb-release binutils ffmpeg gawk opencc plocate gnome-keyring libssl-dev libffi-dev libstdc++5 libpci3 libpci-dev python3 python-setuptools python3-pip python3-dev python3-venv zlib1g-dev libgdbm-dev libnss3-dev libreadline-dev libbz2-dev gcc xorg-dev exo-utils dex xdg-utils libavcodec-extra libportaudio2 moreutils llvm libncursesw5-dev tk-dev liblzma-dev python3-openssl libxml2-dev libxmlsec1-dev
 
 # Display
 
