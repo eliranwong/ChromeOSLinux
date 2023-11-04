@@ -235,6 +235,16 @@ Remarks: Gnome-terminal is a popular choice, however, it does not fully work wit
 
 # Browser
 
+<b>Microsoft Edge</b>
+
+Microsoft Edge work with Chrome OS built-in input methods, without the need of fcitx:
+
+Microsoft Edge can be downloaded at (select the .deb package):
+
+https://www.microsoft.com/en-gb/edge/download
+
+<b>Browsers that work with fcitx</b>
+
 Two examples: Firefox and Chrome.  Both of these browsers work with fcitx on Chrome OS Linux.
 
 <b>Firefox</b>
