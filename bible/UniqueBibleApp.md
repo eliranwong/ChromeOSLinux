@@ -4,17 +4,15 @@ We have developed three versions of Unique Bible App (UBA).  Below is descriptio
 
 # Updated on 4thNov2023
 
-1. set up pyenv, read https://github.com/eliranwong/ChromeOSLinux#development-tools
-
-2. install python version, for example, 3.10.8
+1. install python version
 
 > sudo apt install build-essential python3 python-setuptools python3-pip python3-dev python3-venv libssl-dev libffi-dev -y
 
-3. download UBA
+2. download UBA
 
 > git clone https://github.com/elrianwong/UniqueBible
 
-4. setup
+3. setup
 
 > cd UniqueBible
 
@@ -28,7 +26,7 @@ We have developed three versions of Unique Bible App (UBA).  Below is descriptio
 
 > python3 uba.py
 
-6. To work with fcitx:
+4. To work with fcitx:
 
 > nano ~/.local/share/applications/UniqueBibleApp.desktop
 
@@ -39,6 +37,8 @@ Change the following line from:
 to:
 
 > Exec=env QT_IM_MODULE=fcitx5 /usr/bin/python3 /home/eliran/UniqueBible/uba.py
+
+You may ignore the rest of this page if the method above works on your device.
 
 # Prepare for Installation
 
