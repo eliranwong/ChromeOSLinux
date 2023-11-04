@@ -87,7 +87,10 @@ Check installed Chinese font list
 # Input Method - fcitx5 and fcitx
 
 1. Install both fcitx5 and fcitx:<br>
-> sudo apt install -y fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* kde-config-fcitx5 gnome-shell-extension-kimpanel libime-bin
+> sudo apt install -y fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* kde-config-fcitx5 gnome-shell-extension-kimpanel libime-bin libime-bin
+
+Aternately, if you want fcitx5 only:<br>
+> sudo apt install -y fcitx5 libfcitx5utils2 libfcitx5core7 libfcitx5config6 kde-config-fcitx5 kde-config-fcitx5 fcitx5-config-qt
 
 # Before You Continue
 
@@ -135,6 +138,8 @@ Close and re-open terminal to make changes effective.
 
 For running applications launched through Chrome OS launcher menu:
 
+> mkdir mkdir ~/.config/environment.d
+
 > nano ~/.config/environment.d/im.config
 
 Write and save the following lines:
@@ -173,6 +178,9 @@ Select the "+" button, located at the left lower button, to add input methods.<b
 Uncheck "Only Show Current Language"<br>
 Enter "Pinyin" in search field<br>
 Select "Pinyin" and click the left arrow to add
+
+To add more input methods, e.g. pinyin:<br>
+> sudo apt install -y fcitx5-module-cloudpinyin fcitx5-module-pinyinhelper fcitx5-pinyin fcitx5-chinese-addons fcitx5-chinese-addons-bin fcitx5-chinese-addons-data
 
 # Set up fcitx
 
