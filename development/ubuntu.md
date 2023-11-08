@@ -6,6 +6,8 @@ Read https://ubuntu.com/tutorials/install-ubuntu-desktop#3-create-a-bootable-usb
 
 ## Enable Developer Mode
 
+Warning: Enabling Developer Mode erases all existing data!
+
 1. back up data first
 2. Press "Esc+Refresh+Power"
 3. Ctrl+D
