@@ -37,9 +37,13 @@ Read https://ubuntu.com/tutorials/install-ubuntu-desktop#3-create-a-bootable-usb
 
 ## Install Alternative Bootloader
 
+Run:
+
 > cd; curl -LO mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
 
 Select "1"
+
+Remarks: For dual boot, read https://askubuntu.com/questions/1468964/how-to-install-ubuntu-on-an-intel-amd-chromebook-google-pixelbook-2017
 
 ## Reboot
 
