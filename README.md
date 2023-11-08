@@ -664,3 +664,6 @@ Note: Addon "video-downloadhelper" and its companion app are tested on Alpine, U
 
 > sudo /etc/init.d/networking restart
 
+# Install Ubuntu on Pixelbook Go
+
+https://github.com/eliranwong/ChromeOSLinux/blob/main/development/ubuntu.md
