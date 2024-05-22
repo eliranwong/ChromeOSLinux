@@ -22,6 +22,10 @@ https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
 
 https://docs.docker.com/engine/install/debian/
 
+https://docs.docker.com/engine/install/ubuntu/
+
+https://unix.stackexchange.com/questions/363048/unable-to-locate-package-docker-ce-on-a-64bit-ubuntu
+
 # Build Unique Bible App docker image
 
 > git clone https://github.com/eliranwong/uniquebibleapp-webtop.git
