@@ -26,6 +26,12 @@ https://docs.docker.com/engine/install/ubuntu/
 
 https://unix.stackexchange.com/questions/363048/unable-to-locate-package-docker-ce-on-a-64bit-ubuntu
 
+# Add User to Docker Group
+
+> sudo usermod -aG docker $LOGNAME
+
+> newgrp docker
+
 # Build Unique Bible App docker image
 
 > git clone https://github.com/eliranwong/uniquebibleapp-webtop.git
