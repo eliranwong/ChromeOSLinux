@@ -197,3 +197,18 @@ export OLLAMA_API_KEY=............
 # openclaw
 export DISCORD_BOT_TOKEN=............
 ```
+
+# Upgrade
+
+For example, upgrading to a newer nvm version:
+
+```
+nvm install 24
+npm install -g mcporter@latest
+npm install -g clawhub@latest
+npm install -g @steipete/summarize@latest
+npm install -g @mariozechner/pi-ai@latest
+npm install -g openclaw@latest
+npm install -g @google/gemini-cli@latest
+npm install -g @openai/codex@latest
+```
