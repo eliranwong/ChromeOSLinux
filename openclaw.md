@@ -6,6 +6,12 @@
 sudo apt update && sudo apt dist-upgrade
 ```
 
+# Export local path
+
+```
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
 # Install basic tools
 
 https://github.com/eliranwong/ChromeOSLinux/blob/main/README.md#basic-tools--libaries
@@ -143,4 +149,51 @@ sudo mv Antigravity-x64 /opt/antigravity
 sudo chown root:root /opt/antigravity/chrome-sandbox
 sudo chmod 4755 /opt/antigravity/chrome-sandbox
 sudo ln -s /opt/antigravity/antigravity /usr/local/bin/antigravity
+```
+
+## Install Antigravity IDE
+
+Download Antigravity from https://antigravity.google/
+
+```
+tar -xvzf "Antigravity IDE.tar.gz"
+sudo mv "Antigravity IDE" /opt/antigravity-ide
+sudo chown root:root /opt/antigravity-ide/chrome-sandbox
+sudo chmod 4755 /opt/antigravity-ide/chrome-sandbox
+sudo ln -s /opt/antigravity-ide/antigravity-ide /usr/local/bin/antigravity-ide
+```
+
+# Common Environment Variables
+
+```
+# Claude Code
+export ANTHROPIC_AUTH_TOKEN=............
+export ANTHROPIC_BASE_URL=https://.............services.ai.azure.com/anthropic/
+export ANTHROPIC_FOUNDRY_API_KEY=............
+export ANTHROPIC_FOUNDRY_BASE_URL=https://.............services.ai.azure.com/anthropic/
+#alias claude="claude --model opusplan"
+export ANTHROPIC_MODEL=opusplan
+export ANTHROPIC_DEFAULT_OPUS_MODEL=claude-opus-4-5
+export ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-5
+
+# azure
+export AZURE_OPENAI_API_KEY=............
+
+# Gemini
+export GEMINI_API_KEY=............
+
+# Github
+export GITHUB_TOKEN=............
+
+# PYPI
+export PYPI_TOKEN=............
+
+# PLAYWRIGHT_MCP_EXTENSION_TOKEN
+export PLAYWRIGHT_MCP_EXTENSION_TOKEN=............
+
+# ollama
+export OLLAMA_API_KEY=............
+
+# openclaw
+export DISCORD_BOT_TOKEN=............
 ```
