@@ -203,7 +203,7 @@ export DISCORD_BOT_TOKEN=............
 For example, upgrading to a newer nvm version:
 
 ```
-nvm install 24
+nvm install 24 # change version number here
 npm install -g mcporter@latest
 npm install -g clawhub@latest
 npm install -g @steipete/summarize@latest
